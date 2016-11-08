@@ -1,6 +1,7 @@
 ---
-layout: single
+layout: post
 title: Bayesian Statistics on Data Science 
+description: An introduction to bayesian statistics and it's applications on data science
 tags: 
    - Bayesian
 ---
