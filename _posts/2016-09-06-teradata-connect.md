@@ -1,12 +1,10 @@
 ---
-layout: single
+layout: post
 title: Using JDBC connection to access Teradata
 description: Making R connect to a external database
 categories:
-  - Extract
-tags: 
-  - SQL
-  - R
+  - Data Enginner
+tags: [SQL,R]
 ---
 
 # Let's get it started!
