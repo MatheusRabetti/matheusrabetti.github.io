@@ -1,6 +1,5 @@
 ---
 layout: home
-author_profile: true
 excerpt: "Blog on R, statistics, and data enginner"
 ---
 
