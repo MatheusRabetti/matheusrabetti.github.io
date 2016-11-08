@@ -1,12 +1,9 @@
 ---
-layout: single
-title: Extract Data - Data Warehouse
-description: Dealing with large files - Part 2
-tags: 
-    - Big Data
-    - R 
-    - PostgreSQL
-    - Pentaho ~ BI
+layout: post
+title: Dealing with large files - Extract Data 
+description: How Data Warehousing can help on analysis of big data
+category: Data Enginner
+tags: [Big Data, R, PostgreSQL, Pentaho ~ BI]
 ---
 
 # Storing data
