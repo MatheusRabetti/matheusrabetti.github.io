@@ -1,9 +1,9 @@
 ---
-layout: single
+layout: post
 title: Git Branch - No risks, No gains
 description: Understanding Git branch and when it should be used.
-tags: 
-    - Git
+categories: Data Analysis
+tags: [Git]
 ---
 
 # How does branch works?
