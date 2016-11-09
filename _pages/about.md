@@ -3,7 +3,7 @@ layout: page
 title: About Me
 tags: [about]
 comments: false
-permalink: /year-archive/
+permalink: /about/
 ---
 
 I am a Statistician at [DIEESE](http://dieese.org.br/) graduated from the [University of Brasilia, (UnB)](http://www.est.unb.br/). I have 5 years of experience in applied statistics programming in R. My interests include statistics, data analysis, data enginner, big data, and programming in R and Python.
