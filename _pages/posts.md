@@ -1,6 +1,6 @@
 ---
 layout: post-index
-permalink: /year-archive/
+permalink: /posts/
 title: All Posts
 description: "A List of Posts"
 ---
