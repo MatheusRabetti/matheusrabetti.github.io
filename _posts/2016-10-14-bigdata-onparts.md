@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with large files - Computing on parts
-categories: Data Enginner
+category: Data Enginner
 description: An easy and fast way to work around the problem with big data
 tags: [Big Data,R,Unix]
 ---
