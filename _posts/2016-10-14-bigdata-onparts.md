@@ -6,6 +6,10 @@ description: An easy and fast way to work around the problem with big data
 tags: [Big Data,R,Unix]
 ---
 
+**Big Data Series:**
+
+* [Big Data - Extracting Data](http://matheusrabetti.github.io/data%20enginner/postgresql-extract/)
+
 # Oh my God, please don't explain what is big data
 
 Nowadays the internet have a big data of explanations about big data. 
@@ -23,19 +27,19 @@ That's it! I told you it would be fast. So, how I learned to deal with this kind
 
 There are three classes of aproaches that can be choosen. Let's have a look on them.
 
-## 1. Extract Data
+### 1. Extract Data
 
 Problems that require you to extract a subset, sample, or summary from a Big Data source. 
 You may do further analytics on the subset, as you aren't interesested on every granularity and fields of the data.
 
 Since your subset is smaller than your RAM ... Pretty easy! 
 
-## 2. Compute on the parts
+### 2. Compute on the parts
 
 Problems that require you to repeat computation for many subgroups of the data.
 You may combine the results once finished.
 
-## 3. Compute on the whole
+### 3. Compute on the whole
 
 Problems that require you to use all of the data at once. These problems are irretrievably big. 
 
@@ -57,8 +61,7 @@ dir.file <- "/Base de Dados/RAIS FTP/"
 Let's show it off in a very simple example. I will take the mass of workers in Brazil building a loop function.
 
 But first, if you believe life is beautiful learn everything about the **data.table** package. Seriously! 
-To not overload this post check this [post](https://www.analyticsvidhya.com/blog/2016/05/data-table-data-frame-work-large-data-sets/)
-from the Analytics Vidhya and get convinced.
+To not overload this post check this [post](https://www.analyticsvidhya.com/blog/2016/05/data-table-data-frame-work-large-data-sets/) from the Analytics Vidhya and get convinced.
 
 Moving on, I have many years of data organized like this:
 
@@ -84,7 +87,6 @@ uf.file[,sum(`Vínculo Ativo 31/12`)]
 Doing it recursively we reach our result. The function looks like this:
 
 ``` r
-
 sum_workers <- function(ano){
   total_workers = 0
   year.files = list.files(paste0(dir.file,'/', ano,'/'), 
@@ -120,6 +122,7 @@ of whatever size you want. In the Ubuntu terminal, let's count the number of row
 $ wc -l SP2015.txt
 20604436 SP2015.txt
 ```
+
 20 million lines! I'll split in files with 2 million.
 
 ``` bash
@@ -134,6 +137,7 @@ The result is my original file and all the partitions in the folder:
 $ ls
 SP2015.txt  xaa  xab  xac  xad  xae  xaf  xag  xah  xai  xaj  xak
 ```
+
 Terrible file names and the files have no extension. Changing it...
 
 ``` bash
@@ -143,6 +147,7 @@ $ ls
 SP2015-part-a.txt  SP2015-part-c.txt  SP2015-part-e.txt  SP2015-part-g.txt  SP2015-part-i.txt  SP2015-part-k.txt
 SP2015-part-b.txt  SP2015-part-d.txt  SP2015-part-f.txt  SP2015-part-h.txt  SP2015-part-j.txt  SP2015.txt
 ```
+
 Only the first partition - *part-a* - have the header row. 
 Unfortunately the split command doesn’t have an option for keeping up for all files. 
 However with a little bit more code you can achieve it.
@@ -150,21 +155,23 @@ However with a little bit more code you can achieve it.
 ``` bash
 $ for file in SP2015-part-[b-z].txt; do head -n 1 SP2015.txt > tmp_file; cat $file >> tmp_file; mv -f tmp_file $file; done
 ```
+
 In case you forgot that the first part already had a header and now you have a file with two headers don't freak out.
 Pass this simple command line,
 
 ``` bash
 $ tail -n +2 SP2015-part-a.txt > SP2015-part-a.txt
 ```
+
 After that, one small change on the **R** script to loop on all files: 
 
 ``` r
 for(i in lenght(year.files))
 ```
+
 The new function is almost the same. Have a look:
 
 ``` r
-
 sum_workers <- function(ano){
   total_workers = 0
   year.files = list.files(paste0(dir.file,'/', ano,'/'), 
