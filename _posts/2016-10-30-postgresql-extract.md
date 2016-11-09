@@ -10,7 +10,7 @@ tags: [Big Data, R, PostgreSQL, Pentaho BI]
 
 **Big Data Series:**
 
-* [Big Data - Computing on Parts](https://matheusrabetti.github.io/data-enginner/bigdata-onparts/)
+* [Big Data - Computing on Parts](https://matheusrabetti.github.io/data%20enginner/bigdata-onparts/)
 
 # Storing data
 
