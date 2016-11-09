@@ -2,7 +2,8 @@
 layout: post
 title: Using Unix commands for data science
 description: How can unix commands on terminal helps on analysing data
-categories: Data-Analysis
+categories:
+  - Data Analysis
 tags: [Unix,Big Data]
 ---
 
