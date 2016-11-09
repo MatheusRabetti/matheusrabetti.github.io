@@ -2,14 +2,14 @@
 layout: post
 title: Dealing with large files - Extract Data 
 description: How Data Warehousing can help on analysis of big data
-category: Data Enginner
+categories: Data-Enginner
 tags: [Big Data, R, PostgreSQL, Pentaho ~ BI]
 ---
 
 
 **Big Data Series:**
 
-* [Big Data - Computing on Parts](https://matheusrabetti.github.io/data%20enginner/bigdata-onparts/)
+* [Big Data - Computing on Parts](https://matheusrabetti.github.io/data-enginner/bigdata-onparts/)
 
 # Storing data
 
