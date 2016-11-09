@@ -8,7 +8,7 @@ tags: [Big Data,R,Unix]
 
 **Big Data Series:**
 
-* [Big Data - Extracting Data](http://matheusrabetti.github.io/data%20enginner/postgresql-extract/)
+* [Big Data - Extracting Data](http://matheusrabetti.github.io/data-enginner/postgresql-extract/)
 
 # Oh my God, please don't explain what is big data
 
