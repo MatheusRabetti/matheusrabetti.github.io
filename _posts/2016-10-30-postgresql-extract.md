@@ -2,8 +2,9 @@
 layout: post
 title: Dealing with large files - Extract Data 
 description: How Data Warehousing can help on analysis of big data
-categories: Data-Enginner
-tags: [Big Data, R, PostgreSQL, Pentaho ~ BI]
+categories:
+  - Data Enginner
+tags: [Big Data, R, PostgreSQL, Pentaho BI]
 ---
 
 
