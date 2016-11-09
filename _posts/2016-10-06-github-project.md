@@ -2,7 +2,8 @@
 layout: post
 title: Version Control for data analysis
 description: When and why to use Git on solo data analysis
-categories: Data Analysis
+categories: 
+  - Data Analysis
 tags: [Git]
 ---
 
