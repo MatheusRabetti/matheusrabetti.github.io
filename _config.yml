@@ -79,7 +79,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 permalink:   /:categories/:title/
 markdown:    kramdown
-highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
