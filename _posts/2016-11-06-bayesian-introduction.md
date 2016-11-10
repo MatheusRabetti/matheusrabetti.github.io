@@ -103,8 +103,7 @@ Why is your batting average in the first few hits not a good predictor of your e
 
 Given our batting average problem, which can be represented with a binomial distribution (a series of successes and failures), the best way to represent these *prior expectations* is with the beta distribution. It’s saying, before we’ve seen the player take his first swing, what we roughly expect his batting average to be.
 
-We expect that the player’s season-long batting average will be most likely around 0.27, but that it could reasonably range from 0.21 to 0.35. This can be represented with a beta distribution with parameters $$\alpha=81$$ and $\beta=219$:
-
+We expect that the player’s season-long batting average will be most likely around 0.27, but that it could reasonably range from 0.21 to 0.35. This can be represented with a beta distribution with parameters $$\alpha=81$$ and \\( \beta=219\\):
 
 
 ![center](../../figs/2016-11-06-bayesian-introduction/beta_density-1.png)
