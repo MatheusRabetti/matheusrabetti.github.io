@@ -6,6 +6,10 @@
 <head>
 {% include _head.html %}
 
+{% if page.use_math %}
+  {% include mathjax_support %}
+{% endif %}  
+  
 {% if page.og_image %}<meta property="og:image" content="{{ page.og_image }}">{% endif %}
 </head>
 
