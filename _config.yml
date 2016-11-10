@@ -15,12 +15,6 @@ baseurl                  : ""
 repository               : "matheusrabetti/matheusrabetti.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 
-# Analytics
-analytics:
-  provider               : "google" 
-  google:
-    tracking_id          : "UA-83714078-1"
-
 
 # Site Author
 author:
@@ -36,6 +30,8 @@ author:
   linkedin         : matheus-rabetti-8977b49b
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   twitter          : RabettiMatheus
+  google:
+    analytics      : "UA-83714078-1" 
 
 
 
