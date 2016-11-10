@@ -114,6 +114,4 @@ I came up with these parameters for two reasons:
 
   * As you can see in the plot, this distribution lies almost entirely within $$(0.2,.35)$$ - the reasonable range for a batting average.
   
-  
-  
-\\[\log P(\vec{z};A)\\]
+
