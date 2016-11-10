@@ -8,20 +8,21 @@ tags: [Bayesian]
 
 
 
-# A brief history of Bayesian and frequentist methods
+## A brief history of Bayesian and frequentist methods
 
 When probability was first studied in the 1800's (maybe a little earlier), Bayesian methods were the initial ones studied - to Bayes and Laplace and Gauss, it was the natural way to think about things.  It became evident that for any reasonable model, however, the calculations were too complex.  And thus frequentist statistics (without priors) was born.
 
 Proponents of frequentism are mostly in that camp because that's the way it's been done in all science, etc, for a long time.  But frequentism never would have had a chance if there had been the computing power we had today back then, and never mind that computers would not have been possible without a lot of science based on frequentist statistics. Frequentists also say that putting a prior on things is bad science.
 
-# Why it's natural
+## Why it's natural
 
 I was a rabid frequentist myself (being "brought up" that way - i.e. in my undergrad, master's, and most of my PhD, Bayesian methods were rarely mentioned without derision at the schools I attended at that time) until I thought about what it really means to have prior information, and why it's so natural.  Even watching how I think has convinced me that even though I was a frequentist by choice, my thinking has always been Bayesian in nature.  I'm sure a lot of people think like this:  they form an opinion on a subject, even with no knowledge.  They get data (learn things) about said subject, and modify their opinion, but it's always true that the first (prior) opinion affects things.  Here "subject" can be anything, such as climate change or who's the best baseball player.
 
 And science has always had hypotheses before experiments.  And the experiment guides the creation of new hypotheses.  
 
 
-# Philosophical difference 
+## Philosophical difference 
+### How a Bayesian looks at data and how a frequentist looks at data
 
 **Bayesian:**  says the data are fixed, and any parameters (i.e. for height of people as an example, the reason that people of a population are a given height) are random. Best suited to (re)allocate the credibility of a statement.
 
@@ -95,7 +96,7 @@ What we can do is attach a prior to Bert and Ernie This would be equivalent to g
 
 ### Problem - Baseball batting average
 
-Anyone who follows baseball is familiar with batting averages- simply the number of times a player gets a base hit divided by the number of times he goes up at bat (so it’s just a percentage between 0 and 1). .266 is in general considered an average batting average, while .300 is considered an excellent one.
+Anyone who follows baseball is familiar with batting averages- simply the number of times a player gets a base hit divided by the number of times he goes up at bat (so it’s just a percentage between 0 and 1). 0.266 is in general considered an average batting average, while 0.300 is considered an excellent one.
 
 Imagine we have a baseball player, and we want to predict what his season-long batting average will be. You might say we can just use his batting average so far- but this will be a very poor measure at the start of a season! If a player goes up to bat once and gets a single, his batting average is briefly 1.000, while if he strikes out or walks, his batting average is 0.000. It doesn’t get much better if you go up to bat five or six times- you could get a lucky streak and get an average of 1.000, or an unlucky streak and get an average of 0, neither of which are a remotely good predictor of how you will bat that season.
 
@@ -103,30 +104,11 @@ Why is your batting average in the first few hits not a good predictor of your e
 
 Given our batting average problem, which can be represented with a binomial distribution (a series of successes and failures), the best way to represent these *prior expectations* is with the beta distribution. It’s saying, before we’ve seen the player take his first swing, what we roughly expect his batting average to be.
 
-We expect that the player’s season-long batting average will be most likely around 0.27, but that it could reasonably range from 0.21 to 0.35. This can be represented with a beta distribution with parameters $\alpha=81$ and $$\beta=219$$:
+We expect that the player’s season-long batting average will be most likely around 0.27, but that it could reasonably range from 0.21 to 0.35. This can be represented with a beta distribution with parameters $$\alpha=81$$ and $$\beta=219$$:
 
 
-{% highlight r %}
-library(ggplot2)
-library(dplyr)
 
-sim <- data.frame(a = c(81, 82, 81 + 100),
-                  b = c(219, 219, 219 + 200)) %>%
-    group_by(a, b) %>%
-    do(data_frame(x = seq(0, 1, .001), y = dbeta(x, .$a, .$b))) %>%
-    mutate(Parameters = paste0("\u03B1 = ", a, ", \u03B2 = ", b)) %>%
-    ungroup %>%
-    mutate(Parameters = factor(Parameters, levels = unique(Parameters)))
-{% endhighlight %}
-
-
-{% highlight r %}
-sim %>% filter(a == 81) %>%
-    ggplot(aes(x, y, color = Parameters)) + geom_line() +
-    xlim(0, .5) + ylab("Density of beta")
-{% endhighlight %}
-
-![center](/figs/beta_density-1.png)
+![center](../../figs/2016-11-06-bayesian-introduction/beta_density-1.png)
 
 I came up with these parameters for two reasons:
 
