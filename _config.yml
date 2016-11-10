@@ -78,20 +78,13 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 # Jekyll configuration
 
 permalink:   /:categories/:title/
-markdown:    kramdown
+markdown:    maruku
 highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
 gems:
   - jekyll-sitemap
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-use_coderay: false
 
 # Defaults
 defaults:
