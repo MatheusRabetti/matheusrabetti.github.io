@@ -25,10 +25,10 @@ Here you'll see some nice commands on the Unix shell from basic information on t
 
 ## General syntax
 
-Pipe | The next command will use the previous result ``` result | use result ```
-Saving object |  ``` result > file.txt ```
-Stop | **Control+C** - stops running the command.
-Help | Explanation and parameters overview ``` head --help ```
+Pipe | ``` result | use result ``` | The next command will use the previous result | 
+Save | ``` result > file.txt ``` | Save the result in a file |
+Stop | **Control+C** | Stops running the command |
+Help | ``` head --help ``` | Explanation and parameters overview |
 
 ## Head & Tail - First look
 
@@ -36,18 +36,56 @@ Sometimes you just need to inspect the structure of a huge file. That's where *h
 *Head* prints the first ten lines of a file, while *tail* prints the last ten lines. 
 Optionally, you can include the -N parameter to change the number of lines displayed.
 
-``` shell
-$ head -n 3 random-data.csv 
+{% highlight bash %}
+head -n 3 random-data.csv 
+{% endhighlight %}
+
+{% highlight text %}
 id,first_name,last_name,city,gender,shirt_size
 1,Paula,Bryant,Purut,Female,2XL
-```
+{% endhighlight %}
 
-``` shell
+{% highlight bash %}
 $ tail -n 3 random-data.csv 
+{% endhighlight %}
+
+{% highlight text %}
 998,Albert,James,Raphoe,Male,XL
 999,Cheryl,Day,Hengjie,Female,L
 1000,Tina,Hart,Kanye,Female,2XL
-```
+{% endhighlight %}
+
+## Cut - Column extracter
+
+Unix command *cut* is used for text processing.
+You can use this command to extract portion of text from a file by selecting columns.
+
+{% highlight bash %}
+$ cut -d';' -f1,2,3,4,5 SP2015.txt | head -n4
+Bairros SP;Bairros Fortaleza;Bairros RJ;Causa Afastamento 1;Causa Afastamento 2
+0590;{� c;{� c;99;99
+9999;{� c;{� c;99;99
+9999;{� c;{� c;99;99
+{% endhighlight %}
+
+We have characters that are not being indentified. This's a encoding problem.
+
+## Iconv - File encoding
+
+The *iconv* program converts the encoding of characters in inputfile from one coded character set to another. 
+
+{% highlight bash %}
+$ cut -d';' -f1,2,3 SP2015.txt | head -n3 | iconv -f iso-8859-1 -t UTF-8
+Bairros SP;Bairros Fortaleza;Bairros RJ
+0590;{ñ c;{ñ c
+9999;{ñ c;{ñ c
+{% endhighlight %}
+
+If I have a bunch of text files that I'd like to convert from any given charset to UTF-8 encoding. Just use this bash magic.
+
+{% highlight bash %}
+$ for file in *.txt; do iconv -f ascii -t utf-8 $file; done
+{% endhighlight %}
 
 ## Shuf - Sampling 
 
@@ -59,18 +97,7 @@ $ shuf -n 2 ES2015.txt
 {� c;{� c;{� c;99;99;99;11;513435;62091;72907;  ...
 ```
 
-## Cut - Column extracter
 
-Unix command *cut* is used for text processing.
-You can use this command to extract portion of text from a file by selecting columns.
-
-``` shell
-$ cut -d';' -f1,2,3,4,5 SP2015.txt | head -n4
-Bairros SP;Bairros Fortaleza;Bairros RJ;Causa Afastamento 1;Causa Afastamento 2
-0590;{� c;{� c;99;99
-9999;{� c;{� c;99;99
-9999;{� c;{� c;99;99
-```
 
 ## Sort - Ordering
 
@@ -121,24 +148,6 @@ $ sort ES2015.txt | uniq -u | wc -l
 1433372
 $ wc -l ES2015.txt
 1454538 ES2015.txt
-```
-
-
-## Iconv - File encoding
-
-The *iconv* program converts the encoding of characters in inputfile from one coded character set to another. 
-
-``` shell
-$ cut -d';' -f1,2,3 SP2015.txt | head -n3 | iconv -f iso-8859-1 -t UTF-8
-Bairros SP;Bairros Fortaleza;Bairros RJ
-0590;{ñ c;{ñ c
-9999;{ñ c;{ñ c
-```
-
-If I have a bunch of text files that I'd like to convert from any given charset to UTF-8 encoding. Just use this bash magic.
-
-``` shell
-$ for file in *.txt; do iconv -f ascii -t utf-8 $file; done
 ```
 
 ## Grep - Find pattern
