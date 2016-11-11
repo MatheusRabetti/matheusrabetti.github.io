@@ -1,6 +1,5 @@
 if(ano < 2012){
-    names(candidates_data[[as.character(ano)]]) <- 
-      c("DATA_GERACAO", "HORA_GERACAO", "ANO_ELEICAO", "NUM_TURNO", 
+    c("DATA_GERACAO", "HORA_GERACAO", "ANO_ELEICAO", "NUM_TURNO", 
         "DESCRICAO_ELEICAO", "SIGLA_UF", "SIGLA_UE", "DESCRICAO_UE", 
         "CODIGO_CARGO", "DESCRICAO_CARGO", "NOME_CANDIDATO", 
         "SEQUENCIAL_CANDIDATO", "NUMERO_CANDIDATO", "CPF_CANDIDATO",
@@ -17,8 +16,7 @@ if(ano < 2012){
         "DESPESA_MAX_CAMPANHA", "COD_SIT_TOT_TURNO", "DESC_SIT_TOT_TURNO")
     
   } else if(ano == 2012) {
-    names(candidates_data[[as.character(ano)]]) <- 
-      c("DATA_GERACAO", "HORA_GERACAO", "ANO_ELEICAO", "NUM_TURNO", 
+    c("DATA_GERACAO", "HORA_GERACAO", "ANO_ELEICAO", "NUM_TURNO", 
         "DESCRICAO_ELEICAO", "SIGLA_UF", "SIGLA_UE", "DESCRICAO_UE", 
         "CODIGO_CARGO", "DESCRICAO_CARGO", "NOME_CANDIDATO", 
         "SEQUENCIAL_CANDIDATO", "NUMERO_CANDIDATO", "CPF_CANDIDATO",
@@ -36,8 +34,7 @@ if(ano < 2012){
         "DESC_SIT_TOT_TURNO", "EMAIL_CANDIDATO")
     
   } else {
-    names(candidates_data[[as.character(ano)]]) <- 
-      c("DATA_GERACAO", "HORA_GERACAO", "ANO_ELEICAO", "NUM_TURNO", 
+    c("DATA_GERACAO", "HORA_GERACAO", "ANO_ELEICAO", "NUM_TURNO", 
         "DESCRICAO_ELEICAO", "SIGLA_UF", "SIGLA_UE", "DESCRICAO_UE", 
         "CODIGO_CARGO", "DESCRICAO_CARGO", "NOME_CANDIDATO", 
         "SEQUENCIAL_CANDIDATO", "NUMERO_CANDIDATO", "CPF_CANDIDATO", 
