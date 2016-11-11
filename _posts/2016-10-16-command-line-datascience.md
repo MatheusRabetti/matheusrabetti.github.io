@@ -37,7 +37,7 @@ Sometimes you just need to inspect the structure of a huge file. That's where *h
 Optionally, you can include the -N parameter to change the number of lines displayed.
 
 {% highlight bash %}
-head -n 3 random-data.csv 
+$ head -n 3 random-data.csv 
 {% endhighlight %}
 
 {% highlight text %}
@@ -62,6 +62,9 @@ You can use this command to extract portion of text from a file by selecting col
 
 {% highlight bash %}
 $ cut -d';' -f1,2,3,4,5 SP2015.txt | head -n4
+{% endhighlight %}
+
+{% highlight text %}
 Bairros SP;Bairros Fortaleza;Bairros RJ;Causa Afastamento 1;Causa Afastamento 2
 0590;{� c;{� c;99;99
 9999;{� c;{� c;99;99
@@ -76,6 +79,9 @@ The *iconv* program converts the encoding of characters in inputfile from one co
 
 {% highlight bash %}
 $ cut -d';' -f1,2,3 SP2015.txt | head -n3 | iconv -f iso-8859-1 -t UTF-8
+{% endhighlight %}
+
+{% highlight text %}
 Bairros SP;Bairros Fortaleza;Bairros RJ
 0590;{ñ c;{ñ c
 9999;{ñ c;{ñ c
@@ -91,27 +97,31 @@ $ for file in *.txt; do iconv -f ascii -t utf-8 $file; done
 
 *Shuf* shuffles its input by outputting a random permutation of its input lines. This command loads on the memory RAM and isn't that fast. Why it is here? It's just good to know that exists!
 
-``` shell
+{% highlight bash %}
 $ shuf -n 2 ES2015.txt
-{� c;{� c;{� c;99;99;99;00;914420;45200;50202;  ...
-{� c;{� c;{� c;99;99;99;11;513435;62091;72907;  ...
-```
+{% endhighlight %}
 
-
+{% highlight text %}
+{ñ c;{ñ c;{ñ c;99;99;99;00;914420;45200;50202;  ...
+{ñ c;{ñ c;{ñ c;99;99;99;11;513435;62091;72907;  ...
+{% endhighlight %}
 
 ## Sort - Ordering
 
 *Sort* is a simple and very useful command which will rearrange the lines in a text file so that they are sorted, numerically and alphabetically. 
 Column 30 is the number os days that the worker have been away from work.
 
-``` shell
+{% highlight bash %}
 $ cut -d';' -f30 SP2015.txt | sort -n -r | head -n5
+{% endhighlight %}
+
+{% highlight text %}
  365
  365
  365
  365
  365
-```
+{% endhighlight %}
 
 ## WC - word count 
 
@@ -119,17 +129,23 @@ By default, *wc* will quickly tell you how many lines, words, and bytes are in a
 If you're looking for just the line count, you can pass the -l parameter in.
 I use it most often to verify record counts between files or database tables throughout an analysis.
 
-``` shell
+{% highlight bash %}
 $ wc -l SP2015.txt
+{% endhighlight %}
+
+{% highlight text %}
 20604436 SP2015.txt
-```
+{% endhighlight %}
 
 ## Unique - Distinct entries
 
 Sometimes you want to check for duplicate records in a large text file - that's when *uniq* comes in handy. By using the -c parameter, uniq will output the count of occurrences along with the line. You can also use the -d and -u parameters to output only duplicated or unique records.
 
-``` shell
+{% highlight bash %}
 $ sort ES2015.txt | cut -d';' -f4 | uniq -c
+{% endhighlight %}
+
+{% highlight text %}
       1 Causa Afastamento 1
    4743 10
     675 20
@@ -139,16 +155,20 @@ $ sort ES2015.txt | cut -d';' -f4 | uniq -c
     139 60
    7434 70
 1312266 99
-```
+{% endhighlight %}
 
-Count the number of unique lines
+Count the number of unique lines.
 
-``` shell
+{% highlight bash %}
 $ sort ES2015.txt | uniq -u | wc -l
-1433372
 $ wc -l ES2015.txt
+{% endhighlight %}
+
+{% highlight text %}
+1433372
 1454538 ES2015.txt
-```
+{% endhighlight %}
+
 
 ## Grep - Find pattern
 
@@ -156,21 +176,26 @@ $ wc -l ES2015.txt
 There's an assortment of extra parameters you can use with *grep*, but the ones I tend to use the most are -i (ignore case),
 -r (recursively search directories), -B N (N lines before), -A N (N lines after).
 
-``` shell
+{% highlight bash %}
 $ cut -d';' -f2,3 SP2015.txt |head -n4 | grep {
-{� c;{� c
-{� c;{� c
-{� c;{� c
-```
+{% endhighlight %}
+
+{% highlight bash %}
+{ñ c;{ñ c
+{ñ c;{ñ c
+{% endhighlight %}
 
 In case I want to find a entry in the first column that don't starts with 9:
 
-``` shell
+{% highlight bash %}
 $ cut -d';' -f1 SP2015.txt | head -n100 | grep '[^9].*'
+{% endhighlight %}
+
+{% highlight text %}
 Bairros SP
 0590
 1067
-```
+{% endhighlight %}
 
 ## Sed
 
@@ -181,13 +206,18 @@ Sed is similar to grep and awk (next) in many ways, however I find that I most o
 *  ```-i``` option is used to edit in place on filename.
 *  ```-e``` option indicates a command to run.
 
-``` shell
-$ cut -d';' -f2,3 SP2015.txt |head -n4| iconv -f iso-8859-1 -t UTF-8| sed -e 's/{ñ c//g'
+I will substitute the **{ñ c** for a empty space:
+
+{% highlight bash %}
+$ cut -d';' -f2,3 SP2015.txt |head -n4| sed -e 's/{ñ c//g'
+{% endhighlight %}
+
+{% highlight text %}
 Bairros Fortaleza;Bairros RJ
 ;
 ;
 ;
-```
+{% endhighlight %}
 
 ## AWK - Powerful
 
@@ -195,10 +225,14 @@ Bairros Fortaleza;Bairros RJ
 
 Just like we did in the **Computing on parts** post, I'm going to sum the *Vínculo ativo 31/12* field. It's the 12th column!
 
-``` shell
+{% highlight bash %}
 $ cat SP2015.txt | awk -F ";" '{sum += $12} END {printf "%.0f\n", sum}'
+{% endhighlight %}
+
+{% highlight text %}
 13697471
-```
+{% endhighlight %}
+
 The above line says:
 
 1.  Use the cat command to stream (print) the contents of the file to stdout.
@@ -215,8 +249,11 @@ Time to run the command: **1 min 34 sec**
 
 The next command is essential to manipulate a data with many columns.
 
-``` shell
-$ awk 'BEGIN {FS=";"} {for(fn=1;fn<=NF;fn++) {print fn" = "$fn;}; exit;}' SP2015.txt | iconv -f iso-8859-1 -t UTF-8
+{% highlight bash %}
+$ awk 'BEGIN {FS=";"} {for(fn=1;fn<=NF;fn++) {print fn" = "$fn;}; exit;}' SP2015.txt
+{% endhighlight %}
+
+{% highlight text %}
 1 = Bairros SP
 2 = Bairros Fortaleza
 3 = Bairros RJ
@@ -274,30 +311,44 @@ $ awk 'BEGIN {FS=";"} {for(fn=1;fn<=NF;fn++) {print fn" = "$fn;}; exit;}' SP2015
 55 = Vl Rem Setembro CC
 56 = Vl Rem Outubro CC
 57 = Vl Rem Novembro CC
-```
+{% endhighlight %}
 
 ### Char count
 
 This command counts the maximum character length of each column in SP2015.txt file. Very nice command to look at your data and parse correctly the text file to a database:
 
-``` shell
+
+{% highlight bash %}
 $ tail -n10000 SP2015.txt | awk -F';' 'NR > 1 {for (i=1; i <= NF; i++) max[i] = (length($i) > max[i]?length($i):max[i])}
              END {for (i=1; i <= NF; i++) printf "%d%s", max[i], (i==NF?RS:FS)}'
+{% endhighlight %}             
+             
+{% highlight text %}
 4;3;3;2;2;2;2;6;5;5;20;1;2;2;2;2;2;20;4;4;1;1;2;2;6;6;2;4;1;4;2;4;13;9;13;9;7;20;2;8;2;2;4;2;2;2;15;15;15;15;15;15;15;15;15;15;16
+{% endhighlight %}
+
+{% highlight bash %}
 $ head -n10000 SP2015.txt | awk -F';' 'NR > 1 {for (i=1; i <= NF; i++) max[i] = (length($i) > max[i]?length($i):max[i])}
              END {for (i=1; i <= NF; i++) printf "%d%s", max[i], (i==NF?RS:FS)}'
+{% endhighlight %}       
+
+{% highlight text %}
 4;3;3;2;2;2;2;6;5;5;20;1;2;2;2;2;2;20;4;4;1;1;2;2;6;6;2;4;1;4;2;4;13;9;13;9;7;20;2;8;2;2;4;2;2;2;15;15;15;15;15;15;15;15;15;15;16
-```  
+{% endhighlight %}
 
 ### Mean
 
 It makes possible to calculate the mean of the whole file. 
 In the below example I want the average salary (column 35) for the workers that are still employed in december 31 (column 12).
 
-``` shell
+
+{% highlight bash %}
 $  awk -F';' '($12)=="1" {sum+=$35; count+=1} END {print sum/count}' SP2015.txt
+{% endhighlight %}
+
+{% highlight text %}
 2739.44
-```
+{% endhighlight %}
 
 Time to run the command: **1 min 10 sec**
 
@@ -305,11 +356,14 @@ Time to run the command: **1 min 10 sec**
 
 Also, *awk* can bring some position measures like the standard deviation.
 
-``` shell
+{% highlight bash %}
 $ awk -F';' 'pass==1 {sum+=$35; n+=1} pass==2 {mean=sum/n; 
      ssd+=($1-mean)*($1-mean)} END {print sqrt(ssd/n)}' pass=1 SP2015.txt pass=2 SP2015.txt
+{% endhighlight %}
+
+{% highlight text %}
 6074.84
-```
+{% endhighlight %}
 
 Time to run the command: **1 min 43 sec**
 
@@ -317,9 +371,9 @@ Time to run the command: **1 min 43 sec**
 
 You can also split your file filtered by a rule. 
 
-``` shell
+{% highlight bash %}
 $ gawk -F';' '{x=($12==1)?"SP2015-estoque.txt":"SP2015-desligado.txt"; print > x}' SP2015.txt
-```
+{% endhighlight %}
 
 ### Dive Deeper
 
