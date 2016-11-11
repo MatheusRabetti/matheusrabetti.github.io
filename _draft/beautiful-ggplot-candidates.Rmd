@@ -71,7 +71,13 @@ candidates_data <- data.table::rbindlist(candidates_data, use.names = T, fill = 
 
 ```
 
+I'll select the variables listed below to continue my analysis:
 
+  - **ANO_ELEICAO:** Election year
+  - **DESCRICAO_CARGO:** Description of the position that the candidate runs for.
+  - **DESCRICAO_OCUPACAO:** Candidate's occupation description.
+  - **CODIGO_SEXO:** Candidate's sex code.
+  - **DESCRICAO_SEXO:** Candidate's sex description.
 
 
 ```{r select}
