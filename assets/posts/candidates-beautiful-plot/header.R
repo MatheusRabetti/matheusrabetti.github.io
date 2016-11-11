@@ -1,5 +1,4 @@
 if(ano < 2012){
-    cat('Opção 1 \n')
     names(candidates_data[[as.character(ano)]]) <- 
       c("DATA_GERACAO", "HORA_GERACAO", "ANO_ELEICAO", "NUM_TURNO", 
         "DESCRICAO_ELEICAO", "SIGLA_UF", "SIGLA_UE", "DESCRICAO_UE", 
@@ -18,7 +17,6 @@ if(ano < 2012){
         "DESPESA_MAX_CAMPANHA", "COD_SIT_TOT_TURNO", "DESC_SIT_TOT_TURNO")
     
   } else if(ano == 2012) {
-    cat('Opção 2 \n')
     names(candidates_data[[as.character(ano)]]) <- 
       c("DATA_GERACAO", "HORA_GERACAO", "ANO_ELEICAO", "NUM_TURNO", 
         "DESCRICAO_ELEICAO", "SIGLA_UF", "SIGLA_UE", "DESCRICAO_UE", 
@@ -38,7 +36,6 @@ if(ano < 2012){
         "DESC_SIT_TOT_TURNO", "EMAIL_CANDIDATO")
     
   } else {
-    cat('Opção 3 \n')
     names(candidates_data[[as.character(ano)]]) <- 
       c("DATA_GERACAO", "HORA_GERACAO", "ANO_ELEICAO", "NUM_TURNO", 
         "DESCRICAO_ELEICAO", "SIGLA_UF", "SIGLA_UE", "DESCRICAO_UE", 
