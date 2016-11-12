@@ -54,3 +54,4 @@ if(ano < 2012){
         "DESPESA_MAX_CAMPANHA", "COD_SIT_TOT_TURNO", "DESC_SIT_TOT_TURNO",
         "EMAIL_CANDIDATO")
    }
+}
