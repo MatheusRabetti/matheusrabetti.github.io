@@ -1,7 +1,7 @@
 ---
 layout: post
 description: "Working on visualization on R using the ggplot library"
-title: "A quick analysis on the brazilian profile of the candidates for election"
+title: "A Quick Analysis on the Brazilian Profile of the Candidates for Election"
 categories:
   - Data Analysis
 tags: [Unix,R,Visualization]  
@@ -120,19 +120,38 @@ for(ano in seq(2004, 2016, 4)){
 ## Downloading year 2004 
 ## Binding and reading the files ...
 ## 
-## Read 39.8% of 401789 rowsRead 59.7% of 401789 rowsRead 82.1% of 401789 rowsRead 401789 rows and 43 (of 43) columns from 0.171 GB file in 00:00:06
+## 
+Read 39.8% of 401789 rows
+Read 59.7% of 401789 rows
+Read 82.1% of 401789 rows
+Read 401789 rows and 43 (of 43) columns from 0.171 GB file in 00:00:06
 ## Downloading year 2008 
 ## Binding and reading the files ...
 ## 
-## Read 44.2% of 384532 rowsRead 62.4% of 384532 rowsRead 98.8% of 384532 rowsRead 384532 rows and 43 (of 43) columns from 0.162 GB file in 00:00:05
+## 
+Read 44.2% of 384532 rows
+Read 62.4% of 384532 rows
+Read 98.8% of 384532 rows
+Read 384532 rows and 43 (of 43) columns from 0.162 GB file in 00:00:05
 ## Downloading year 2012 
 ## Binding and reading the files ...
 ## 
-## Read 4.1% of 483825 rowsRead 35.1% of 483825 rowsRead 66.1% of 483825 rowsRead 95.1% of 483825 rowsRead 99.2% of 483825 rowsRead 483825 rows and 44 (of 44) columns from 0.231 GB file in 00:00:09
+## 
+Read 4.1% of 483825 rows
+Read 35.1% of 483825 rows
+Read 66.1% of 483825 rows
+Read 95.1% of 483825 rows
+Read 99.2% of 483825 rows
+Read 483825 rows and 44 (of 44) columns from 0.231 GB file in 00:00:09
 ## Downloading year 2016 
 ## Binding and reading the files ...
 ## 
-## Read 40.2% of 497125 rowsRead 42.2% of 497125 rowsRead 70.4% of 497125 rowsRead 98.6% of 497125 rowsRead 497125 rows and 46 (of 46) columns from 0.251 GB file in 00:00:08
+## 
+Read 40.2% of 497125 rows
+Read 42.2% of 497125 rows
+Read 70.4% of 497125 rows
+Read 98.6% of 497125 rows
+Read 497125 rows and 46 (of 46) columns from 0.251 GB file in 00:00:08
 {% endhighlight %}
 
 
@@ -183,10 +202,10 @@ knitr::kable(female_percent)
 
 |ANO_ELEICAO | fem_percent|xtralabs |
 |:-----------|-----------:|:--------|
-|2004        |      0.2125|Lowest:  |
-|2008        |      0.2129|         |
-|2012        |      0.3152|         |
-|2016        |      0.3188|Highest: |
+|2004        |   0.2125   | Lowest: |
+|2008        |   0.2129   |         |
+|2012        |   0.3152   |         |
+|2016        |   0.3188   | Highest:|
 
 #### Analysis - drawing a portrait of electoral candidates
 
@@ -228,5 +247,6 @@ female_percent %>%
 
 ![center](/../figs/2016-11-13-beautiful-ggplot-candidates/women-percentage-1.png)
 
+<br></br>
 The situation is getting better, but is far from being considered good. There is still a gap of 18.1% to the ideal cenary of half of candidates.
 
