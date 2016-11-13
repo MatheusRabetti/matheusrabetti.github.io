@@ -1,12 +1,6 @@
 #!/usr/bin/Rscript 
 
-
-# compiles all .Rmd files in _R directory into .md files in Pages directory,
-# if the input file is older than the output file.
-
 KnitPost <- function(input, outfile, figsfolder, cachefolder, base.url="/") {
-  # this function is a modified version of an example here:
-  # http://jfisher-usgs.github.com/r/2012/07/03/knitr-jekyll/
   require(knitr);
   opts_knit$set(base.url = base.url)
   fig.path <- paste0(figsfolder, sub(".Rmd$", "", basename(input)), "/")
