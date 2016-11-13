@@ -201,7 +201,7 @@ knitr::kable(female_percent)
 
 
 |ANO_ELEICAO | fem_percent|xtralabs |
-|:-----------|-----------:|:--------|
+|:-----------|:----------:|:-------:|
 |2004        |   0.2125   | Lowest: |
 |2008        |   0.2129   |         |
 |2012        |   0.3152   |         |
@@ -247,6 +247,6 @@ female_percent %>%
 
 ![center](/../figs/2016-11-13-beautiful-ggplot-candidates/women-percentage-1.png)
 
-<br></br>
+<br> 
 The situation is getting better, but is far from being considered good. There is still a gap of 18.1% to the ideal cenary of half of candidates.
 
