@@ -1,0 +1,11 @@
+#!/home/matheusrabetti/anaconda2/lib/R/bin/Rscript
+
+options(echo = TRUE)
+args<-commandArgs(TRUE)
+
+teste <- function(ano, trimestre){
+  sprintf('Retornou o arg1 como o ano de %s e o arg2 como o trimestre %s', ano, trimestre)
+}
+
+teste(ano = args[1],
+      trimestre = args[2])
