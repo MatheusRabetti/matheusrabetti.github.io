@@ -1,3 +1,12 @@
+---
+layout: post
+title: Statistics is not math
+categories:
+  - Statistics
+description: How math and statistics are related and some key concepts in a data analysis
+tags: [Statistics]
+---
+
 # Statistics is not math
 
 “Here is a column of a couple of dozen numbers. From them, calculate the mean and standard deviation. 
