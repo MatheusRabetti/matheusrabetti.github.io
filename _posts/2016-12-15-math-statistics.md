@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Statistics is not math
+title: The Epistemology Of Statistics - Run Away From The Cookbook
 categories:
   - Statistics
 description: How math and statistics are related and some key concepts in a data analysis
