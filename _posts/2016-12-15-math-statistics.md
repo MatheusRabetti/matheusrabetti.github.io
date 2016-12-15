@@ -70,27 +70,27 @@ Statistics is all about understanding data – numbers with context and meaning.
 
 So, statistics is about taking the information we get from mathematics and interpreting it. You may look at the math behind the information, but only to get a better idea of how to make a decision. The most important things I’ve learned in years of studying statistics and doind analysis aren’t formal, but have proven extremely useful when working/playing with data. 
 
-## Attention to Detail
+### Attention to Detail
 
 Oftentimes it’s the little things that end up being the most important. There was this one time in class when my professor put up a graph on the projector. It was a bunch of data points with a smooth fitted line. He asked what we saw. Well, there was an increase in the beginning, a leveling off in the middle, and then another increase. However, what I missed was the little blip in the curve in the first increase. That was what we were after.
 
 The point is that trends and patterns are important, but so are outliers, missing data points, and inconsistencies.
 
-## See the Big Picture
+### See the Big Picture
 
 It’s important not to get too caught up with individual data points or a tiny section in a really big dataset. Always look on what the data wants to talk in general. Looking at distance, what can you see?
 
-## No Agendas
+### No Agendas
 
 This should go without saying, but approach data as objectively as possible. I’m not saying you shouldn’t have a hunch about what you’re looking for, but don’t let your preconceived ideas influence the results. Because if you go to length looking for some specific pattern, you’re probably going to find it. It’ll just be at the sacrifice of accurate results.
 
-## Look Outside the Data
+### Look Outside the Data
 
 Context, context, context. Sometimes this will come in the form of metadata. Other times it’ll come from more data.
 
 The more you know about how the data was collected, where it came from, when it happened, and what was going on at the time, the more informative your results and the more confident you can be about your findings.
 
-## Ask Why
+### Ask Why
 
 Finally, and this is the most important thing I’ve learned, always ask why. When you see a blip in a graph, you should wonder why it’s there. If you find some correlation, you should think about whether or not it makes any sense. If it does make sense, then cool, but if not, dig deeper. Numbers are great, but you have to remember that when humans are involved, errors are always a possibility.
 
