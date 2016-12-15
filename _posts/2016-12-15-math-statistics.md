@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Epistemology Of Statistics - Run Away From The Cookbook
+title: The Epistemology of Statistics - Run Away from the Cookbook
 categories:
   - Statistics
 description: How math and statistics are related and some key concepts in a data analysis
