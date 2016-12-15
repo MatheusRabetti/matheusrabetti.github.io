@@ -10,7 +10,6 @@ tags: [Bayesian]
 library(knitr)
 opts_chunk$set(echo = FALSE, cache = TRUE, warning = FALSE)
 ```
-
 ## A brief history of Bayesian and frequentist methods
 
 When probability was first studied in the 1800's (maybe a little earlier), Bayesian methods were the initial ones studied - to Bayes and Laplace and Gauss, it was the natural way to think about things.  It became evident that for any reasonable model, however, the calculations were too complex.  And thus frequentist statistics (without priors) was born.
@@ -22,7 +21,6 @@ Proponents of frequentism are mostly in that camp because that's the way it's be
 I was a rabid frequentist myself (being "brought up" that way - i.e. in my undergrad, master's, and most of my PhD, Bayesian methods were rarely mentioned without derision at the schools I attended at that time) until I thought about what it really means to have prior information, and why it's so natural.  Even watching how I think has convinced me that even though I was a frequentist by choice, my thinking has always been Bayesian in nature.  I'm sure a lot of people think like this:  they form an opinion on a subject, even with no knowledge.  They get data (learn things) about said subject, and modify their opinion, but it's always true that the first (prior) opinion affects things.  Here "subject" can be anything, such as climate change or who's the best baseball player.
 
 And science has always had hypotheses before experiments.  And the experiment guides the creation of new hypotheses.  
-
 
 ## Philosophical difference 
 
@@ -79,16 +77,17 @@ This is the key different between Baysian and Frequentist:
 *   The frequentist get the data and try to generalize that data to the whole population, it's very human nature.
     *    You see all your neighbors driving pinky cars => you end up the whole city love pinky cars.
 *   Instead, Bayesian thinks about some parameters affected the choice of your neighbors.
-    *    You have strong evidence that all your neighbors are beatiful young girls. So that why most of the cars are pink.
+    *    You have strong evidence that all your neighbors are young girls. So that why most of the cars are pink.
 
 But what if some guys love driving pinky cars also? This is the risk of Bayesian, if your prior is wrong and the data you have is not big enough, everything goes wrong!
 
 ## Bayesian Statistics - Big Data
 
+The essence of Bayesian statistics is the combination of information from multiple sources. We call this data and prior information, or hierarchical modeling, or dynamic updating, or partial pooling, but in any case it’s all about putting together data to understand a larger structure. Big data, or data coming from the so-called internet of things, are inherently messy: scraped data not random samples, observational data not randomized experiments, available data not constructed measurements. So statistical modeling is needed to put data from these different sources on a common footing. 
+
 Bayesian statistics simply is one branch of statistics that relies on subjective probabilities and Bayes theorem to "update" knowledge regarding events and quantities of interest based on data - in order words, Bayesian statistics can draw/update/alter inferences regarding events/quantities when more data is available. For example, based on some knowledge, we can draw some initial set of inferences regarding the system (referred to as "prior" in Bayesian statistics) and then "update" these inferences based on data (to obtain the so-called "posterior").
 
 As we can see clearly, there is so much synergy between these two, especially in today's world where big data and predictive analytics have become so prominent. We have loads and loads of data for variety of systems, and we can constantly make data-driven inferences about the system and keep updating them as more and more data becomes available. Since Bayesian statistics provides a framework for updating *knowledge*, it is in fact used a whole lot in machine learning. 
-
 
 ## Bayesian Statistics - Small Data
 
@@ -121,7 +120,7 @@ sim <- data.frame(a = c(81, 82, 81 + 100),
     mutate(Parameters = factor(Parameters, levels = unique(Parameters)))
 ```
 
-```{r beta_density, dependson = "setup"}
+```{r beta-density, dependson = "setup"}
 sim %>% filter(a == 81) %>%
     ggplot(aes(x, y, color = Parameters)) + geom_line() +
     xlim(0, .5) + ylab("Density of beta") + xlab("Batting Average")
@@ -132,3 +131,25 @@ I came up with these parameters for two reasons:
   * The mean is $$\frac{\alpha}{\alpha + \beta} = \frac{81}{81+219} = 0.270$$
 
   * As you can see in the plot, this distribution lies almost entirely within $$(0.2,.35)$$ - the reasonable range for a batting average.
+  
+Here’s why the beta distribution is so appropriate. Imagine the player gets a single hit. His record for the season is now “1 hit; 1 at bat.” We have to then update our probabilities- we want to shift this entire curve over just a bit to reflect our new information. While the math for proving this is a bit involved ([it's shown here](http://en.wikipedia.org/wiki/Conjugate_prior#Example)), the result is very simple. The new beta distribution will be:
+
+$$\mbox{Beta}(\alpha_0+\mbox{hits}, \beta_0+\mbox{misses})$$
+
+The more the player hits over the course of the season, the more the curve will shift to accommodate the new evidence, and furthermore the more it will narrow based on the fact that we have more proof. Let’s say halfway through the season he has been up to bat 300 times, hitting 100 out of those times. The new distribution would be $$\mbox{beta}(81+100, 219+200)$$:
+  
+
+```{r updated-beta}  
+sim %>% ggplot(aes(x, y, color = Parameters)) + geom_line() +
+    xlim(0, .5) + ylab("Density of beta")
+```
+
+Notice the curve is now both thinner and shifted to the right (higher batting average) than it used to be- we have a better sense of what the player's batting average is.
+
+One of the most interesting outputs of this formula is the expected value of the resulting beta distribution, which is basically your new estimate. Recall that the expected value of the beta distribution is $$\frac{\alpha}{\alpha+\beta}$$. Thus, after 100 hits of 300 *real* at-bats, the expected value of the new beta distribution is $$\frac{82+100}{82+100+219+200}=0.303$$. You might notice that this formula is equivalent to adding a "head start" to the number of hits and non-hits of a player- you're saying "start him off in the season with 81 hits and 219 non hits on his record").
+
+Thus, the beta distribution is best for representing a probabilistic distribution *of probabilities*- the case where we don't know what a probability is in advance, but we have some reasonable guesses.
+
+## Referencia
+
+   * The baseball analysis was based on [David Robinson's post](http://varianceexplained.org/statistics/beta_distribution_and_baseball/). Looking for more? It brings a lot of valuable posts on Bayesian analysis! Have a look on his website.
