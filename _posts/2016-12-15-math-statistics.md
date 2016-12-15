@@ -40,25 +40,35 @@ Now, strictly according to frequentist theory the only thing you can say about t
 you have in hand is that the true value of the parameter lies within it or that it does not. 
 This is a tautology, therefore it is always true. Thus, the CI provides no measure of uncertainty at all. 
 
-> Probability is not decision!
-
 But ask your neighborhood statistician and you will hear words about “95% confidence”, about “long runs”, 
 about “other experiments”, etc., etc. **These poorly chosen phrases are a bar to clear thinking**. 
 They make the utterer forget that all he can say is some tautological, and therefore trivial, truth. 
 He has concentrated on the math, making sure to divide by n minus one in the appropriate place, etc.,
 and has not given any time to consider why the calculation exists.
 
+# The case of p-value
+
+The discussion quickly became heated, when the American Statistical Association gathered 26 experts to develop a consensus statement on statistical significance and p-values.
+
+There was no disagreement over the misuse of the p-value and how bad can drive the science. P-values have become a litmus test for deciding which studies are worthy of publication. As a result, research that produces p-values that surpass an arbitrary threshold are more likely to be published, while studies with greater or equal scientific importance may remain in the file drawer, unseen by the scientific community.
+
+Small wonder that students have trouble with statistical hypothesis testing. They may be trying to think. Because we are taught to follow a cookbook a big mess about this concept spread. The p-value was never intended to be a substitute for scientific reasoning.
+
+> **The ASA statement’s Principle No. 2**: “P-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone.” 
+
+The p-value cannot tell you if your hypothesis is correct. Instead, it’s the probability of getting results at least as extreme as the ones you observed, given that the null hypothesis is correct. More concise - the probability of your data given your hypothesis. That sounds tantalizingly similar to “the probability of your hypothesis given your data,” but they’re not the same thing, said Stephen Senn, a biostatistician at the Luxembourg Institute of Health. To understand why, consider this example. “Is the pope Catholic? The answer is yes,” said Senn. “Is a Catholic the pope? The answer is probably not. If you change the order, the statement doesn’t survive.”
+
+Nor can a p-value tell you the size of an effect, the strength of the evidence or the importance of a result. Yet despite all these limitations, p-values are often used as a way to separate true findings from spurious ones, and that creates perverse incentives.
+
+When p-values are treated as a way to sort results into bins labeled significant or not significant, the vast efforts to collect and analyze data are degraded into mere labels. 
+
+If there’s one takeaway from the ASA statement, it’s that p-values are not badges of truth and p < 0.05 is not a line that separates real results from false ones. They’re simply one piece of a puzzle that should be considered in the context of other evidence.
+
+# Always have in mind
+
 Statistics is all about understanding data – numbers with context and meaning. A computer can do all of the calculations and all of the numerical work with finding a mean, a standard deviation, and even a confidence interval (all things we do in statistics). But, only a person can tell you if the mean really describes the data set or what the confidence interval is actually telling us.
 
-So, statistics is about taking the information we get from mathematics and interpreting it. You may look at the math behind the information, but only to get a better idea of how to make a decision.
-
-# Statistics beyond the math
-
-I call myself a statistician, because, well, I’m a statistics graduate student. However, ask me specific questions about hypothesis tests or required sampling size, and my answer probably won’t be very good.
-
-The other day I was trying to think of the last time I did an actual hypothesis test or formal analysis. I couldn’t remember. I actually had to dig up old course listings to figure out when it was. It was four years ago during my first year of graduate school. I did well in those courses, and I’m confident I could do that stuff with a quick refresher, but it’s a no go off the cuff. It’s just not something I do regularly.
-
-Instead, the most important things I’ve learned are less formal, but have proven extremely useful when working/playing with data. Here they are in no particular order.
+So, statistics is about taking the information we get from mathematics and interpreting it. You may look at the math behind the information, but only to get a better idea of how to make a decision. The most important things I’ve learned in years of studying statistics and doind analysis aren’t formal, but have proven extremely useful when working/playing with data. 
 
 ## Attention to Detail
 
@@ -68,7 +78,7 @@ The point is that trends and patterns are important, but so are outliers, missin
 
 ## See the Big Picture
 
-With that said, it’s important not to get too caught up with individual data points or a tiny section in a really big dataset. 
+It’s important not to get too caught up with individual data points or a tiny section in a really big dataset. Always look on what the data wants to talk in general. Looking at distance, what can you see?
 
 ## No Agendas
 
