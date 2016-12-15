@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dealing with large files - Extract Data 
+title: Dealing With Large Files - Extract Data 
 description: How Data Warehousing can help on analysis of big data
 categories:
   - Data Enginner
