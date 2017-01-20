@@ -20,7 +20,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 author:
   name             : "Matheus Rabetti"
   avatar           : "/assets/avatar-icon.jpg"
-  bio              : "Statistician in DIEESE, works with Python and R."
+  bio              : "Statistician in Globo.com, works with Python and R."
   disqus-shortname : matheusrabetti
   location         : "Brasilia, Brazil"
   email            : "matheus.rabetti@gmail.com"
