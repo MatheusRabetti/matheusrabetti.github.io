@@ -12,7 +12,7 @@ tags: [Unix]
 I developed a R script where it generate certain outputs for the trimester and year of interest.
 
 The decision to choose which trimester and year should be done by the data engineers in the project as a store process.
-So all the script had to be parametrized in function of trimesters and year so then it could scheduled 
+So all the script had to be parameterized in function of trimesters and year so then it could scheduled 
 as a task where these arguments are passed in a bash command. 
 
 The automation process couldn't go into the R environment as the software in use didn't support.
@@ -38,5 +38,7 @@ To pass the arguments "first" and "second" the command in the bash should be lik
 {% highlight text %}
 Rscript myscript.R first second
 {% endhighlight %}
+
+The result in your R environment should be: "Arg1: first --- Arg2: second".
 
 Just an observation. The R script have to be in the working directory you are in the Terminal.
