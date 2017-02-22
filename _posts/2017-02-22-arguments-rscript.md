@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Passing arguments to an R script from command lines
+title: Passing Arguments to an R Script from Command Lines
 categories:
   - Data Analysis
 description: Shedule a job for your R script
