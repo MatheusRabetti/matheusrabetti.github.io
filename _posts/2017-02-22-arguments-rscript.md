@@ -33,12 +33,12 @@ sprintf('Arg1: %s --- Arg2: %s',
         
 {% endhighlight %}
 
-To pass the arguments "first" and "second" the command in the bash should be like this:
+To pass the arguments of trimester and year the command in the bash should be like this:
 
 {% highlight text %}
-Rscript myscript.R first second
+Rscript myscript.R trimester year
 {% endhighlight %}
 
-The result in your R environment should be: "Arg1: first --- Arg2: second".
+The result in your R environment should be: "Arg1: trimester --- Arg2: year".
 
 Just an observation. The R script have to be in the working directory you are in the Terminal.
