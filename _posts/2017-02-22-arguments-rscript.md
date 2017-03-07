@@ -44,7 +44,7 @@ To pass the arguments of trimester and year the command in the bash should be li
 Rscript myscript.R trimester year
 {% endhighlight %}
 
-The result in your R environment should be: "Arg1: trimester --- Arg2: year".
+The result in your R environment should be: **"Arg1: trimester --- Arg2: year"**.
 
 The first line of the R code is telling the Terminal to use Rscript to execute the .R file. So you it isn't necessary the Rscript on the bash command.
 
@@ -58,7 +58,6 @@ cat file.txt | preProcessInPython.py | runRmodel.R | formatOutput.sh > output.tx
 
 {% endhighlight %}
 
-and design your tasks following the Unix philosophy:
 
 # More about
 https://tgmstat.wordpress.com/2014/05/21/r-scripts/
