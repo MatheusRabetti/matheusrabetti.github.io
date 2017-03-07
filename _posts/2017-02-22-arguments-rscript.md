@@ -60,4 +60,4 @@ cat file.txt | preProcessInPython.py | runRmodel.R | formatOutput.sh > output.tx
 
 
 # More about
-https://tgmstat.wordpress.com/2014/05/21/r-scripts/
+[Thiago's Blog](https://tgmstat.wordpress.com/2014/05/21/r-scripts/)
