@@ -46,6 +46,10 @@ They make the utterer forget that all he can say is some tautological, and there
 He has concentrated on the math, making sure to divide by n minus one in the appropriate place, etc.,
 and has not given any time to consider why the calculation exists.
 
+# Test assumptions
+
+The Welch t test makes a strange set of assumptions. What would it mean for two populations to have the same mean but different standard deviations? Why would you want to test for that? I prefer to think about the unequal variance t test as a way to create a confidence interval. Your prime goal is not to ask whether two populations differ, but to quantify how far apart the two means are. The unequal variance t test reports a confidence interval for the difference between two means that is usable even if the standard deviations differ.
+
 # The case of p-value
 
 The discussion quickly became heated, when the American Statistical Association gathered 26 experts to develop a consensus statement on statistical significance and p-values.
