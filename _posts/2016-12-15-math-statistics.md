@@ -7,7 +7,8 @@ description: How math and statistics are related and some key concepts in a data
 tags: [Statistics]
 ---
 
-# Statistics is not math
+
+# Let's illustrate a common statistics class
 
 “Here is a column of a couple of dozen numbers. From them, calculate the mean and standard deviation. 
 When you are finished — it should take you a good fifteen to twenty minutes — report back to me.”
@@ -20,6 +21,8 @@ This inertia is a quirk of human nature and is common in any field of instructio
 overcome easily by all serious students. Far more restraining, however, are the pernicious effects of the belief
 that statistics is a branch of mathematics.
 
+# Statistics is not math
+
 Statistics is not math; neither is probability. It is true that math has proven unreasonably effective
 in understanding statistics, but it is not, or at least not the sole, language to describe its workings. 
 
@@ -31,38 +34,56 @@ To master probability and statistics requires mastering a great chunk of math. B
 mindlessly apply equations in inappropriate situations because of the allure of quantification. **Equations become a scapegoat!**
 
 Philosophy sharpens the mind. It teaches us to recognize and eliminate sloppy thinking and writing,
-two elements rife in our field. 
-If people spent more time thinking about what they are saying and doing, much error would be reduced or eliminated. 
+two elements rife in our field.  If people spent more time thinking about what they are saying and doing, much error would be reduced or eliminated. 
 
-I’ll give just one example. What is a confidence interval? It is an equation, of course, 
-that will provide you an interval for your data. It is meant to provide a measure of the uncertainty of a parameter estimate. 
-Now, strictly according to frequentist theory the only thing you can say about the CI
-you have in hand is that the true value of the parameter lies within it or that it does not. 
-This is a tautology, therefore it is always true. Thus, the CI provides no measure of uncertainty at all. 
+I’ll give just one example:
+
+## What is a confidence interval? 
+
+Confidence intervals provide more information than point estimates. Confidence intervals for means are intervals constructed using a procedure that will contain the population mean a specified proportion of the time, typically either 95% or 99% of the time. These intervals are referred to as 95% and 99% confidence intervals respectively. An example of a 95% confidence interval is shown below:
+
+72.85 < μ < 107.15
+
+There is good reason to believe that the population mean lies between these two bounds of 72.85 and 107.15 since 95% of the time confidence intervals contain the true mean.
+
+If repeated samples were taken and the 95% confidence interval computed for each sample, 95% of the intervals would contain the population mean. Naturally, 5% of the intervals would not contain the population mean. It is natural to interpret a 95% confidence interval as an interval with a 0.95 probability of containing the population mean. 
 
 But ask your neighborhood statistician and you will hear words about “95% confidence”, about “long runs”, 
 about “other experiments”, etc., etc. **These poorly chosen phrases are a bar to clear thinking**. 
-They make the utterer forget that all he can say is some tautological, and therefore trivial, truth. 
 He has concentrated on the math, making sure to divide by n minus one in the appropriate place, etc.,
 and has not given any time to consider why the calculation exists.
 
-# Test assumptions
+## Test assumptions
 
-The Welch t test makes a strange set of assumptions. What would it mean for two populations to have the same mean but different standard deviations? Why would you want to test for that? I prefer to think about the unequal variance t test as a way to create a confidence interval. Your prime goal is not to ask whether two populations differ, but to quantify how far apart the two means are. The unequal variance t test reports a confidence interval for the difference between two means that is usable even if the standard deviations differ.
+The Welch t test makes a strange set of assumptions. What would it mean for two populations to have the same mean but different standard deviations? Why would you want to test for that? In cases like this, the mean as a centrality measures means almost nothing.
 
-# The case of p-value
+I prefer to think about the unequal variance t test as a way to create a confidence interval. Your prime goal is not to ask whether two means populations differ, but to quantify how far apart the two means are. The equality of means in two distributions that are very different carries almost no information. 
 
-The discussion quickly became heated, when the American Statistical Association gathered 26 experts to develop a consensus statement on statistical significance and p-values.
+## The case of p-value
+
+The p-value is the most controversial and traumatic estimative. Peopel throw away studies and force results just to obtain  a p-value less than 0,05. To discuss this The American Statistical Association gathered 26 experts to develop a consensus statement on statistical significance and p-values.
 
 There was no disagreement over the misuse of the p-value and how bad can drive the science. P-values have become a litmus test for deciding which studies are worthy of publication. As a result, research that produces p-values that surpass an arbitrary threshold are more likely to be published, while studies with greater or equal scientific importance may remain in the file drawer, unseen by the scientific community.
 
 Small wonder that students have trouble with statistical hypothesis testing. They may be trying to think. Because we are taught to follow a cookbook a big mess about this concept spread. The p-value was never intended to be a substitute for scientific reasoning.
 
+This committee organized some principles in a statistical analysis.
+
 > **The ASA statement’s Principle No. 2**: “P-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone.” 
 
-The p-value cannot tell you if your hypothesis is correct. Instead, it’s the probability of getting results at least as extreme as the ones you observed, given that the null hypothesis is correct. More concise - the probability of your data given your hypothesis. That sounds tantalizingly similar to “the probability of your hypothesis given your data,” but they’re not the same thing, said Stephen Senn, a biostatistician at the Luxembourg Institute of Health. To understand why, consider this example. “Is the pope Catholic? The answer is yes,” said Senn. “Is a Catholic the pope? The answer is probably not. If you change the order, the statement doesn’t survive.”
+The p-value cannot tell you if your hypothesis is correct. Instead, it’s the probability of getting results at least as extreme as the ones you observed, given that the null hypothesis is correct. More concise - the probability of your data given your hypothesis. 
 
-Nor can a p-value tell you the size of an effect, the strength of the evidence or the importance of a result. Yet despite all these limitations, p-values are often used as a way to separate true findings from spurious ones, and that creates perverse incentives.
+That sounds tantalizingly similar to “the probability of your hypothesis given your data,” but they’re not the same thing, said Stephen Senn, a biostatistician at the Luxembourg Institute of Health. To understand why, consider this example. “Is the pope Catholic? The answer is yes,” said Senn. “Is a Catholic the pope? The answer is probably not. If you change the order, the statement doesn’t survive.”
+
+Let's suppose a hypothesis test. I believe that testing a new layout on my website will make my users spend more time in my website.
+
+H0: User default layout >= User new layout
+
+H1: User default layout < User new layout
+
+After calculating the mean for each experiment (default, new layout) I see a difference of 20 minutes more in the mean time per user for the new layout. So, the p-value will answer: The p-value is the probability of the new layout be 20 minutes more than the default layout, given that the user in default layout spend more time than the user in the new layout.
+
+Another common error relationed to the p-value is supposing it tells the size of an effect, the strength of the evidence or the importance of a result. Yet despite all these limitations, p-values are often used as a way to separate true findings from spurious ones, and that creates perverse incentives.
 
 When p-values are treated as a way to sort results into bins labeled significant or not significant, the vast efforts to collect and analyze data are degraded into mere labels. 
 
@@ -72,29 +93,4 @@ If there’s one takeaway from the ASA statement, it’s that p-values are not b
 
 Statistics is all about understanding data – numbers with context and meaning. A computer can do all of the calculations and all of the numerical work with finding a mean, a standard deviation, and even a confidence interval (all things we do in statistics). But, only a person can tell you if the mean really describes the data set or what the confidence interval is actually telling us.
 
-So, statistics is about taking the information we get from mathematics and interpreting it. You may look at the math behind the information, but only to get a better idea of how to make a decision. The most important things I’ve learned in years of studying statistics and doind analysis aren’t formal, but have proven extremely useful when working/playing with data. 
-
-### Attention to Detail
-
-Oftentimes it’s the little things that end up being the most important. There was this one time in class when my professor put up a graph on the projector. It was a bunch of data points with a smooth fitted line. He asked what we saw. Well, there was an increase in the beginning, a leveling off in the middle, and then another increase. However, what I missed was the little blip in the curve in the first increase. That was what we were after.
-
-The point is that trends and patterns are important, but so are outliers, missing data points, and inconsistencies.
-
-### See the Big Picture
-
-It’s important not to get too caught up with individual data points or a tiny section in a really big dataset. Always look on what the data wants to talk in general. Looking at distance, what can you see?
-
-### No Agendas
-
-This should go without saying, but approach data as objectively as possible. I’m not saying you shouldn’t have a hunch about what you’re looking for, but don’t let your preconceived ideas influence the results. Because if you go to length looking for some specific pattern, you’re probably going to find it. It’ll just be at the sacrifice of accurate results.
-
-### Look Outside the Data
-
-Context, context, context. Sometimes this will come in the form of metadata. Other times it’ll come from more data.
-
-The more you know about how the data was collected, where it came from, when it happened, and what was going on at the time, the more informative your results and the more confident you can be about your findings.
-
-### Ask Why
-
-Finally, and this is the most important thing I’ve learned, always ask why. When you see a blip in a graph, you should wonder why it’s there. If you find some correlation, you should think about whether or not it makes any sense. If it does make sense, then cool, but if not, dig deeper. Numbers are great, but you have to remember that when humans are involved, errors are always a possibility.
-
+So, statistics is about taking the information we get from mathematics and interpreting it. You may look at the math behind the information, but only to get a better idea of how to make a decision. A statistician is critical by nature.
