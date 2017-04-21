@@ -85,6 +85,7 @@ To get the average and the standard deviation of the school's grade I wrote a Py
 
 The workflow will look like this:
 <br/>
+<br/>
 ![workflow](/assets/posts/integrate-r-python/workflow.png)
 <br/>
 Let's show all the steps inside:
@@ -132,7 +133,7 @@ cat school-grade.txt | python mean-std.py
 
 {% endhighlight %}
 
-The result is the strinling: **23.0,17.88854382**
+The result is the string: **23.0,17.88854382**
 
 ### The R Script
 
@@ -159,7 +160,7 @@ cat school-grade.txt | python mean-std.py | Rscript read_argument.r
 {% endhighlight %}
 
 The result is:
-
+<br/>
 **Mean = 23.0**
 
 **Standard Deviation = 17.88854382**
