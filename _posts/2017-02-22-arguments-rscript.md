@@ -9,14 +9,13 @@ tags: [Unix]
 
 # Why is it necessary?
 
-Working along a data engineers team I got in a process where the definitions of the parameters that my R script would run should be done by a automated process doing job sequentialy. Ok, what does it means? 
+Working along a data engineers team I got in a process where the definitions of the parameters that my R script should run would be done by a automated process doing job sequentialy. Ok, what does it means? 
 
-It means that it wasn't enough to write a beautiful functional code. I needed to write a functional code that the arguments that my functions would call were external off my R script ambient. Basically the arguments were the *trimester* and *year*.
+It means that it wasn't enough to write a beautiful functional code. I needed to write a functional code where the arguments that my functions would call were external off my R script ambient. To simplify, the arguments were the *trimester* and *year*.
 
-So all the script had to be parameterized in function of *trimesters* and *year* so then it could scheduled 
-as a task where these arguments are passed in a bash command.
+All the script had to be parameterized in function of *trimesters* and *year*. After parametizing the script it could scheduled as a task where these arguments are passed in a bash command.
 
-So, at first, I developed a R script where it generate certain outputs for the *trimester* and *year* of interest. Later I found a solution to parse arguments from a bash command to my Rscript run.
+At first, I developed a R script where it generate certain outputs for the *trimester* and *year* of interest. Later I found a solution to parse arguments from a bash command to my Rscript run.
 
 # How is it done?
 
@@ -29,7 +28,7 @@ The following code shows a simple example of two arguments been passed. Save it 
 
 options(echo = TRUE)
 
-args<-commandArgs(TRUE)
+args <- commandArgs(TRUE)
 
 sprintf('Arg1: %s --- Arg2: %s', 
         args[1], args[2]')
@@ -45,7 +44,7 @@ Rscript myscript.R trimester year
 
 The result in your R environment should be: **"Arg1: trimester --- Arg2: year"**.
 
-The first line of the R code is telling the Terminal to use Rscript to execute the .R file. So you it isn't necessary the Rscript on the bash command.
+The first line (hashtagged) of the R code is telling the Terminal to use Rscript to execute the .R file. So it isn't necessary the *Rscript* command on the bash command.
 
 # Pipeline
 
