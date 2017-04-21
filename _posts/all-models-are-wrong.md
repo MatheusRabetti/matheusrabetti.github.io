@@ -15,8 +15,8 @@ Nate Silver is that guy. Consider:
 
 We’ll never really know whether a particular forecast was correct or incorrect, since they’re all probabilistic, and they all suggest a Clinton win is the most likely outcome.  Yet for anyone who followed the 2016 presidential race, Silver’s political predictions hit the wall.
 
-On Trump’s win, Silver said as much, “It’s the most shocking political development of my lifetime.” But no one can predict outliers, so if someone like Silver pretends he can—watch out. Spyros Makridakis, in his famed 1979 paper “Accuracy of Forecasting: An Empirical Investigation,” showed that simple beats complicated and that moving averages beat tortuous econometric routines. 
+On Trump’s win, Silver said as much, “It’s the most shocking political development of my lifetime.” But no one can predict outliers, so if someone like Silver pretends he can — watch out. Spyros Makridakis, in his famed 1979 paper “Accuracy of Forecasting: An Empirical Investigation,” showed that simple beats complicated and that moving averages beat tortuous econometric routines. 
 
 David Rock had a great piece in Psychology Today nailing the conundrum:
 
-> “Some parts of accounting and consulting make their money by helping executives experience a perception of increasing certainty, through strategic planning and ‘forecasting’. While the financial markets of 2008 showed once again that the future is inherently uncertain, the one thing that’s certain is that people will pay lots of money to at least feel less uncertain. That’s because uncertainty feels, to the brain, like a threat to your life.”
+> “Some parts of accounting and consulting make their money by helping executives experience a perception of increasing certainty, through strategic planning and ‘forecasting’. While the financial markets of 2008 showed once again that the future is inherently uncertain, the one thing that’s certain is that people will pay lots of money to at least feel less uncertain. **That’s because uncertainty feels, to the brain, like a threat to your life.**”
