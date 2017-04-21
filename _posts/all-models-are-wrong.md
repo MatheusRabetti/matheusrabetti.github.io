@@ -19,4 +19,4 @@ On Trump’s win, Silver said as much, “It’s the most shocking political dev
 
 David Rock had a great piece in Psychology Today nailing the conundrum:
 
-| “Some parts of accounting and consulting make their money by helping executives experience a perception of increasing certainty, through strategic planning and ‘forecasting’. While the financial markets of 2008 showed once again that the future is inherently uncertain, the one thing that’s certain is that people will pay lots of money to at least feel less uncertain. That’s because uncertainty feels, to the brain, like a threat to your life.”
+> “Some parts of accounting and consulting make their money by helping executives experience a perception of increasing certainty, through strategic planning and ‘forecasting’. While the financial markets of 2008 showed once again that the future is inherently uncertain, the one thing that’s certain is that people will pay lots of money to at least feel less uncertain. That’s because uncertainty feels, to the brain, like a threat to your life.”
