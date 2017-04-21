@@ -162,7 +162,7 @@ cat school-grade.txt | python mean-std.py | Rscript read_argument.r
 The result is:
 <br/>
 **Mean = 23.0**
-
+<br/>
 **Standard Deviation = 17.88854382**
 
 # More about
