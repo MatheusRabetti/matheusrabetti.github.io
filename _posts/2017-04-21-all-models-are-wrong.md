@@ -1,4 +1,11 @@
-
+---
+layout: post
+title: All Models Are Wrong, Some Are Useful
+description: Peering into future remains an imperfect science
+categories:
+  - Statistics
+tags: [Statistics]
+---
 
 # The fall of the heroes
 
@@ -55,9 +62,10 @@ Probability works in the proper context, but can produce deadly results if it is
 # All Models Are Wrong, Some are Useful
 
 Pascal, the father of probability understood the limitations of his methodology in real life. When asked to bet on God’s existence, Pascal did not consider the probability, odds, or evidence of god’s existence. Pascal considered the consequences of being wrong, and just choose the least consequential option. Pascal concluded accepting god’s existence and being wrong had no consequences greater than the alternative. But denying god’s existence and being wrong came with massive consequences, including an eternity burning in hell.
-
+<br/>
+<br/>
 ![pascal](/assets/posts/models-are-wrong/pascal.png)
-
+<br/>
 Pascal, the father of probability, claims when a rational person is dealing with an unknown, they should consider the consequences, not the odds. 
 
 In 1976, a British statistician named George Box wrote the famous line, “All models are wrong, some are useful.” His point was that we should focus more on whether something can be applied to everyday life in a useful manner rather than debating endlessly if an answer is correct in all cases. As historian Yuval Noah Harari puts it, “Scientists generally agree that no theory is 100 percent correct. Thus, the real test of knowledge is not truth, but utility. Science gives us power. The more useful that power, the better the science.” 

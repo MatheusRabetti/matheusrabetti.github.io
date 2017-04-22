@@ -29,13 +29,13 @@ Links
 
 * I worked on the development, calculation and construction along a BI team of a interactive plataform to analyse the brazilian labour market, [Painel de Monitoramento do Mercado de Trabalho](http://mercadodetrabalho.mte.gov.br/).
 
-* I've done all analysis procedures on the IVS project, a plataform developed in partnership betweend United Nations Development Programme and Institute for Applied Economic Research, [IVS](http://ivs.ipea.gov.br/ivs/en/o_atlas/o_atlas_/).
+* I've done all analysis procedures on the IVS project, a plataform developed in partnership betweend United Nations Development Programme and Institute for Applied Economic Research, [IVS](http://ivs.ipea.gov.br/ivs/en/mapa/).
+
+* Some results of the third publication listed above - Mapping the Economic Centers of Brazil, [RPubs Portfolio](https://rpubs.com/msrabetti/rais_leaflet)
 
 * [My CV](/assets/CURRICULO.pdf)
 
 * [My GitHub](https://github.com/matheusrabetti)
-
-* [My RPubs Portfolio](https://rpubs.com/msrabetti)
 
 
 About This Site
