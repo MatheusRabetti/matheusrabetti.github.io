@@ -41,9 +41,11 @@ I’ll give just one example:
 ## What is a confidence interval? 
 
 Confidence intervals provide more information than point estimates. Confidence intervals for means are intervals constructed using a procedure that will contain the population mean a specified proportion of the time, typically either 95% or 99% of the time. These intervals are referred to as 95% and 99% confidence intervals respectively. An example of a 95% confidence interval is shown below:
-
-72.85 < μ < 107.15
-
+<br/>
+<p align="center">
+  72.85 < μ < 107.15
+</p>
+<br/>
 There is good reason to believe that the population mean lies between these two bounds of 72.85 and 107.15 since 95% of the time confidence intervals contain the true mean.
 
 If repeated samples were taken and the 95% confidence interval computed for each sample, 95% of the intervals would contain the population mean. Naturally, 5% of the intervals would not contain the population mean. It is natural to interpret a 95% confidence interval as an interval with a 0.95 probability of containing the population mean. 
@@ -76,11 +78,11 @@ The p-value cannot tell you if your hypothesis is correct. Instead, it’s the p
 That sounds tantalizingly similar to “the probability of your hypothesis given your data,” but they’re not the same thing, said Stephen Senn, a biostatistician at the Luxembourg Institute of Health. To understand why, consider this example. “Is the pope Catholic? The answer is yes,” said Senn. “Is a Catholic the pope? The answer is probably not. If you change the order, the statement doesn’t survive.”
 
 Let's suppose a hypothesis test. I believe that testing a new layout on my website will make my users spend more time in my website.
-
+<br/>
 H0: User default layout >= User new layout
 
 H1: User default layout < User new layout
-
+<br/>
 After calculating the mean for each experiment (default, new layout) I see a difference of 20 minutes more in the mean time per user for the new layout. So, the p-value will answer: The p-value is the probability of the new layout be 20 minutes more than the default layout, given that the user in default layout spend more time than the user in the new layout.
 
 Another common error relationed to the p-value is supposing it tells the size of an effect, the strength of the evidence or the importance of a result. Yet despite all these limitations, p-values are often used as a way to separate true findings from spurious ones, and that creates perverse incentives.
