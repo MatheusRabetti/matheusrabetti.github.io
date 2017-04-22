@@ -78,10 +78,13 @@ The p-value cannot tell you if your hypothesis is correct. Instead, it’s the p
 That sounds tantalizingly similar to “the probability of your hypothesis given your data,” but they’re not the same thing, said Stephen Senn, a biostatistician at the Luxembourg Institute of Health. To understand why, consider this example. “Is the pope Catholic? The answer is yes,” said Senn. “Is a Catholic the pope? The answer is probably not. If you change the order, the statement doesn’t survive.”
 
 Let's suppose a hypothesis test. I believe that testing a new layout on my website will make my users spend more time in my website.
-<br/>
-H0: User default layout >= User new layout
 
-H1: User default layout < User new layout
+<br/>
+<p align="center">
+	**H0:** User default layout >= User new layout
+	
+	**H1:** User default layout < User new layout
+</p>
 <br/>
 After calculating the mean for each experiment (default, new layout) I see a difference of 20 minutes more in the mean time per user for the new layout. So, the p-value will answer: The p-value is the probability of the new layout be 20 minutes more than the default layout, given that the user in default layout spend more time than the user in the new layout.
 
