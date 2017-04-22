@@ -9,20 +9,26 @@ tags: [Statistics]
 
 # The fall of the heroes
 
-Wall Street always overflows with Holy Grails—those predictions, strategies, secret formulas, and genius interpretations that promise otherworldly knowledge and riches if you just trust. They are most often delivered in the investment world through a black box—a closed system where the inputs and outputs are known, but the internal analytical workings are left top secret, only for the high priests’ consumption. Black box positioning goes far beyond markets, however. It is not surprising in a modern, interconnected age that when you take a very smart guy, rows of computers, proprietary formulas, and code that only the one smart guy can see, and then add a string of successful forecasts, boom—you end up with a nerdy, made-for-social-media superstar who suddenly makes prediction cool for the proletariat.
+Wall Street always overflows with Holy Grails—those predictions, strategies, secret formulas, and genius interpretations that promise otherworldly knowledge and riches if you just trust. They are most often delivered in the investment world through a black box — a closed system where the inputs and outputs are known, but the internal analytical workings are left top secret, only for the high priests consumption. 
+
+![wallstreet](/assets/posts/models-are-wrong/dipcario-wallstreet.jpg)
+
+Black box positioning goes far beyond markets, however. It is not surprising in a modern, interconnected age that when you take a very smart guy, rows of computers, proprietary formulas, and code that only the one smart guy can see, and then add a string of successful forecasts, boom—you end up with a nerdy, made-for-social-media superstar who suddenly makes prediction cool for the proletariat.
 
 Nate Silver is that guy. Consider:
 
 * He successfully called the outcomes in 49 of the 50 states in the 2008 U.S. presidential election.
 * He successfully called the outcomes in 50 of the 50 states in the 2012 U.S. presidential election.
 
-I admit that I had a statue of Nate Silver in my room. The word **Statistics** and **Bayesian** were all around just because of this man. We’ll never really know whether a particular forecast was correct or incorrect, since they’re all probabilistic, and they all suggest a Clinton win is the most likely outcome. Since, we can't repeat this experiment over and over to confirm if the model was right all we will hear is that it's completely right or wrong. For anyone who followed the 2016 presidential race, Silver’s political predictions hit the wall. 
+I admit that I had a statue of Nate Silver in my room. The word **Statistics** and **Bayesian** were all around just because of this man. We’ll never really know whether a particular forecast was correct or incorrect, since they’re all probabilistic, and they all suggest a Clinton win is the most likely outcome. 
+
+The nature of this forecast don't allow Nate to repeat this experiment over and over to confirm if the model was right. All we will hear is that it's completely right or wrong. For anyone who followed the 2016 presidential race, Silver’s political predictions hit the wall. 
 
 On Trump’s win, Silver said as much, “It’s the most shocking political development of my lifetime.” But no one can predict outliers, so if someone like Silver pretends he can — watch out.  In the same way, if we give the super hero clothes to someone believing they can, it's better getting real. 
 
 Forecasting is basically working on probabilites, so let's go back where it all begins. 
 
-# Evolution of probability
+# The history of probability
 
 In 1653 and young French scholar named Blaise Pascal published “treatise on the arithmetical triangle,” now known as Pascal's triangle. Pascal invented a methodology to predict the result of games by mapping out every possible outcome and comparing it to alternative outcomes.
 
@@ -31,6 +37,8 @@ For example, if I asked the odds of rolling a “3” on a six-sided dice, Pasca
 Roughly one hundred years after Pascal, Pierre-Simon Laplace wanted to make predictions in the real world, specifically the movement of celestial bodies. Lacking the exact knowledge of each variable Pascal enjoyed with his games of chance, Laplace substituted historical data for the known variables of the game. In other words, Pascal knew the number of sides on each dice, whereas Laplace’s method guesses at the number of sides on the dice by observing multiple rolls, or rather the frequency of occurrence. But Laplace was not predicting the odds of rolling a “1” on a six-sided dice; he was predicting the odds of the sun rising tomorrow.
 
 Incidentally, Laplace calculated the odds of the sun rising tomorrow based on historical data as 99.999999…..%, which is the most confident prediction one can make based on historical data. However, the aging of the sun guarantees a day when the sun does not rise. Do to Murphy’s law, Laplace’s forecast is at best 99% accurate and one day will be 100% wrong.
+
+![murphy](/assets/posts/models-are-wrong/lei-murphy.jpg)
 
 Studying historical statistics can be incredibly useful when trying to explain what happened. But just identifying a trend in statistical data does not automatically translate into a forecast for the future. Statistics is more an explanatory tool, than a predictive tool. We can see that the ability to predict trends has grown over the centuries, but not as much as people might think, especially in a few important areas.
 
@@ -41,6 +49,8 @@ What’s the common tie among these problems? They’re connected to our worldvi
 # Mathematical Harmony
 
 The Greeks believed that the cosmos was ruled by *mathematical harmony*, and followed the classical ideals of unity, stability, symmetry, elegance, and order. These ideals were reflected in architecture like the Pantheon in Rome, with its elegant geometry. Today, predictive models are largely governed by these same classical ideals or aesthetics.
+
+![greek](/assets/posts/models-are-wrong/greek.jpg)
 
 Predictions may be good for a couple of days, but things like precipitation or extreme events remain particularly difficult to predict. Spyros Makridakis, in his famed 1979 paper “Accuracy of Forecasting: An Empirical Investigation,” showed that simple beats complicated and that moving averages beat tortuous econometric routines. And as it turns out, it’s even harder to predict the economy or human behaviour than the weather.
 
