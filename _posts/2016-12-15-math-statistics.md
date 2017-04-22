@@ -81,9 +81,8 @@ Let's suppose a hypothesis test. I believe that testing a new layout on my websi
 
 <br/>
 <p align="center">
-	**H0:** User default layout >= User new layout
-	
-	**H1:** User default layout < User new layout
+	<strong>H0:</strong> User default layout >= User new layout <br>
+	<strong>H1:</strong> User default layout < User new layout
 </p>
 <br/>
 After calculating the mean for each experiment (default, new layout) I see a difference of 20 minutes more in the mean time per user for the new layout. So, the p-value will answer: The p-value is the probability of the new layout be 20 minutes more than the default layout, given that the user in default layout spend more time than the user in the new layout.
