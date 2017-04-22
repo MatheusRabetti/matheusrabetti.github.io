@@ -10,8 +10,10 @@ tags: [Statistics]
 # The fall of the heroes
 
 Wall Street always overflows with Holy Grails—those predictions, strategies, secret formulas, and genius interpretations that promise otherworldly knowledge and riches if you just trust. They are most often delivered in the investment world through a black box — a closed system where the inputs and outputs are known, but the internal analytical workings are left top secret, only for the high priests consumption. 
-
+<br/>
+<br/>
 ![wallstreet](/assets/posts/models-are-wrong/dipcario-wallstreet.jpg)
+<br/>
 
 Black box positioning goes far beyond markets, however. It is not surprising in a modern, interconnected age that when you take a very smart guy, rows of computers, proprietary formulas, and code that only the one smart guy can see, and then add a string of successful forecasts, boom—you end up with a nerdy, made-for-social-media superstar who suddenly makes prediction cool for the proletariat.
 
@@ -37,8 +39,10 @@ For example, if I asked the odds of rolling a “3” on a six-sided dice, Pasca
 Roughly one hundred years after Pascal, Pierre-Simon Laplace wanted to make predictions in the real world, specifically the movement of celestial bodies. Lacking the exact knowledge of each variable Pascal enjoyed with his games of chance, Laplace substituted historical data for the known variables of the game. In other words, Pascal knew the number of sides on each dice, whereas Laplace’s method guesses at the number of sides on the dice by observing multiple rolls, or rather the frequency of occurrence. But Laplace was not predicting the odds of rolling a “1” on a six-sided dice; he was predicting the odds of the sun rising tomorrow.
 
 Incidentally, Laplace calculated the odds of the sun rising tomorrow based on historical data as 99.999999…..%, which is the most confident prediction one can make based on historical data. However, the aging of the sun guarantees a day when the sun does not rise. Do to Murphy’s law, Laplace’s forecast is at best 99% accurate and one day will be 100% wrong.
-
+<br/>
+<br/>
 ![murphy](/assets/posts/models-are-wrong/lei-murphy.jpg)
+<br/>
 
 Studying historical statistics can be incredibly useful when trying to explain what happened. But just identifying a trend in statistical data does not automatically translate into a forecast for the future. Statistics is more an explanatory tool, than a predictive tool. We can see that the ability to predict trends has grown over the centuries, but not as much as people might think, especially in a few important areas.
 
