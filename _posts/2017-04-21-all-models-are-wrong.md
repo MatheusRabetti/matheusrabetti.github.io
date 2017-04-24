@@ -88,4 +88,4 @@ We have to acknowledge that some things aren’t predictable. Can we predict the
 
 # More about it
 
-* [Can a simple test predict wath a person will do in the future?](https://medium.com/towards-data-science/can-a-simple-test-predict-what-a-person-will-do-in-the-future-a64f0b7e0ff2)
+* [Can a simple test predict what a person will do in the future?](https://medium.com/towards-data-science/can-a-simple-test-predict-what-a-person-will-do-in-the-future-a64f0b7e0ff2)
