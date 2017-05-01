@@ -122,7 +122,7 @@ The more the player hits over the course of the season, the more the curve will 
 
 <br>
 <br>
-![center](/../figs/2016-11-06-bayesian-introduction/updated-beta-1.png)
+![updated](/../figs/2016-11-06-bayesian-introduction/updated-beta-1.png)
 <br>
 
 Notice the curve is now both thinner and shifted to the right (higher batting average) than it used to be- we have a better sense of what the player's batting average is.
