@@ -85,3 +85,7 @@ Pascal, the father of probability, claims when a rational person is dealing with
 In 1976, a British statistician named George Box wrote the famous line, “All models are wrong, some are useful.” His point was that we should focus more on whether something can be applied to everyday life in a useful manner rather than debating endlessly if an answer is correct in all cases. As historian Yuval Noah Harari puts it, “Scientists generally agree that no theory is 100 percent correct. Thus, the real test of knowledge is not truth, but utility. Science gives us power. The more useful that power, the better the science.” 
 
 We have to acknowledge that some things aren’t predictable. Can we predict the exact timing of the next business, health, or climate crisis or opportunity? No. But can we use available tools to better prepare ourselves, and make our businesses and institutions more flexible and robust? Yes. I think we can.
+
+# More about it
+
+* [Can a simple test predict what a person will do in the future?](https://medium.com/towards-data-science/can-a-simple-test-predict-what-a-person-will-do-in-the-future-a64f0b7e0ff2)
