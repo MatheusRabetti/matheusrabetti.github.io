@@ -105,7 +105,7 @@ We expect that the player’s season-long batting average will be most likely ar
 
 <br>
 <br>
-![center](/../figs/2016-11-06-bayesian-introduction/beta_density-1.png)
+![center](/../figs/2016-11-06-bayesian-introduction/beta-density-1.png)
 <br>
 
 I came up with these parameters for two reasons:
