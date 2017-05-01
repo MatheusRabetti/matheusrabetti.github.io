@@ -105,7 +105,7 @@ We expect that the player’s season-long batting average will be most likely ar
 
 <br>
 <br>
-![center](/../figs/2016-11-06-bayesian-introduction/beta-density-1.png)
+![center](/../figs/2016-11-06-bayesian-introduction/beta_density-1.png)
 <br>
 
 I came up with these parameters for two reasons:
@@ -131,6 +131,7 @@ One of the most interesting outputs of this formula is the expected value of the
 
 Thus, the beta distribution is best for representing a probabilistic distribution *of probabilities*- the case where we don't know what a probability is in advance, but we have some reasonable guesses.
 
-## Referencia
+## More about it
 
    * The baseball analysis was based on [David Robinson's post](http://varianceexplained.org/statistics/beta_distribution_and_baseball/). Looking for more? It brings a lot of valuable posts on Bayesian analysis! Have a look on his website.
+   * A great hands on to understand the Bayesian thinking [Beginning Bayes - Datacamp](https://www.datacamp.com/courses/beginning-bayes-in-r)

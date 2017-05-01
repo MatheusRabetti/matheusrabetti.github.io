@@ -18,7 +18,7 @@ Proponents of frequentism are mostly in that camp because that's the way it's be
 
 ## Why it's natural
 
-I was a rabid frequentist myself (being "brought up" that way - i.e. in my undergrad, master's, and most of my PhD, Bayesian methods were rarely mentioned without derision at the schools I attended at that time) until I thought about what it really means to have prior information, and why it's so natural.  Even watching how I think has convinced me that even though I was a frequentist by choice, my thinking has always been Bayesian in nature.  I'm sure a lot of people think like this:  they form an opinion on a subject, even with no knowledge.  They get data (learn things) about said subject, and modify their opinion, but it's always true that the first (prior) opinion affects things.  Here "subject" can be anything, such as climate change or who's the best baseball player.
+What it really means to have prior information, and why it's so natural? Even watching how I think has convinced me that even though I was a frequentist by choice, my thinking has always been Bayesian in nature.  I'm sure a lot of people think like this:  they form an opinion on a subject, even with no knowledge.  They get data (learn things) about said subject, and modify their opinion, but it's always true that the first (prior) opinion affects things.  Here "subject" can be anything, such as climate change or who's the best baseball player.
 
 And science has always had hypotheses before experiments.  And the experiment guides the creation of new hypotheses.  
 
@@ -150,6 +150,7 @@ One of the most interesting outputs of this formula is the expected value of the
 
 Thus, the beta distribution is best for representing a probabilistic distribution *of probabilities*- the case where we don't know what a probability is in advance, but we have some reasonable guesses.
 
-## Referencia
+## More about it
 
    * The baseball analysis was based on [David Robinson's post](http://varianceexplained.org/statistics/beta_distribution_and_baseball/). Looking for more? It brings a lot of valuable posts on Bayesian analysis! Have a look on his website.
+   * A great hands on to understand the Bayesian thinking [Beginning Bayes - Datacamp](https://www.datacamp.com/courses/beginning-bayes-in-r)
