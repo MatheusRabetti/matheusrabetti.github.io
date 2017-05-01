@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git Branch - No risks, No gains
+title: Git Branch - No Risks, No Gains
 description: Understanding Git branch and when it should be used.
 categories: 
   - Data Analysis

@@ -14,7 +14,7 @@ Proponents of frequentism are mostly in that camp because that's the way it's be
 
 ## Why it's natural
 
-I was a rabid frequentist myself (being "brought up" that way - i.e. in my undergrad, master's, and most of my PhD, Bayesian methods were rarely mentioned without derision at the schools I attended at that time) until I thought about what it really means to have prior information, and why it's so natural.  Even watching how I think has convinced me that even though I was a frequentist by choice, my thinking has always been Bayesian in nature.  I'm sure a lot of people think like this:  they form an opinion on a subject, even with no knowledge.  They get data (learn things) about said subject, and modify their opinion, but it's always true that the first (prior) opinion affects things.  Here "subject" can be anything, such as climate change or who's the best baseball player.
+What it really means to have prior information, and why it's so natural? Even watching how I think has convinced me that even though I was a frequentist by choice, my thinking has always been Bayesian in nature.  I'm sure a lot of people think like this:  they form an opinion on a subject, even with no knowledge.  They get data (learn things) about said subject, and modify their opinion, but it's always true that the first (prior) opinion affects things.  Here "subject" can be anything, such as climate change or who's the best baseball player.
 
 And science has always had hypotheses before experiments.  And the experiment guides the creation of new hypotheses.  
 
@@ -68,7 +68,7 @@ So the idea behind Bayesian methods is:
 
 >   "The data we collected is *affected* by some parameters so that we try to find the parameters which is limited by our prior knowledge to maximize the chance this data happen"
 
-This is the key different between Baysian and Frequentist:
+This is the key different between Bayesian and Frequentist:
 
 *   The frequentist get the data and try to generalize that data to the whole population, it's very human nature.
     *    You see all your neighbors driving pinky cars => you end up the whole city love pinky cars.
@@ -103,7 +103,10 @@ Given our batting average problem, which can be represented with a binomial dist
 
 We expect that the player’s season-long batting average will be most likely around 0.27, but that it could reasonably range from 0.21 to 0.35. This can be represented with a beta distribution with parameters $$\alpha=81$$ and \\( \beta=219\\):
 
-![center](../../figs/2016-11-06-bayesian-introduction/beta-density-1.png)
+</br>
+</br>
+![center](/figs/2016-11-06-bayesian-introduction/beta-density-1.png)
+</br>
 
 I came up with these parameters for two reasons:
 
@@ -117,9 +120,10 @@ $$\mbox{Beta}(\alpha_0+\mbox{hits}, \beta_0+\mbox{misses})$$
 
 The more the player hits over the course of the season, the more the curve will shift to accommodate the new evidence, and furthermore the more it will narrow based on the fact that we have more proof. Let’s say halfway through the season he has been up to bat 300 times, hitting 100 out of those times. The new distribution would be $$\mbox{beta}(81+100, 219+200)$$:
 
-
-![center](../../figs/2016-11-06-bayesian-introduction/updated-beta-1.png)
-
+</br>
+</br>
+![center](/figs/2016-11-06-bayesian-introduction/updated-beta-1.png)
+</br>
 
 Notice the curve is now both thinner and shifted to the right (higher batting average) than it used to be- we have a better sense of what the player's batting average is.
 

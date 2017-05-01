@@ -201,23 +201,38 @@ I discovered a great open source ETL tool, Pentaho Data Integration (or Kettle).
 
 Heading on the pratice, on PDI you can set some steps. The picture shows the steps running.
 
+<br/>
+<br/>
 ![etl-running](/assets/posts/bigdata/etl-tansformation.png)
+<br/>
 
 This is a basic and pretty fast ETL procedure. The speed is 16.258 rows per second. Let's have a look deeper on what's going on each step. First the *Leitura RAIS 2015* is a reading setup. I'm defining the directory where my 27 files are and a regular expression to capture only the files I want on this folder.
 
+<br/>
+<br/>
 ![etl-input](/assets/posts/bigdata/etl-fileinput.png)
+<br/>
 
 On the *Fields* tab I can define the type, mask, lenght, decimal, when is null and even trim my variable. That comes in handy! Just what I was looking for. Clicking on *Get Fields*, PDI will sample your file and give you a hint on those classifiers entries.
 
+<br/>
+<br/>
 ![etl-fields](/assets/posts/bigdata/etl-fields.png)
+<br/>
 
 Next, I want to load this on a PostgreSQL table. PostgreSQL Bulk Loader is the faster way to make this happen and it's easily definable. 
 
+<br/>
+<br/>
 ![etl-load](/assets/posts/bigdata/etl-load.png)
+<br/>
 
 The transformation process took **1h:14** to complete. It read 72 millions of lines 
 
+<br/>
+<br/>
 ![etl-end](/assets/posts/bigdata/etl-finished.png)
+<br/>
 
 In the end I created a simple primary key, a new column storing the State - *UF* - and indexed this column as I normally do my analysis by states:
 

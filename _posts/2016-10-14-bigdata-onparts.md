@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dealing with large files - Computing on parts
+title: Dealing with Large Files - Computing on Parts
 categories:
   - Data Enginner
 description: An easy and fast way to work around the problem with big data
@@ -16,7 +16,10 @@ tags: [Big Data,R,Unix]
 Nowadays the internet have a big data of explanations about big data. 
 Probably you have already faced the 3, 4 or 5 V's to explain Big Data:
 
+<br/>
+<br/>
 ![v4](/assets/posts/bigdata/bigdata-4v.jpg)
+<br/>
 
 I will move fast and tell my particularly problem on dealing with big data on my greatest tool on earth **R**.
 
@@ -52,8 +55,7 @@ On my current project I'm dealing with a 30 GB yearly data called RAIS.
 It's a administrative report issued by all brasilian companies that the Ministry of Labor manages. 
 It's known as the labor market census.
 
-To reproduce this analysis the file is stored in this [ftp](ftp://ftp.mtps.gov.br/pdet/microdados/RAIS/2015/).
-
+To reproduce this analysis the file is stored in this [ftp](ftp://ftp.mtps.gov.br/pdet/microdados/RAIS/2015/). 
 The data is already partitioned in 27 Federation Unities files. The directory I saved the files is:
 
 ``` r
@@ -66,7 +68,10 @@ To not overload this post check this [post](https://www.analyticsvidhya.com/blog
 
 Moving on, I have many years of data organized like this:
 
+<br/>
+<br/>
 ![raisfiles](/assets/posts/bigdata/rais-files.png)
+<br/>
 
 I will list all files inside each year directory. The regex pattern is to not read one particular file *ESTAB.TXT*
 

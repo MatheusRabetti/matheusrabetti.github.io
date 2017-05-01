@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using JDBC connection to access Teradata
+title: Using JDBC Connection to Access Teradata
 description: Making R connect to a external database
 categories:
   - Data Enginner
