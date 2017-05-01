@@ -103,10 +103,10 @@ Given our batting average problem, which can be represented with a binomial dist
 
 We expect that the player’s season-long batting average will be most likely around 0.27, but that it could reasonably range from 0.21 to 0.35. This can be represented with a beta distribution with parameters $$\alpha=81$$ and \\( \beta=219\\):
 
-</br>
-</br>
-![center](/figs/2016-11-06-bayesian-introduction/beta-density-1.png)
-</br>
+<br>
+<br>
+![center](/../figs/2016-11-06-bayesian-introduction/beta-density-1.png)
+<br>
 
 I came up with these parameters for two reasons:
 
@@ -120,10 +120,10 @@ $$\mbox{Beta}(\alpha_0+\mbox{hits}, \beta_0+\mbox{misses})$$
 
 The more the player hits over the course of the season, the more the curve will shift to accommodate the new evidence, and furthermore the more it will narrow based on the fact that we have more proof. Let’s say halfway through the season he has been up to bat 300 times, hitting 100 out of those times. The new distribution would be $$\mbox{beta}(81+100, 219+200)$$:
 
-</br>
-</br>
-![center](/figs/2016-11-06-bayesian-introduction/updated-beta-1.png)
-</br>
+<br>
+<br>
+![center](/../figs/2016-11-06-bayesian-introduction/updated-beta-1.png)
+<br>
 
 Notice the curve is now both thinner and shifted to the right (higher batting average) than it used to be- we have a better sense of what the player's batting average is.
 
