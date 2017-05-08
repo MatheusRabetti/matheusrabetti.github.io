@@ -1,0 +1,37 @@
+library(parallel)
+
+bimodal_boot <- function(sample_size = 1e4){
+    modal <- 
+        daily %>% 
+        filter(alternative == "default") %>% 
+        sample_n(size = sample_size, replace = T) %>% 
+        with(., densityMclust(log(watch), G = 2))
+    controle_res <- summary(modal, parameters = T)
+    
+    modal <- 
+        daily %>% 
+        filter(alternative == "simulcast") %>% 
+        sample_n(size = sample_size, replace = T) %>% 
+        with(., densityMclust(log(watch), G = 2))
+    experim_res <- summary(modal, parameters = T)
+    
+    difference <- exp(controle_res$mean) - exp(experim_res$mean)
+    return(difference)
+}
+
+write.file = 'temp-output/R-progress'
+results <-
+    mclapply(1:10, function(i){
+        if (i %% 10 == 0 ){
+            file.create(write.file)
+            fileConn <- file(write.file)
+            writeLines(sprintf('task %s is complete',i), fileConn)
+            close(fileConn)
+        }
+        bimodal_boot(sample_size = 1e4) 
+    }, mc.cores = 3)
+# monitor from a console:
+# tail -c +0 -f 'temp-output/R-progress
+
+difference <- data.frame()
+difference <- rbind(difference, do.call(rbind, results))
