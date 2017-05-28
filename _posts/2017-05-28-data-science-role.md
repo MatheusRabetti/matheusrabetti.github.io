@@ -8,7 +8,9 @@ tags: [Business]
 ---
 
 
-“What is the relationship like between your team and the data scientists?” This is, without a doubt, the question I had most asked myself. Why is that? If you read the recruiting propaganda of data science and look at the others roles on your departament team, you might see functions overlapping. Also, everyone wants to be the thinker, the model builder.
+> “What is the relationship like between your team and the data scientists?” 
+
+This is, without a doubt, the question I had most asked myself. Why is that? If you read the recruiting propaganda of data science and look at the others roles on your departament team, you might see functions overlapping. Also, everyone wants to be the thinker, the model builder.
 
 My first time as a just arrived data scientist in a team full of experienced and respected engineers in the company left me extremely uncomfortable in the early months. The truth is that they were really talented and capable of doing pretty awesome data analysis. One of them had built most of the recommendation systems algorithms. While I marveled also got scared keeping asking myself: "Shouldn't they be building the infrastructure to the data scientists do the analysis?". At first I felt the need to have a clear role on the production process.
 
@@ -19,6 +21,11 @@ While building my space and setting aside the fear I realized and would like to 
 Let’s forget the traditional roles, and instead think about the intrinsic motivations that get folks excited to come to work in the morning.
 
 Regardless of role, a fundamental differentiator between adequate and great people lies in their desire and talent for being creative. Great people are able to identify and creatively solve problems that would absolutely baffle the mediocre. They excel in and crave for an environment of autonomy, ownership, and focus. 
+
+<br>
+<br>
+![center](/assets/posts/data-science-team/account.jpg)
+<br>
 
 ### Data Scientists:
 
