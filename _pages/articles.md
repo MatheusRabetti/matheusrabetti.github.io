@@ -6,6 +6,8 @@ comments: false
 permalink: /articles/
 ---
 
+A list of must read articles that I read and thought was great ideia to share them. You will be able to find diverse subjects like machine learning, recommender systems, statistics, business and big data.
+
 
 Machine Learning
 ============
