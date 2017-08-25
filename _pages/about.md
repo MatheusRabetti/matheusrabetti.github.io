@@ -33,9 +33,7 @@ Links
 
 * Some results of the third publication listed above - Mapping the Economic Centers of Brazil, [RPubs Portfolio](https://rpubs.com/msrabetti/rais_leaflet)
 
-* [My CV](/assets/CURRICULO.pdf)
-
-* [My GitHub](https://github.com/matheusrabetti)
+* [Check my Resume](/assets/CURRICULO.pdf)
 
 
 About This Site

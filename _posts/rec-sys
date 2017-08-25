@@ -1,0 +1,12 @@
+---
+layout: post
+title: Recommender System
+description: Pratical Introduction
+categories:
+  - Rec Sys
+tags: [Machine Learning]
+---
+
+
+git clone https://github.com/rustyrazorblade/movielens.git movielens
+
