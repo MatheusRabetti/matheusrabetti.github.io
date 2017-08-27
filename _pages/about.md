@@ -6,12 +6,13 @@ comments: false
 permalink: /about/
 ---
 
-I am a Statistician at [Globo.com](http://www.globo.com/) graduated from the [University of Brasilia, (UnB)](http://www.est.unb.br/). For a year and a half I did a master's degree in quantitative finance with a focus on risk default. During this period I discovered how to learn, how I learn. Being curious, challenging problems, chewing technical and academic books, beta testing, following those off the curve and experimenting with new technologies. Classic academic conduits aren't providing Data Scientists -- this talent gap will be closed differently.
+I am a Data Scientist at [Globo.com](http://www.globo.com/) graduated in Statistics from the [University of Brasilia, (UnB)](http://www.est.unb.br/). For a year and a half I did a master's degree in quantitative finance with a focus on risk default. During this period I discovered how to learn, how I learn. Being curious, challenging problems, chewing technical and academic books, beta testing, following those off the curve and experimenting with new technologies. Classic academic conduits aren't providing Data Scientists -- this talent gap will be closed differently.
 
 > **Academic credentials are important but not necessary for high-quality data science.** The core aptitudes – curiosity, intellectual agility, statistical fluency, research stamina, scientific rigor, skeptical nature – that distinguish the best data scientists are widely distributed throughout the population.
 
 -- James Kobielus, [Closing the Talent Gap](http://bit.ly/closingthetalentgap) 17 Jan 2013
 
+</br>
 Since this discovery I have dedicated myself on this path. I have 5 years of experience in applied statistics programming in R. My interests include statistics, machine learning, recommender systems, data mining, data engineer, big data, and programming in R and Python.
 
 Courses
