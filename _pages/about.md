@@ -6,12 +6,18 @@ comments: false
 permalink: /about/
 ---
 
-I am a Statistician at [Globo.com](http://www.globo.com/) graduated from the [University of Brasilia, (UnB)](http://www.est.unb.br/). I have 5 years of experience in applied statistics programming in R. My interests include statistics, machine learning, recommender systems, data mining, data engineer, big data, and programming in R and Python.
+I am a Statistician at [Globo.com](http://www.globo.com/) graduated from the [University of Brasilia, (UnB)](http://www.est.unb.br/). For a year and a half I did a master's degree in quantitative finance with a focus on risk default. During this period I discovered how to learn, how I learn. Being curious, challenging problems, chewing technical and academic books, beta testing, following those off the curve and experimenting with new technologies. Classic academic conduits aren't providing Data Scientists -- this talent gap will be closed differently.
+
+> **Academic credentials are important but not necessary for high-quality data science.** The core aptitudes – curiosity, intellectual agility, statistical fluency, research stamina, scientific rigor, skeptical nature – that distinguish the best data scientists are widely distributed throughout the population.
+
+-- James Kobielus, [Closing the Talent Gap](http://bit.ly/closingthetalentgap) 17 Jan 2013
+
+Since this discovery I have dedicated myself on this path. I have 5 years of experience in applied statistics programming in R. My interests include statistics, machine learning, recommender systems, data mining, data engineer, big data, and programming in R and Python.
 
 Courses
 ============
 
-* [MITx: 15.071x The Analytics Edge](https://www.edx.org/course/analytics-edge-mitx-15-071x-2): MIT’s The Analytics Edge is an edX course focused on using statistical tools to gain insight about data and make predictions. 
+* [MITx: 15.071x The Analytics Edge](https://www.edx.org/course/analytics-edge-mitx-15-071x-2): MIT’s The Analytics Edge is an edX course focused on using statistical tools to gain insight about data and make predictions. It has around 75 datasets and starts from linear regression upto clustering and some classification techniques like Random Forest and CART models in between.
 
 * [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science): This Specialization covers the concepts and tools you'll need throughout the entire data science pipeline, from asking the right kinds of questions to making inferences and publishing results.
 
@@ -21,11 +27,11 @@ Courses
 Publications
 ============
 
-1. Rabetti, M.S.; Nadalin, V.G.; Oliveira, C.A.P.; Furtado, B.A.; Cavalcanti, C.B. (2016) <a href="http://www.ipea.gov.br/portal/index.php?option=com_content&view=article&id=28469&Itemid=406"> Dinâmica Populacional e de Empregos nos Centros Urbanos das Metrópoles Brasileiras </a>. 
+1. Rabetti, M.S.; Nadalin, V.G.; Oliveira, C.A.P.; Furtado, B.A.; Cavalcanti, C.B. (2016) <a href="http://www.ipea.gov.br/portal/index.php?option=com_content&view=article&id=28469&Itemid=406"> Population and Employment Dynamics in the Urban Centers of the Brazilian Metropolis </a>. 
 
-2. Rabetti, M.S.; Sambuichi, R.H.R.; Galindo, E.P.; Pereira, R.M.; Cconstantino, M. (2016) <a href="http://www.ipea.gov.br/portal/index.php?option=com_content&view=article&id=27858">Diversidade da Produção nos Estabelecimentos da Agricultura Familiar no Brasil:uma análise econométrica baseada no cadastro da Declaração de Aptidão ao Pronaf (DAP)</a>.
+2. Rabetti, M.S.; Sambuichi, R.H.R.; Galindo, E.P.; Pereira, R.M.; Cconstantino, M. (2016) <a href="http://www.ipea.gov.br/portal/index.php?option=com_content&view=article&id=27858"> Production Diversity in Family Agriculture Establishments in Brazil: an econometric analysis based on the registration of the Declaration of Aptitude to Pronaf (DAP) </a>.
 
-3. Rabetti, M.S. and Carvalho, C.H.R. (2015) <a href="http://www.ipea.gov.br/portal/images/stories/PDFs/relatoriopesquisa/150922_relatorio_acidentes_transito.pdf">Acidentes de trânsito nas rodovias federais brasileiras</a>. 
+3. Rabetti, M.S. and Carvalho, C.H.R. (2015) <a href="http://www.ipea.gov.br/portal/images/stories/PDFs/relatoriopesquisa/150922_relatorio_acidentes_transito.pdf"> Traffic accidents on Brazilian federal highways </a>. 
 
 
 Links
