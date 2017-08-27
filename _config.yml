@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Data Science Padawan"
+title                    : "Data + Science + Statistics"
 name                     : "Matheus Rabetti"
 description              : "The path of a statistician to become a data scientist"
 url                      : "https://matheusrabetti.github.io"
@@ -20,9 +20,9 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 author:
   name             : "Matheus Rabetti"
   avatar           : "/assets/avatar-icon.jpg"
-  bio              : "Statistician in Globo.com, works with Python and R."
+  bio              : "Data Scientist in Globo.com, works with Python and R."
   disqus-shortname : matheusrabetti
-  location         : "Brasilia, Brazil"
+  location         : "Rio de Janeiro, Brazil"
   email            : "matheus.rabetti@gmail.com"
   uri              :
   facebook         :
