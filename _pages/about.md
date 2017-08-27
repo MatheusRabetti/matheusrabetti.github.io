@@ -12,7 +12,7 @@ I am a Data Scientist at [Globo.com](http://www.globo.com/) graduated in Statist
 
 -- James Kobielus, [Closing the Talent Gap](http://bit.ly/closingthetalentgap) 17 Jan 2013
 
-</br>
+<br>
 Since this discovery I have dedicated myself on this path. I have 5 years of experience in applied statistics programming in R. My interests include statistics, machine learning, recommender systems, data mining, data engineer, big data, and programming in R and Python.
 
 Courses
