@@ -34,7 +34,7 @@ Since this discovery I have dedicated myself on this path always avoiding the â€
 <script src="../assets/bullet.js"></script>
 <script>
 
-var margin = {top: 5, right: 40, bottom: 20, left: 120},
+var margin = {top: 5, right: 40, bottom: 20, left: 50},
     width = 480 - margin.left - margin.right,
     height = 40 - margin.top - margin.bottom;
 
