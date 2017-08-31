@@ -13,7 +13,101 @@ I am a Data Scientist at [Globo.com](http://www.globo.com/) graduated in Statist
 -- James Kobielus, [Closing the Talent Gap](http://bit.ly/closingthetalentgap) 17 Jan 2013
 
 <br>
-Since this discovery I have dedicated myself on this path. I have 5 years of experience in applied statistics programming in R. My interests include statistics, machine learning, recommender systems, data mining, data engineer, big data, and programming in R and Python.
+Since this discovery I have dedicated myself on this path always avoiding the “comfort zone”. Being good at something doesn’t mean that you can be satisfied with it. There’s always more that you can achieve, that you can improve!
+
+<style>
+/* python -m SimpleHTTPServer 8888 & */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+  padding-top: 40px;
+  position: relative;
+  width: 480px;
+}
+
+button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.bullet { font: 8px Helvetica; }
+.bullet .marker { stroke: #0F2535; stroke-width: 2px; }
+.bullet .tick line { stroke: #666; stroke-width: .5px; }
+.bullet .range.s0 { fill: #eee; }
+.bullet .range.s1 { fill: #FFFFFF; }
+.bullet .range.s2 { fill: #F9F9F9; }
+.bullet .measure.s0 { fill: #FCB07E; }
+.bullet .measure.s1 { fill: #E8992C; }
+.bullet .title { font: 12px Helvetica; font-weight: bold; }
+.bullet .subtitle { fill: #999; }
+
+</style>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="../assets/bullet.js"></script>
+<script>
+
+var margin = {top: 5, right: 40, bottom: 20, left: 120},
+    width = 480 - margin.left - margin.right,
+    height = 40 - margin.top - margin.bottom;
+
+var chart = d3.bullet()
+    .width(width)
+    .height(height);
+
+d3.json("../assets/bullets.json", function(error, data) {
+  if (error) throw error;
+
+  var svg = d3.select("div#explore").selectAll("svg")
+      .data(data)
+    .enter().append("svg")
+      .attr("class", "bullet")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+      .call(chart);
+
+  var title = svg.append("g")
+      .style("text-anchor", "end")
+      .attr("transform", "translate(-6," + height / 2 + ")");
+
+  title.append("text")
+      .attr("class", "title")
+      .text(function(d) { return d.title; });
+
+  title.append("text")
+      .attr("class", "subtitle")
+      .attr("dy", "1em")
+      .text(function(d) { return d.subtitle; });
+
+  d3.selectAll("button").on("click", function() {
+    svg.datum(randomize).call(chart.duration(1000)); // TODO automatic transition
+  });
+});
+
+function randomize(d) {
+  if (!d.randomizer) d.randomizer = randomizer(d);
+  d.ranges = d.ranges.map(d.randomizer);
+  d.markers = d.markers.map(d.randomizer);
+  d.measures = d.measures.map(d.randomizer);
+  return d;
+}
+
+function randomizer(d) {
+  var k = d3.max(d.ranges) * .2;
+  return function(d) {
+    return Math.max(0, d + k * (Math.random() - .5));
+  };
+}
+
+</script>
+
+<div id="explore"></div>
+
+
+I have 5 years of experience in applied statistics programming in R. My interests include statistics, machine learning, recommender systems, data mining, data visualization, data engineer, big data, and programming in R and Python.
+
 
 Courses
 ============
@@ -43,8 +137,6 @@ Links
 * I've done all analysis procedures on the IVS project, a plataform developed in partnership betweend United Nations Development Programme and Institute for Applied Economic Research, [IVS](http://ivs.ipea.gov.br/ivs/en/mapa/).
 
 * Some results of the third publication listed above - Mapping the Economic Centers of Brazil, [RPubs Portfolio](https://rpubs.com/msrabetti/rais_leaflet)
-
-* [Check my Resume](/assets/CURRICULO.pdf)
 
 
 About This Site
