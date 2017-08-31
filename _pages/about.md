@@ -34,8 +34,8 @@ Since this discovery I have dedicated myself on this path always avoiding the â€
 <script src="../assets/bullet.js"></script>
 <script>
 
-var margin = {top: 5, right: 20, bottom: 20, left: 150},
-    width = 480 - margin.left - margin.right,
+var margin = {top: 5, right: 40, bottom: 20, left: 150},
+    width = 520 - margin.left - margin.right,
     height = 40 - margin.top - margin.bottom;
 
 var chart = d3.bullet()
