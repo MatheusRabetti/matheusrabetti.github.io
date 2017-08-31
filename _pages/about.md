@@ -15,21 +15,6 @@ I am a Data Scientist at [Globo.com](http://www.globo.com/) graduated in Statist
 <br>
 Since this discovery I have dedicated myself on this path always avoiding the “comfort zone”. Being good at something doesn’t mean that you can be satisfied with it. There’s always more that you can achieve, that you can improve!
 
-<style>
-/* python -m SimpleHTTPServer 8888 & */
-
-.bullet { font: 8px Helvetica; }
-.bullet .marker { stroke: #0F2535; stroke-width: 2px; }
-.bullet .tick line { stroke: #666; stroke-width: .5px; }
-.bullet .range.s0 { fill: #eee; }
-.bullet .range.s1 { fill: #FFFFFF; }
-.bullet .range.s2 { fill: #F9F9F9; }
-.bullet .measure.s0 { fill: #FCB07E; }
-.bullet .measure.s1 { fill: #E8992C; }
-.bullet .title { font: 12px Helvetica; font-weight: bold; }
-.bullet .subtitle { fill: #999; }
-
-</style>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script src="../assets/bullet.js"></script>
 <script>
@@ -101,10 +86,40 @@ d3.json("../assets/interests.json", function(error, data) {
 </script>
 
 #### Skills
-<div id="explore"></div>
+<div id="explore">
+<style>
+/* python -m SimpleHTTPServer 8888 & */
+
+.bullet { font: 8px Helvetica; }
+.bullet .marker { stroke: #0F2535; stroke-width: 2px; }
+.bullet .tick line { stroke: #666; stroke-width: .5px; }
+.bullet .range.s0 { fill: #eee; }
+.bullet .range.s1 { fill: #FFFFFF; }
+.bullet .range.s2 { fill: #F9F9F9; }
+.bullet .measure.s0 { fill: #FCB07E; }
+.bullet .measure.s1 { fill: #E8992C; }
+.bullet .title { font: 12px Helvetica; font-weight: bold; }
+.bullet .subtitle { fill: #999; }
+
+</style>
+</div>
 
 #### Interests
-<div id="interests"></div>
+<div id="interests">
+<style>
+.bullet { font: 8px Helvetica; }
+.bullet .marker { stroke: #0F2535; stroke-width: 2px; }
+.bullet .tick line { stroke: #666; stroke-width: .5px; }
+.bullet .range.s0 { fill: #eee; }
+.bullet .range.s1 { fill: #FFFFFF; }
+.bullet .range.s2 { fill: #F9F9F9; }
+.bullet .measure.s0 { fill: #1A93FF; }
+.bullet .measure.s1 { fill: #44B0E8; }
+.bullet .title { font: 12px Helvetica; font-weight: bold; }
+.bullet .subtitle { fill: #999; }
+</style>
+
+</div>
 
 <br>
 
