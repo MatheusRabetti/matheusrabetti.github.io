@@ -17,19 +17,6 @@ Since this discovery I have dedicated myself on this path always avoiding the â€
 
 <style>
 /* python -m SimpleHTTPServer 8888 & */
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: auto;
-  padding-top: 40px;
-  position: relative;
-  width: 480px;
-}
-
-button {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
 
 .bullet { font: 8px Helvetica; }
 .bullet .marker { stroke: #0F2535; stroke-width: 2px; }
