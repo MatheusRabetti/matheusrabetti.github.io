@@ -107,6 +107,7 @@ d3.json("../assets/interests.json", function(error, data) {
 <div id="interests"></div>
 
 <br>
+
 Courses
 ============
 
