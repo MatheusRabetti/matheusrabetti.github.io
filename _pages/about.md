@@ -58,7 +58,7 @@ d3.json("../assets/explore.json", function(error, data) {
 d3.json("../assets/interests.json", function(error, data) {
   if (error) throw error;
 
-  var svg = d3.select("div#interests").selectAll("svg")
+  var svg = d3.select("div#interest").selectAll("svg")
       .data(data)
     .enter().append("svg")
       .attr("class", "bullet")
@@ -86,40 +86,10 @@ d3.json("../assets/interests.json", function(error, data) {
 </script>
 
 #### Skills
-<div id="explore">
-<style>
-/* python -m SimpleHTTPServer 8888 & */
-
-.bullet { font: 8px Helvetica; }
-.bullet .marker { stroke: #0F2535; stroke-width: 2px; }
-.bullet .tick line { stroke: #666; stroke-width: .5px; }
-.bullet .range.s0 { fill: #eee; }
-.bullet .range.s1 { fill: #FFFFFF; }
-.bullet .range.s2 { fill: #F9F9F9; }
-.bullet .measure.s0 { fill: #FCB07E; }
-.bullet .measure.s1 { fill: #E8992C; }
-.bullet .title { font: 12px Helvetica; font-weight: bold; }
-.bullet .subtitle { fill: #999; }
-
-</style>
-</div>
+<div id="explore"></div>
 
 #### Interests
-<div id="interests">
-<style>
-.bullet { font: 8px Helvetica; }
-.bullet .marker { stroke: #0F2535; stroke-width: 2px; }
-.bullet .tick line { stroke: #666; stroke-width: .5px; }
-.bullet .range.s0 { fill: #eee; }
-.bullet .range.s1 { fill: #FFFFFF; }
-.bullet .range.s2 { fill: #F9F9F9; }
-.bullet .measure.s0 { fill: #1A93FF; }
-.bullet .measure.s1 { fill: #44B0E8; }
-.bullet .title { font: 12px Helvetica; font-weight: bold; }
-.bullet .subtitle { fill: #999; }
-</style>
-
-</div>
+<div id="interest"></div>
 
 <br>
 

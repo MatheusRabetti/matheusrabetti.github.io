@@ -1,0 +1,25 @@
+#explore {
+	font: 8px Helvetica;
+	.marker { stroke: #0F2535; stroke-width: 2px; }
+	.tick line { stroke: #666; stroke-width: .5px; }
+	.range.s0 { fill: #eee; }
+	.range.s1 { fill: #FFFFFF; }
+	.range.s2 { fill: #F9F9F9; }
+	.measure.s0 { fill: #FCB07E; }
+	.measure.s1 { fill: #E8992C; }
+	.title { font: 12px Helvetica; font-weight: bold; }
+	.subtitle { fill: #999; }
+}
+
+#interest{
+	font: 8px Helvetica; 
+	.marker { stroke: #0F2535; stroke-width: 2px; }
+	.tick line { stroke: #666; stroke-width: .5px; }
+	.range.s0 { fill: #eee; }
+	.range.s1 { fill: #FFFFFF; }
+	.range.s2 { fill: #F9F9F9; }
+	.measure.s0 { fill: #44B0E8; }
+	.measure.s1 { fill: #1A93FF; }
+	.title { font: 12px Helvetica; font-weight: bold; }
+	.subtitle { fill: #999; }
+}
