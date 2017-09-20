@@ -21,11 +21,12 @@ Through experiments we expose our ideas to empirical evaluation. Naturally, un
 Machine Learning
 ============
 
-[Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
-by **R2D3** <br/>
-A friendly and quick tour to introduce anyone to the machine learning world
+[Reducing Dimensionality from Dimensionality Reduction Techniques](https://medium.com/towards-data-science/reducing-dimensionality-from-dimensionality-reduction-techniques-f658aec24dfe)
+by **Elior Cohen** <br/>
+Demystify three dimensionality reduction techniques PCA, t-SNE and Auto Encoders.
+
 <br/>
 <br/>
-[Support Vector Machine (SVM) Tutorial](https://blog.statsbot.co/support-vector-machines-tutorial-c1618e635e93) by **Abhishek Ghose** <br/>
-Learning SVMs from examples - developping a strong intuition of the working principle
+[The Problem of Classification - Support Vector Machine (SVM) Tutorial](https://blog.statsbot.co/support-vector-machines-tutorial-c1618e635e93) by **Abhishek Ghose** <br/>
+Gain a high-level understanding of how SVMs work developping a strong intuition of the working principle.
 
