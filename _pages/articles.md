@@ -40,17 +40,15 @@ Six snippets of code that made deep learning what it is today. It covers the inv
 <br/>
 <br/>
 
-### [Reducing Dimensionality from Dimensionality Reduction Techniques](https://medium.com/towards-data-science/reducing-dimensionality-from-dimensionality-reduction-techniques-f658aec24dfe)
-by **Elior Cohen** 
-<br/>
-<br/>
-Demystify three dimensionality reduction techniques PCA, t-SNE and Auto Encoders.
+Statistics
+============
+
+### [Planning an A/B Test - How Sure and How Big](https://stackoverflow.blog/2017/10/17/power-calculations-p-values-ab-testing-stack-overflow/)
+by **Julia Silge: Stackoverflow**
 
 <br/>
 <br/>
-### [The Problem of Classification - Support Vector Machine (SVM) Tutorial](https://blog.statsbot.co/support-vector-machines-tutorial-c1618e635e93) 
-by **Abhishek Ghose** 
+A/B testing helps us gain confidence in the change we’re making. It helps us validate new ideas and guides decision making. How sure do we need to be that we are measuring a real change?
+How big is the change we expect to see because of the new version, compared to the baseline?
 <br/>
 <br/>
-Gain a high-level understanding of how SVMs work developping a strong intuition of the working principle.
-
