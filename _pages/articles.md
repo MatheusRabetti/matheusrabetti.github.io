@@ -12,11 +12,29 @@ A list of must read articles that I read and thought was great ideia to share th
 Business
 ============
 
-### [Experimentation - moving from a culture of deployment to a culture of learning](http://codevoyagers.com/2015/11/26/common-pitfalls-in-experimentation/)
+### [Experimentation - Moving from a Culture of Deployment to a Culture of Learning](http://codevoyagers.com/2015/11/26/common-pitfalls-in-experimentation/)
 by **Skyscanner** 
 <br/>
 <br/>
 Through experiments we expose our ideas to empirical evaluation. Naturally, uncertainty follows, but the organisational mind-set one develops around this uncertainty is crucial.
+<br/>
+<br/>
+
+### [Growth Cycle - Stepping Up Your A/B Tests](https://www.mindtheproduct.com/2017/07/stepping-ab-tests/)
+by ** Kevin Shanahan: Peak**
+<br/>
+<br/>
+Brainstorm, prioritise, define, implement, analyse and learn.
+<br/>
+<br/>
+
+### [Data Sciente - Key Skills and the Correct Mindset](https://medium.com/airbnb-engineering/academia-to-data-science-99e68f36485e)
+by **Avneesh Saluja, Alok Gupta and Cuky Perez: Airbnb** 
+<br/>
+<br/>
+Data Science is very much an overloaded term that sits at the intersection of Mathematics/Statistics, business domain knowledge, and ‘hacking’. Data Scientists are asked to extract insights from data to drive a company’s metrics. 
+
+Creativity has to go into how to set up the problem in the first place, a fast-moving environment, premature optimization (80% of the way there), deliver bottom-line impact and talking the walk in a collaborative environment are some of the key things to look for in Data Scientists.
 <br/>
 <br/>
 
@@ -52,3 +70,15 @@ A/B testing helps us gain confidence in the change we’re making. It helps us v
 How big is the change we expect to see because of the new version, compared to the baseline?
 <br/>
 <br/>
+
+### [Understanding A/B Tests Results ](https://medium.com/airbnb-engineering/experiments-at-airbnb-e2db3abf39e7)
+by **Jan Overgoor: Airbnb**
+
+<br/>
+<br/>
+Controlled experiments are a great way to inform decisions around product development. The best way to determine how long you should run an experiment is to compute the sample size you need to make an inference in advance.
+
+It is important to consider results in context. Break them down into meaningful cohorts and try to deeply understand the impact of the change you made. In general, experiments should be run to make good decisions about how to improve the product, rather than to aggressively optimize for a metric. Optimizing is not impossible, but often leads to opportunistic decisions for short-term gains. 
+<br/>
+<br/>
+
