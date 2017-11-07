@@ -21,7 +21,7 @@ Through experiments we expose our ideas to empirical evaluation. Naturally, un
 <br/>
 
 ### [Growth Cycle - Stepping Up Your A/B Tests](https://www.mindtheproduct.com/2017/07/stepping-ab-tests/)
-by ** Kevin Shanahan: Peak**
+by **Kevin Shanahan: Peak**
 <br/>
 <br/>
 Brainstorm, prioritise, define, implement, analyse and learn.
