@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Data + Science + Statistics"
+title                    : "Experimentation Data Science"
 name                     : "Matheus Rabetti"
-description              : "The path of a statistician to become a data scientist"
+description              : "Enlightened trial and error outperforms the planning of flawless execution"
 url                      : "https://matheusrabetti.github.io"
 baseurl                  : ""
 repository               : "matheusrabetti/matheusrabetti.github.io"

@@ -6,13 +6,8 @@ comments: false
 permalink: /about/
 ---
 
-I am a Data Scientist at [Globo.com](http://www.globo.com/) graduated in Statistics from the [University of Brasilia, (UnB)](http://www.est.unb.br/). For a year and a half I did a master's degree in quantitative finance with a focus on risk default. During this period I discovered how to learn, how I learn. Being curious, challenging problems, chewing technical and academic books, beta testing, following those off the curve and experimenting with new technologies. Classic academic conduits aren't providing Data Scientists -- this talent gap will be closed differently.
+I am a Data Scientist at [Globo.com](http://www.globo.com/) graduated in Statistics from the [University of Brasilia, (UnB)](http://www.est.unb.br/). For a year and a half I did a master's degree in quantitative finance with a focus on risk default. During this period I discovered how to learn, how I learn. Being curious, challenging problems, chewing technical and academic books, beta testing, following those off the curve and experimenting with new technologies. 
 
-> **Academic credentials are important but not necessary for high-quality data science.** The core aptitudes – curiosity, intellectual agility, statistical fluency, research stamina, scientific rigor, skeptical nature – that distinguish the best data scientists are widely distributed throughout the population.
-
--- James Kobielus, [Closing the Talent Gap](http://bit.ly/closingthetalentgap) 17 Jan 2013
-
-<br>
 Since this discovery I have dedicated myself on this path always avoiding the “comfort zone”. Being good at something doesn’t mean that you can be satisfied with it. There’s always more that you can achieve, that you can improve!
 
 <script src="//d3js.org/d3.v3.min.js"></script>
@@ -97,6 +92,8 @@ Courses
 ============
 
 * [MITx: 15.071x The Analytics Edge](https://www.edx.org/course/analytics-edge-mitx-15-071x-2): MIT’s The Analytics Edge is an edX course focused on using statistical tools to gain insight about data and make predictions. It has around 75 datasets and starts from linear regression upto clustering and some classification techniques like Random Forest and CART models in between.
+
+* [Machine Learning Specialization](https://pt.coursera.org/specializations/machine-learning): Gain applied experience in major areas of Machine Learning including Prediction, Classification, Clustering, and Information Retrieval. Learn to analyze large and complex datasets, create systems that adapt and improve over time, and build intelligent applications that can make predictions from data.
 
 * [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science): This Specialization covers the concepts and tools you'll need throughout the entire data science pipeline, from asking the right kinds of questions to making inferences and publishing results.
 

@@ -8,8 +8,45 @@ permalink: /articles/
 
 A list of must read articles that I read and thought was great ideia to share them. You will be able to find diverse subjects like machine learning, recommender systems, statistics, business and big data.
 
+Statistics
+============
 
-Business
+### [Inferring causal impact using Bayesian structural time-series models](https://research.google.com/pubs/pub41854.html)
+by **Google, 2015**
+
+<br/>
+<br/>
+An important problem in econometrics and marketing is to infer the causal impact that a designed market intervention has exerted on an outcome metric over time. In order to allocate a given budget optimally, for example, an advertiser must assess to what extent different campaigns have contributed to an incremental lift in web searches, product installs, or sales. 
+
+This paper proposes to infer causal impact on the basis of a diffusion-regression state-space model that predicts the counterfactual market response that would have occurred had no intervention taken place.
+<br/>
+<br/>
+
+
+### [A nonparametric sequential test for online randomized experiments](https://arxiv.org/pdf/1610.02490.pdf)
+by **Abhishek, Vineet and Shie Mannor; 2017.**
+
+<br/>
+<br/>
+A propose on a nonparametric sequential test. Use of bootstrap to estimate the likelihood for blocks of data followed by mixture sequential probability ratio test. The proposed test controls type 1 error at any time, has good power, is robust to misspecification in the distribution generating the data, and allows quick inference in online randomized experiments.
+<br/>
+<br/>
+
+### [Controlled experiments on the web: survey and practical guide](http://www.robotics.stanford.edu/~ronnyk/2009controlledExperimentsOnTheWebSurvey.pdf)
+by **Ron Kohavi, Roger Longbotham, Dan Sommerfield and Randal M. Henne; 2009**
+
+<br/>
+<br/>
+Controlled experiments embody the best scientific design for establishing a causal relationship between changes and their influence on user-observable behavior. Our experience indicates that significant learning and return-on-investment (ROI) are seen when development teams listen to their customers, not to the Highest Paid Person’s Opinion (HiPPO). 
+
+Review the important ingredients of running controlled experiments, and discuss their limitations (both technical and organizational) and focus on several areas that are critical to experimentation, including statistical power, sample size, and techniques for variance reduction. 
+
+Controlled experiments typically generate large amounts of data, which can be analyzed using data mining techniques to gain deeper understanding of the factors influencing the outcome of interest, leading to new hypotheses and creating a virtuous cycle of improvements.
+<br/>
+<br/>
+
+
+Data Science
 ============
 
 ### [Experimentation - Moving from a Culture of Deployment to a Culture of Learning](http://codevoyagers.com/2015/11/26/common-pitfalls-in-experimentation/)
@@ -57,28 +94,3 @@ by **Emil Wallnér**
 Six snippets of code that made deep learning what it is today. It covers the inventors and the background to their breakthroughs.
 <br/>
 <br/>
-
-Statistics
-============
-
-### [Planning an A/B Test - How Sure and How Big](https://stackoverflow.blog/2017/10/17/power-calculations-p-values-ab-testing-stack-overflow/)
-by **Julia Silge: Stackoverflow**
-
-<br/>
-<br/>
-A/B testing helps us gain confidence in the change we’re making. It helps us validate new ideas and guides decision making. How sure do we need to be that we are measuring a real change?
-How big is the change we expect to see because of the new version, compared to the baseline?
-<br/>
-<br/>
-
-### [Understanding A/B Tests Results ](https://medium.com/airbnb-engineering/experiments-at-airbnb-e2db3abf39e7)
-by **Jan Overgoor: Airbnb**
-
-<br/>
-<br/>
-Controlled experiments are a great way to inform decisions around product development. The best way to determine how long you should run an experiment is to compute the sample size you need to make an inference in advance.
-
-It is important to consider results in context. Break them down into meaningful cohorts and try to deeply understand the impact of the change you made. In general, experiments should be run to make good decisions about how to improve the product, rather than to aggressively optimize for a metric. Optimizing is not impossible, but often leads to opportunistic decisions for short-term gains. 
-<br/>
-<br/>
-

@@ -3,5 +3,5 @@
   {"title":"Statistics & Math","subtitle":"","ranges":[0,70,100],"measures":[70,80],"markers":[70]},
   {"title":"Recommender Systems","subtitle":"","ranges":[0,40,100],"measures":[40,70],"markers":[40]},
   {"title":"Big Data","subtitle":"","ranges":[0,30,100],"measures":[30,60],"markers":[30]},
-  {"title":"Cloud Computing","subtitle":"","ranges":[0,50,100],"measures":[50,60],"markers":[50]}
+  {"title":"Cloud Computing","subtitle":"","ranges":[0,40,100],"measures":[40,60],"markers":[40]}
 ]

@@ -24,7 +24,10 @@ Sometimes I have a function, but I have an idea to organize the pieces in a bett
 
 So I'll create a new branch, explore these solutions, and if it works, combine the improved pieces with the original analysis. I find it's a smart way to work and I want to show you how to get started. The branching workflow looks like this:
 
+<br>
 ![flow](/assets/posts/rstudio-git/git-goodbranch.png)
+<br>
+<br>
 
 # How it looks on Rstudio?
 
@@ -37,11 +40,17 @@ git checkout -b cleaner
 ```
 Now the pulldown menu under the Git tab in RStudio shows that you're working in a different branch:
 
+<br>
+<br>
 ![branch](/assets/posts/rstudio-git/rstudio-git-branches.PNG)
+<br>
 
 I'm going to use a technique from A successful Git branching model and merge these two branches using **--no-ff**. This means that Git will retain information about the history of the project, and the fact that the current state is a result of combining separate branches. I like doing it this way.
 
+<br>
+<br>
 ![merge](/assets/posts/rstudio-git/git-merge.png)
+<br>
 
 ``` git
 git merge --no --ff cleaner

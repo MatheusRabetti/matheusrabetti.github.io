@@ -75,7 +75,7 @@ This committee organized some principles in a statistical analysis.
 
 The p-value cannot tell you if your hypothesis is correct. Instead, it’s the probability of getting results at least as extreme as the ones you observed, given that the null hypothesis is correct. More concise - the probability of your data given your hypothesis. 
 
-That sounds tantalizingly similar to “the probability of your hypothesis given your data,” but they’re not the same thing, said Stephen Senn, a biostatistician at the Luxembourg Institute of Health. To understand why, consider this example. “Is the pope Catholic? The answer is yes,” said Senn. “Is a Catholic the pope? The answer is probably not. If you change the order, the statement doesn’t survive.”
+That sounds tantalizingly similar to “the probability of your hypothesis given your data”, but they’re not the same thing, said Stephen Senn, a biostatistician at the Luxembourg Institute of Health. To understand why, consider this example. “Is the pope Catholic? The answer is yes,” said Senn. “Is a Catholic the pope? The answer is probably not. If you change the order, the statement doesn’t survive.”
 
 Let's suppose a hypothesis test. I believe that testing a new layout on my website will make my users spend more time in my website.
 

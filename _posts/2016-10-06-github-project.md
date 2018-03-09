@@ -15,7 +15,10 @@ It took some time to realize the need of version control, but here I am, an enth
 
 ## Uncontrollable file list
 
+<br>
+<br>
 ![mess](/assets/posts/rstudio-git/files-git.png)
+<br>
 
 Ok, Matheus, you won! End the post here... 
 
@@ -48,19 +51,28 @@ RStudio's team made a great job bringing Git to the plataform. RStudio projects 
 
 Prior to using RStudio's version control features you will need to ensure that you have Git installed on your system. 
 
+<br>
+<br>
 ![rstudio](/assets/posts/rstudio-git/git-rstudio-option.png)
+<br>
 
 Beginning is that easy! Click *Commit* and a messagebox appears. A commit in a git repository records a snapshot of all the files in your directory. It's like a giant copy and paste, but even better! Git wants to keep commits as lightweight as possible though, so it doesn't just blindly copy the entire directory every time you commit.
 
 A *commit* in Git means you have arrived at a point in the story which you are satisfied with. The message is a brief summary of that paragraph.
 
+<br>
+<br>
 ![commit](/assets/posts/rstudio-git/commit.png)
+<br>
 
 The *question mark icon* under *Status* indicates that Git has detected a new file has arrived. Do you want Git to track its storyline as it progresses? The blue *M* means that a file with history has been saved with changes. Tick the checkbox to let Git know you've made changes to the file and you're ready to commit. In red you have the deleted parts and in green the fresh work.
 
 Now if you want to see how the analysis has changed over time, click *History* under the Git tab. *My first steps* was my first commit and as you can see, done in 04/10.
 
+<br>
+<br>
 ![history](/assets/posts/rstudio-git/history.png)
+<br>
 
 Git maintains a history of which commits were made when. That's why most commits have ancestor commits above them. Maintaining history is great for everyone working on the project!
 

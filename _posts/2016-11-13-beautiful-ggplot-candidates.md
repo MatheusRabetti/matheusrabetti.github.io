@@ -27,8 +27,8 @@ library(RCurl)
 
 A brief explain on the packages:
 
-  - Dplyr and data.table are the undispensible tools for every analysis. 
-  - GGplot2, scales and extrafont are the best tools for static plots.
+  - dplyr and data.table are the undispensible tools for every analysis. 
+  - ggplot2, scales and extrafont are the best tools for static plots.
   - Rcurl is good workaround package to solve download issues.
   
 Before going further, let's get a single file and have a overall look on it. The candidates file of electoral race can be downloaded from the Superior Electoral Court website. 
