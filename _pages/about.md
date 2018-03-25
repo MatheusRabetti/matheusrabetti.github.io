@@ -100,6 +100,10 @@ Courses
 * [Master Statistics with R](https://www.coursera.org/specializations/statistics): This Specialization showed how to analyze and visualize data in R and created reproducible data analysis reports, demonstrate a conceptual understanding of the unified nature of statistical inference, perform frequentist and Bayesian statistical inference and modeling to understand natural phenomena and make data-based decisions.
 
 
+Experience
+============
+<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1-DKT4cULTPc0pjV8CI6bFBZ3pxEXoiqvOde0p6we_UI&font=Default&lang=en&initial_zoom=0&start_at_slide=3&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+
 Publications
 ============
 
