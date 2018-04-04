@@ -18,9 +18,6 @@ An additional point is the batch versus streaming analysis approach. Getting sho
 
 The command line is essential to my daily work, so I wanted to share some of the commands I've found most useful.
 
-As we have seen in my last post ([Computing on Parts](https://matheusrabetti.github.io/2016-10-14-bigdata-onparts)) 
-the file **SP2015.txt** have 9,2 GB. If you really want to reproduce this commands check the last post.
-
 Here you'll see some nice commands on the Unix shell from basic information on the data to analysis.
 
 ## General syntax
@@ -30,29 +27,41 @@ Save | ``` result > file.txt ``` | Save the result in a file |
 Stop | **Control+C** | Stops running the command |
 Help | ``` head --help ``` | Explanation and parameters overview |
 
+## Data
+
+The [dataset](https://vincentarelbundock.github.io/Rdatasets/doc/car/Salaries.html) is the 2008-09 nine-month academic salary for Assistant Professors, Associate Professors and Professors in a college in the U.S. 
+
+To reproduce this post download the file and unzip it using the commands below.
+
+~~~ bash
+$ cd ~/Downloads/
+$ wget 'https://vincentarelbundock.github.io/Rdatasets/csv/car/Salaries.csv'
+~~~
+
 ## Head & Tail - First look
 
 Sometimes you just need to inspect the structure of a huge file. That's where *head* and *tail* come in. 
 *Head* prints the first ten lines of a file, while *tail* prints the last ten lines. 
-Optionally, you can include the -N parameter to change the number of lines displayed.
+Optionally, you can include the -n parameter to change the number of lines displayed.
 
 {% highlight bash %}
-$ head -n 3 random-data.csv 
+$ head -n 3 Salaries.csv
 {% endhighlight %}
 
 {% highlight text %}
-id,first_name,last_name,city,gender,shirt_size
-1,Paula,Bryant,Purut,Female,2XL
+"","rank","discipline","yrs.since.phd","yrs.service","sex","salary"
+"1","Prof","B",19,18,"Male",139750
+"2","Prof","B",20,16,"Male",173200
 {% endhighlight %}
 
 {% highlight bash %}
-$ tail -n 3 random-data.csv 
+$ tail -n 3 Salaries.csv
 {% endhighlight %}
 
 {% highlight text %}
-998,Albert,James,Raphoe,Male,XL
-999,Cheryl,Day,Hengjie,Female,L
-1000,Tina,Hart,Kanye,Female,2XL
+"395","Prof","A",42,25,"Male",101738
+"396","Prof","A",25,15,"Male",95329
+"397","AsstProf","A",8,4,"Male",81035
 {% endhighlight %}
 
 ## Cut - Column extracter
@@ -61,31 +70,40 @@ Unix command *cut* is used for text processing.
 You can use this command to extract portion of text from a file by selecting columns.
 
 {% highlight bash %}
-$ cut -d';' -f1,2,3,4,5 SP2015.txt | head -n4
+$ cut -d',' -f2,4,6,7 Salaries.csv | head -n4
 {% endhighlight %}
 
 {% highlight text %}
-Bairros SP;Bairros Fortaleza;Bairros RJ;Causa Afastamento 1;Causa Afastamento 2
-0590;{� c;{� c;99;99
-9999;{� c;{� c;99;99
-9999;{� c;{� c;99;99
+"rank","yrs.since.phd","sex","salary"
+"Prof",19,"Male",139750
+"Prof",20,"Male",173200
+"AsstProf",4,"Male",79750
 {% endhighlight %}
-
-We have characters that are not being indentified. This's a encoding problem.
 
 ## Iconv - File encoding
 
-The *iconv* program converts the encoding of characters in inputfile from one coded character set to another. 
+The *iconv* program converts the encoding of characters in inputfile from one coded character set to another. The file encoding is all right so let's create a problem:
 
-{% highlight bash %}
-$ cut -d';' -f1,2,3 SP2015.txt | head -n3 | iconv -f iso-8859-1 -t UTF-8
-{% endhighlight %}
+~~~ bash
+$ echo 'pão' > new.txt
+$ cat new.txt
+~~~
 
-{% highlight text %}
-Bairros SP;Bairros Fortaleza;Bairros RJ
-0590;{ñ c;{ñ c
-9999;{ñ c;{ñ c
-{% endhighlight %}
+~~~ bash
+pão
+~~~
+
+UTF-8 handles the *ã* character well. But if we set as ISO-8859-9?
+
+~~~ bash
+$ cat new.txt | iconv -f UTF-8 -t ISO-8859-9
+~~~
+
+~~~ bash
+p�o
+~~~
+
+A wild � appears! For the sake of curiosity, *pão* is bread in Portuguese.
 
 If I have a bunch of text files that I'd like to convert from any given charset to UTF-8 encoding. Just use this bash magic.
 
@@ -93,34 +111,21 @@ If I have a bunch of text files that I'd like to convert from any given charset 
 $ for file in *.txt; do iconv -f ascii -t utf-8 $file; done
 {% endhighlight %}
 
-## Shuf - Sampling 
-
-*Shuf* shuffles its input by outputting a random permutation of its input lines. This command loads on the memory RAM and isn't that fast. Why it is here? It's just good to know that exists!
-
-{% highlight bash %}
-$ shuf -n 2 ES2015.txt
-{% endhighlight %}
-
-{% highlight text %}
-{ñ c;{ñ c;{ñ c;99;99;99;00;914420;45200;50202;  ...
-{ñ c;{ñ c;{ñ c;99;99;99;11;513435;62091;72907;  ...
-{% endhighlight %}
-
 ## Sort - Ordering
 
 *Sort* is a simple and very useful command which will rearrange the lines in a text file so that they are sorted, numerically and alphabetically. 
-Column 30 is the number os days that the worker have been away from work.
+Here is the top five salaries.
 
 {% highlight bash %}
-$ cut -d';' -f30 SP2015.txt | sort -n -r | head -n5
+$ cut -d',' -f7 Salaries.csv | sort -n -r | head -n5
 {% endhighlight %}
 
 {% highlight text %}
- 365
- 365
- 365
- 365
- 365
+ 231545
+ 205500
+ 204000
+ 194800
+ 193000
 {% endhighlight %}
 
 ## WC - word count 
@@ -130,11 +135,11 @@ If you're looking for just the line count, you can pass the -l parameter in.
 I use it most often to verify record counts between files or database tables throughout an analysis.
 
 {% highlight bash %}
-$ wc -l SP2015.txt
+$ wc -l Salaries.csv
 {% endhighlight %}
 
 {% highlight text %}
-20604436 SP2015.txt
+398 Salaries.csv
 {% endhighlight %}
 
 ## Unique - Distinct entries
@@ -142,31 +147,25 @@ $ wc -l SP2015.txt
 Sometimes you want to check for duplicate records in a large text file - that's when *uniq* comes in handy. By using the -c parameter, uniq will output the count of occurrences along with the line. You can also use the -d and -u parameters to output only duplicated or unique records.
 
 {% highlight bash %}
-$ sort ES2015.txt | cut -d';' -f4 | uniq -c
+$ cut -d',' -f6 Salaries.csv | sort | uniq -c
 {% endhighlight %}
 
 {% highlight text %}
-      1 Causa Afastamento 1
-   4743 10
-    675 20
-   2256 30
- 105262 40
-  21762 50
-    139 60
-   7434 70
-1312266 99
+  39 "Female"
+ 358 "Male"
+   1 "sex"
 {% endhighlight %}
 
 Count the number of unique lines.
 
 {% highlight bash %}
-$ sort ES2015.txt | uniq -u | wc -l
-$ wc -l ES2015.txt
+$ sort Salaries.csv | uniq -u | wc -l
+$ wc -l Salaries.csv
 {% endhighlight %}
 
 {% highlight text %}
-1433372
-1454538 ES2015.txt
+398
+398 Salaries.csv
 {% endhighlight %}
 
 
@@ -177,24 +176,25 @@ There's an assortment of extra parameters you can use with *grep*, but the ones 
 -r (recursively search directories), -B N (N lines before), -A N (N lines after).
 
 {% highlight bash %}
-$ cut -d';' -f2,3 SP2015.txt |head -n4 | grep {
+$ cut -d',' -f3 Salaries.csv |head -n4 | grep B
 {% endhighlight %}
 
 {% highlight bash %}
-{ñ c;{ñ c
-{ñ c;{ñ c
+"B"
+"B"
+"B"
 {% endhighlight %}
 
-In case I want to find a entry in the first column that don't starts with 9:
+In case I want to find a entry in the first column that don't starts with *"Prof*:
 
 {% highlight bash %}
-$ cut -d';' -f1 SP2015.txt | head -n100 | grep '[^9].*'
+$ cut -d',' -f2 Salaries.csv | head -n10 | grep '[^"Prof].*'
 {% endhighlight %}
 
 {% highlight text %}
-Bairros SP
-0590
-1067
+"rank"
+"AsstProf"
+"AssocProf"
 {% endhighlight %}
 
 ## Sed
@@ -206,31 +206,31 @@ Sed is similar to grep and awk (next) in many ways, however I find that I most o
 *  ```-i``` option is used to edit in place on filename.
 *  ```-e``` option indicates a command to run.
 
-I will substitute the **{ñ c** for a empty space:
+I will substitute the *Male* entries for a single char *M*:
 
 {% highlight bash %}
-$ cut -d';' -f2,3 SP2015.txt |head -n4| sed -e 's/{ñ c//g'
+$ cut -d',' -f6 Salaries.csv | head -n4 | sed -e 's/"Male"/"M"/g'
 {% endhighlight %}
 
 {% highlight text %}
-Bairros Fortaleza;Bairros RJ
-;
-;
-;
+"sex"
+"M"
+"M"
+"M"
 {% endhighlight %}
 
 ## AWK - Powerful
 
 ### Sum
 
-Just like we did in the **Computing on parts** post, I'm going to sum the *Vínculo ativo 31/12* field. It's the 12th column!
+How much is the annual cost of teachers in this school?
 
 {% highlight bash %}
-$ cat SP2015.txt | awk -F ";" '{sum += $12} END {printf "%.0f\n", sum}'
+$ cat Salaries.csv | awk -F "," '{sum += $7} END {printf "%.0f\n", sum}'
 {% endhighlight %}
 
 {% highlight text %}
-13697471
+45141464
 {% endhighlight %}
 
 The above line says:
@@ -238,141 +238,76 @@ The above line says:
 1.  Use the cat command to stream (print) the contents of the file to stdout.
 2.  Pipe the streaming contents from our cat command to the next one - awk.
 3.  With awk:
-    1. Set the field separator to the pipe character (-F ";"). 
-    2. Increment the variable sum with the value in the twelfth column ($12). Since we used a pipeline in point #2,
+    1. Set the field separator to the pipe character (-F ","). 
+    2. Increment the variable sum with the value in the twelfth column ($7). Since we used a pipeline in point #2,
     the contents of each line are being streamed to this statement.
     3. Once the stream is done, print out the value of sum, using printf to format the value with none decimal places.
-
-Time to run the command: **1 min 34 sec**
 
 ### List the column number
 
 The next command is essential to manipulate a data with many columns.
 
 {% highlight bash %}
-$ awk 'BEGIN {FS=";"} {for(fn=1;fn<=NF;fn++) {print fn" = "$fn;}; exit;}' SP2015.txt
+$ awk 'BEGIN {FS=","} {for(fn=1;fn<=NF;fn++) {print fn" = "$fn;}; exit;}' Salaries.csv
 {% endhighlight %}
 
 {% highlight text %}
-1 = Bairros SP
-2 = Bairros Fortaleza
-3 = Bairros RJ
-4 = Causa Afastamento 1
-5 = Causa Afastamento 2
-6 = Causa Afastamento 3
-7 = Motivo Desligamento
-8 = CBO Ocupação 2002
-9 = CNAE 2.0 Classe
-10 = CNAE 95 Classe
-11 = Distritos SP
-12 = Vínculo Ativo 31/12
-13 = Faixa Etária
-14 = Faixa Hora Contrat
-15 = Faixa Remun Dezem (SM)
-16 = Faixa Remun Média (SM)
-17 = Faixa Tempo Emprego
-18 = Escolaridade após 2005
-19 = Qtd Hora Contr
-20 = Idade
-21 = Ind CEI Vinculado
-22 = Ind Simples
-23 = Mês Admissão
-24 = Mês Desligamento
-25 = Mun Trab
-26 = Município
-27 = Nacionalidade
-28 = Natureza Jurídica
-29 = Ind Portador Defic
-30 = Qtd Dias Afastamento
-31 = Raça Cor
-32 = Regiões Adm DF
-33 = Vl Remun Dezembro Nom
-34 = Vl Remun Dezembro (SM)
-35 = Vl Remun Média Nom
-36 = Vl Remun Média (SM)
-37 = CNAE 2.0 Subclasse
-38 = Sexo Trabalhador
-39 = Tamanho Estabelecimento
-40 = Tempo Emprego
-41 = Tipo Admissão
-42 = Tipo Estab
-43 = Tipo Estab
-44 = Tipo Defic
-45 = Tipo Vínculo
-46 = IBGE Subsetor
-47 = Vl Rem Janeiro CC
-48 = Vl Rem Fevereiro CC
-49 = Vl Rem Março CC
-50 = Vl Rem Abril CC
-51 = Vl Rem Maio CC
-52 = Vl Rem Junho CC
-53 = Vl Rem Julho CC
-54 = Vl Rem Agosto CC
-55 = Vl Rem Setembro CC
-56 = Vl Rem Outubro CC
-57 = Vl Rem Novembro CC
+1 = ""
+2 = "rank"
+3 = "discipline"
+4 = "yrs.since.phd"
+5 = "yrs.service"
+6 = "sex"
+7 = "salary"
 {% endhighlight %}
 
 ### Char count
 
-This command counts the maximum character length of each column in SP2015.txt file. Very nice command to look at your data and parse correctly the text file to a database:
+This command counts the maximum character length of each column in *Salaries.csv* file. Very nice command to look at your data and parse correctly the text file to a database:
 
 
 {% highlight bash %}
-$ tail -n10000 SP2015.txt | awk -F';' 'NR > 1 {for (i=1; i <= NF; i++) max[i] = (length($i) > max[i]?length($i):max[i])}
+$ tail -n10000 Salaries.csv | awk -F',' 'NR > 1 {for (i=1; i <= NF; i++) max[i] = (length($i) > max[i]?length($i):max[i])}
              END {for (i=1; i <= NF; i++) printf "%d%s", max[i], (i==NF?RS:FS)}'
 {% endhighlight %}             
              
 {% highlight text %}
-4;3;3;2;2;2;2;6;5;5;20;1;2;2;2;2;2;20;4;4;1;1;2;2;6;6;2;4;1;4;2;4;13;9;13;9;7;20;2;8;2;2;4;2;2;2;15;15;15;15;15;15;15;15;15;15;16
-{% endhighlight %}
-
-{% highlight bash %}
-$ head -n10000 SP2015.txt | awk -F';' 'NR > 1 {for (i=1; i <= NF; i++) max[i] = (length($i) > max[i]?length($i):max[i])}
-             END {for (i=1; i <= NF; i++) printf "%d%s", max[i], (i==NF?RS:FS)}'
-{% endhighlight %}       
-
-{% highlight text %}
-4;3;3;2;2;2;2;6;5;5;20;1;2;2;2;2;2;20;4;4;1;1;2;2;6;6;2;4;1;4;2;4;13;9;13;9;7;20;2;8;2;2;4;2;2;2;15;15;15;15;15;15;15;15;15;15;16
+5,11,3,2,2,8,6
 {% endhighlight %}
 
 ### Mean
 
 It makes possible to calculate the mean of the whole file. 
-In the below example I want the average salary (column 35) for the workers that are still employed in december 31 (column 12).
+In the below example I want the average salary for the female professors.
 
 
 {% highlight bash %}
-$  awk -F';' '($12)=="1" {sum+=$35; count+=1} END {print sum/count}' SP2015.txt
+$  awk -F',' '($6) ~ /Female/ {sum+=$7; count+=1} END {print sum/count}' Salaries.csv
 {% endhighlight %}
 
 {% highlight text %}
-2739.44
+101002
 {% endhighlight %}
-
-Time to run the command: **1 min 10 sec**
 
 ### Standard Deviation - population
 
 Also, *awk* can bring some position measures like the standard deviation.
 
 {% highlight bash %}
-$ awk -F';' 'pass==1 {sum+=$35; n+=1} pass==2 {mean=sum/n; 
-     ssd+=($1-mean)*($1-mean)} END {print sqrt(ssd/n)}' pass=1 SP2015.txt pass=2 SP2015.txt
+$ awk -F',' 'pass==1 {sum+=$7; n+=1} pass==2 {mean=sum/n; 
+     ssd+=($1-mean)*($1-mean)} END {print sqrt(ssd/n)}' pass=1 Salaries.csv pass=2 Salaries.csv
 {% endhighlight %}
 
 {% highlight text %}
-6074.84
+113421
 {% endhighlight %}
-
-Time to run the command: **1 min 43 sec**
 
 ### Split file by some rule
 
 You can also split your file filtered by a rule. 
 
 {% highlight bash %}
-$ gawk -F';' '{x=($12==1)?"SP2015-estoque.txt":"SP2015-desligado.txt"; print > x}' SP2015.txt
+$ gawk -F',' '{x=($6 ~ "Female")?"salaries-female.txt":"salaries-male.txt"; print > x}' Salaries.csv
 {% endhighlight %}
 
 ### Dive Deeper

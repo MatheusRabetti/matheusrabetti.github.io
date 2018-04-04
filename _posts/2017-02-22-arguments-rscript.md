@@ -7,7 +7,6 @@ description: Passing arguments on command line and piping scripts
 tags: [Unix]
 ---
 
-# Integrating R and Bash
 ## Passing arguments outside the script
 
 In the world of data analysis, the term automation runs hand in hand with the term “scripting”. There’s not the best programming language, only the most suitable to perform the required function.
