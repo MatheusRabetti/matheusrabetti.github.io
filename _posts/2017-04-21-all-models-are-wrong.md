@@ -22,11 +22,7 @@ Nate Silver is that guy. Consider:
 * He successfully called the outcomes in 49 of the 50 states in the 2008 U.S. presidential election.
 * He successfully called the outcomes in 50 of the 50 states in the 2012 U.S. presidential election.
 
-I admit that I had a statue of Nate Silver in my room. The word **Statistics** and **Bayesian** were all around just because of this man. We’ll never really know whether a particular forecast was correct or incorrect, since they’re all probabilistic, and they all suggest a Clinton win is the most likely outcome. 
-
-The nature of this forecast don't allow Nate to repeat this experiment over and over to confirm if the model was right. All we will hear is that it's completely right or wrong. For anyone who followed the 2016 presidential race, Silver’s political predictions hit the wall. 
-
-On Trump’s win, Silver said as much, “It’s the most shocking political development of my lifetime.” But no one can predict outliers, so if someone like Silver pretends he can — watch out.  In the same way, if we give the super hero clothes to someone believing they can, it's better getting real. 
+I admit that I had a statue of Nate Silver in my room. The word **Statistics** and **Bayesian** were all around just because of this man. On Trump’s win, Silver said as much, “It’s the most shocking political development of my lifetime.” But no one can predict outliers, so if someone like Silver pretends he can — watch out.  In the same way, if we give the super hero clothes to someone believing they can, it's better getting real. 
 
 Forecasting is basically working on probabilites, so let's go back where it all begins. 
 
@@ -71,7 +67,6 @@ There are plenty of skeptics when it comes to computers and algorithms abilities
 Probability works, forecasting works — in the right domain, simple systems. In complex systems probability is limited, forecasting creates a false sense of confidence, and Murphy’s Law reigns true. Cities are complex systems. Human behavior is a complex system. 
 
 Probability works in the proper context, but can produce deadly results if it is overleveraged. In the words of author Charles Wheelan, “Probability doesn’t make mistakes; people using probability make mistakes.” Don’t let the math surpass your wisdom. 
-
 
 # All Models Are Wrong, Some are Useful
 
