@@ -41,11 +41,11 @@ I’ll give just one example:
 ## What is a confidence interval? 
 
 Confidence intervals provide more information than point estimates. Confidence intervals for means are intervals constructed using a procedure that will contain the population mean a specified proportion of the time, typically either 95% or 99% of the time. These intervals are referred to as 95% and 99% confidence intervals respectively. An example of a 95% confidence interval is shown below:
-<br/>
-<p align="center">
-  72.85 < μ < 107.15
-</p>
-<br/>
+
+$$
+  72.85 < \mu < 107.15
+$$
+
 There is good reason to believe that the population mean lies between these two bounds of 72.85 and 107.15 since 95% of the time confidence intervals contain the true mean.
 
 If repeated samples were taken and the 95% confidence interval computed for each sample, 95% of the intervals would contain the population mean. Naturally, 5% of the intervals would not contain the population mean. It is natural to interpret a 95% confidence interval as an interval with a 0.95 probability of containing the population mean. 
@@ -55,15 +55,9 @@ about “other experiments”, etc., etc. **These poorly chosen phrases are a ba
 He has concentrated on the math, making sure to divide by n minus one in the appropriate place, etc.,
 and has not given any time to consider why the calculation exists.
 
-## Test assumptions
-
-The Welch t test makes a strange set of assumptions. What would it mean for two populations to have the same mean but different standard deviations? Why would you want to test for that? In cases like this, the mean as a centrality measures means almost nothing.
-
-I prefer to think about the unequal variance t test as a way to create a confidence interval. Your prime goal is not to ask whether two means populations differ, but to quantify how far apart the two means are. The equality of means in two distributions that are very different carries almost no information. 
-
 ## The case of p-value
 
-The p-value is the most controversial and traumatic estimative. Peopel throw away studies and force results just to obtain  a p-value less than 0,05. To discuss this The American Statistical Association gathered 26 experts to develop a consensus statement on statistical significance and p-values.
+The p-value is the most controversial and traumatic estimative. People throw away studies and force results just to obtain  a p-value less than 0,05. To discuss this The American Statistical Association gathered 26 experts to develop a consensus statement on statistical significance and p-values.
 
 There was no disagreement over the misuse of the p-value and how bad can drive the science. P-values have become a litmus test for deciding which studies are worthy of publication. As a result, research that produces p-values that surpass an arbitrary threshold are more likely to be published, while studies with greater or equal scientific importance may remain in the file drawer, unseen by the scientific community.
 
@@ -81,11 +75,11 @@ Let's suppose a hypothesis test. I believe that testing a new layout on my websi
 
 <br/>
 <p align="center">
-	<strong>H0:</strong> User default layout >= User new layout <br>
-	<strong>H1:</strong> User default layout < User new layout
+	<strong>H0:</strong> User's default layout time >= User's new layout time <br>
+	<strong>H1:</strong> User's default layout time < User's new layout time
 </p>
 <br/>
-After calculating the mean for each experiment (default, new layout) I see a difference of 20 minutes more in the mean time per user for the new layout. So, the p-value will answer: The p-value is the probability of the new layout be 20 minutes more than the default layout, given that the user in default layout spend more time than the user in the new layout.
+After calculating the mean for each experiment (default, new layout) I see a difference of 10 minutes more in the mean time per user for the new layout. So, the p-value will answer: The p-value is the probability of the new layout be 10 minutes more than the default layout, given that the user in default layout spend more time than the user in the new layout.
 
 Another common error relationed to the p-value is supposing it tells the size of an effect, the strength of the evidence or the importance of a result. Yet despite all these limitations, p-values are often used as a way to separate true findings from spurious ones, and that creates perverse incentives.
 
