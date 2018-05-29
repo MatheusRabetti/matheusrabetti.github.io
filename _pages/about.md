@@ -97,6 +97,8 @@ Courses
 
 * [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science): This Specialization covers the concepts and tools you'll need throughout the entire data science pipeline, from asking the right kinds of questions to making inferences and publishing results.
 
+* [Become a Product Manager](https://www.udemy.com/become-a-product-manager-learn-the-skills-get-a-job/): Learn the skills that make up the entire Product Management job and process: from ideation to market research, to UX wireframing to prototyping, technology, metrics, and finally to building the product with user stories, project management, scoping, and leadership.
+
 * [Master Statistics with R](https://www.coursera.org/specializations/statistics): This Specialization showed how to analyze and visualize data in R and created reproducible data analysis reports, demonstrate a conceptual understanding of the unified nature of statistical inference, perform frequentist and Bayesian statistical inference and modeling to understand natural phenomena and make data-based decisions.
 
 
