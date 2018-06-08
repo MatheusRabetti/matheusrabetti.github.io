@@ -1,0 +1,16 @@
+---
+layout: post
+description: ""
+title: "Increasing the Predictive Power of Your Machine Learning Models with Stacking Ensembles"
+categories:
+  - Data Analysis
+tags: [Unix,R,Visualization]  
+---
+
+# Introduction
+
+We have learned so many different machine learning algorithms from supervised, unsupervised to reinforcement learning. Now, it's time to use them to solve a real problem. We found this new and interesting competition on Kaggle. It is not a fancy competition and its goal is to predict house prices in Ames, Iowa using different features of houses collected in 2010. There are 79 explanatory features describing every aspect of residential homes in Ames, Iowa. We found this competition friendly because the detailed explanatory features have been fully provided to the participants. And it is a great opportunity to practice our knowledge of advanced machine learning such as XGboost and other ensemble and stacking approaches.
+
+# Exploratory Data Analysis
+
+Let's first do EDA to gain some insights from our data.
