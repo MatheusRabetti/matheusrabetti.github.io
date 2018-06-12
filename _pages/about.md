@@ -93,14 +93,11 @@ Courses
 
 * [MITx: 15.071x The Analytics Edge](https://www.edx.org/course/analytics-edge-mitx-15-071x-2): MIT’s The Analytics Edge is an edX course focused on using statistical tools to gain insight about data and make predictions. It has around 75 datasets and starts from linear regression upto clustering and some classification techniques like Random Forest and CART models in between.
 
-* [Machine Learning Specialization](https://pt.coursera.org/specializations/machine-learning): Gain applied experience in major areas of Machine Learning including Prediction, Classification, Clustering, and Information Retrieval. Learn to analyze large and complex datasets, create systems that adapt and improve over time, and build intelligent applications that can make predictions from data.
-
 * [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science): This Specialization covers the concepts and tools you'll need throughout the entire data science pipeline, from asking the right kinds of questions to making inferences and publishing results.
-
-* [Become a Product Manager](https://www.udemy.com/become-a-product-manager-learn-the-skills-get-a-job/): Learn the skills that make up the entire Product Management job and process: from ideation to market research, to UX wireframing to prototyping, technology, metrics, and finally to building the product with user stories, project management, scoping, and leadership.
 
 * [Master Statistics with R](https://www.coursera.org/specializations/statistics): This Specialization showed how to analyze and visualize data in R and created reproducible data analysis reports, demonstrate a conceptual understanding of the unified nature of statistical inference, perform frequentist and Bayesian statistical inference and modeling to understand natural phenomena and make data-based decisions.
 
+* [Become a Product Manager](https://www.udemy.com/become-a-product-manager-learn-the-skills-get-a-job/): Learn the skills that make up the entire Product Management job and process: from ideation to market research, to UX wireframing to prototyping, technology, metrics, and finally to building the product with user stories, project management, scoping, and leadership.
 
 Experience
 ============
