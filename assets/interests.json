@@ -1,7 +1,77 @@
 [
-  {"title":"Machine Learning","subtitle":"","ranges":[0,60,100],"measures":[60,90],"markers":[60]},
-  {"title":"Statistics & Math","subtitle":"","ranges":[0,70,100],"measures":[70,80],"markers":[70]},
-  {"title":"Recommender Systems","subtitle":"","ranges":[0,40,100],"measures":[40,70],"markers":[40]},
-  {"title":"Big Data","subtitle":"","ranges":[0,40,100],"measures":[40,60],"markers":[50]},
-  {"title":"Cloud Computing","subtitle":"","ranges":[0,40,100],"measures":[40,60],"markers":[40]}
+  {
+    "title": "Machine Learning",
+    "subtitle": "",
+    "ranges": [
+      0,
+      100
+    ],
+    "measures": [
+      60,
+      90
+    ],
+    "markers": [
+      60
+    ]
+  },
+  {
+    "title": "Statistics",
+    "subtitle": "",
+    "ranges": [
+      0,
+      100
+    ],
+    "measures": [
+      70,
+      80
+    ],
+    "markers": [
+      70
+    ]
+  },
+  {
+    "title": "Business Analyst",
+    "subtitle": "",
+    "ranges": [
+      0,
+      100
+    ],
+    "measures": [
+      80,
+      90
+    ],
+    "markers": [
+      80
+    ]
+  },
+  {
+    "title": "Marketing",
+    "subtitle": "",
+    "ranges": [
+      0,
+      100
+    ],
+    "measures": [
+      50,
+      80
+    ],
+    "markers": [
+      50
+    ]
+  },
+  {
+    "title": "Data Engineer",
+    "subtitle": "",
+    "ranges": [
+      0,
+      100
+    ],
+    "measures": [
+      40,
+      60
+    ],
+    "markers": [
+      40
+    ]
+  }
 ]

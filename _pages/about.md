@@ -6,9 +6,11 @@ comments: false
 permalink: /about/
 ---
 
-I am a Data Scientist at [Globo.com](http://www.globo.com/) graduated in Statistics from the [University of Brasilia, (UnB)](http://www.est.unb.br/). For a year and a half I did a master's degree in quantitative finance with a focus on risk default. During this period I discovered how to learn, how I learn. Being curious, challenging problems, chewing technical and academic books, beta testing, following those off the curve and experimenting with new technologies. 
+> "Generating numbers is easy, generating numbers you should trust is hard!" 
 
-Since this discovery I have dedicated myself on this path always avoiding the “comfort zone”. Being good at something doesn’t mean that you can be satisfied with it. There’s always more that you can achieve, that you can improve!
+I am a Data Scientist at [Globo.com](http://www.globo.com/) graduated in Statistics from the [University of Brasilia, (UnB)](http://www.est.unb.br/). For a year and a half I did a master's degree in quantitative finance with a focus on risk default. 
+
+I have dedicated myself on this path always avoiding the comfort zone. Being curious, challenging problems, chewing technical and academic books, beta testing, following those off the curve and experimenting with new technologies. 
 
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script src="../assets/bullet.js"></script>
@@ -21,34 +23,6 @@ var margin = {top: 5, right: 40, bottom: 20, left: 150},
 var chart = d3.bullet()
     .width(width)
     .height(height);
-
-d3.json("../assets/explore.json", function(error, data) {
-  if (error) throw error;
-
-  var svg = d3.select("div#explore").selectAll("svg")
-      .data(data)
-    .enter().append("svg")
-      .attr("class", "bullet")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-      .call(chart);
-
-  var title = svg.append("g")
-      .style("text-anchor", "end")
-      .attr("transform", "translate(-6," + height / 2 + ")");
-
-  title.append("text")
-      .attr("class", "title")
-      .text(function(d) { return d.title; });
-
-  title.append("text")
-      .attr("class", "subtitle")
-      .attr("dy", "1em")
-      .text(function(d) { return d.subtitle; });
-});
-
 
 d3.json("../assets/interests.json", function(error, data) {
   if (error) throw error;
@@ -79,14 +53,32 @@ d3.json("../assets/interests.json", function(error, data) {
 
 
 </script>
-
-#### Skills
-<div id="explore"></div>
-
-#### Interests
+        
+#### Interests: the mark is my current moment and then my growth goal
 <div id="interest"></div>
 
 <br>
+
+I have been applying data analysis, analytics, experimentation, and machine learning professionally in the field of Web and Marketing. Data-driven decision-making is key to organizations become more effectively and efficient attract, engage and retain customer.
+
+#### @Globo.com 
+
+* Implemented a churn prediction model to anticipate this decision and make actions to retain the customer.
+* Building the metrics and the statistical environment on A/B platform.
+* Formulating success metrics for quality of experience on player, estimating marginal effects of these metrics on engagement and using the estimates on how to prioritize what metric to act on.
+
+#### @Ministry of Labor
+
+* Time series prediction of admissions and dismissals for the main Brazilian cities
+* Monthly report of labor market monitoring metrics of affiliated municipalities
+* Dashboard available online for anyone interested in the most current labor market situation
+
+#### @IPEA - Institute of Economic and Applied Research
+
+* An econometric analysis of the diversity on agriculture familiar production.
+* Panel of social vulnerability in partnership with the UN.
+* Investigates the population and employment dynamics in central urban areas of twelve selected capitals. Kernel heat maps were used to conceptualize and delimite central areas for each city.
+
 
 Courses
 ============
@@ -97,11 +89,9 @@ Courses
 
 * [Master Statistics with R](https://www.coursera.org/specializations/statistics): This Specialization showed how to analyze and visualize data in R and created reproducible data analysis reports, demonstrate a conceptual understanding of the unified nature of statistical inference, perform frequentist and Bayesian statistical inference and modeling to understand natural phenomena and make data-based decisions.
 
-* [Become a Product Manager](https://www.udemy.com/become-a-product-manager-learn-the-skills-get-a-job/): Learn the skills that make up the entire Product Management job and process: from ideation to market research, to UX wireframing to prototyping, technology, metrics, and finally to building the product with user stories, project management, scoping, and leadership.
+* [Digital Marketing](https://in.udacity.com/course/digital-marketing-nanodegree--nd018): This program offers you the opportunity to master platform-specific skills valued by top employers, while at the same time establishing a broad-based understanding of the whole digital marketing ecosystem. Run live campaigns on major marketing platforms, learn and apply new marketing techniques, analyze results, and produce actionable insights. [*doing*]
 
-Experience
-============
-<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1-DKT4cULTPc0pjV8CI6bFBZ3pxEXoiqvOde0p6we_UI&font=Default&lang=en&initial_zoom=0&start_at_slide=3&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+* [Become a Product Manager](https://www.udemy.com/become-a-product-manager-learn-the-skills-get-a-job/): Learn the skills that make up the entire Product Management job and process: from ideation to market research, to UX wireframing to prototyping, technology, metrics, and finally to building the product with user stories, project management, scoping, and leadership. [*doing*]
 
 Publications
 ============
@@ -128,5 +118,5 @@ About This Site
 
 This site is powered by [Jekyll](http://jekyllrb.com/) using the [Minimal Mistakes](http://mademistakes.com/minimal-mistakes/) theme. All blog posts are released under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
-All blog posts are compiled with [knitr](http://yihui.name/knitr/) [R markdown](http://rmarkdown.rstudio.com/). You can find the reproducible sources of each blog post [here](https://github.com/matheusrabetti/matheusrabetti.github.io/tree/master/_R).
+All R blog posts are compiled with [knitr](http://yihui.name/knitr/) [R markdown](http://rmarkdown.rstudio.com/). You can find the reproducible sources of each blog post [here](https://github.com/matheusrabetti/matheusrabetti.github.io/tree/master/_R).
 
