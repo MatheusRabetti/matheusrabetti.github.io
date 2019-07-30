@@ -8,58 +8,20 @@ permalink: /about/
 
 > "Generating numbers is easy, generating numbers you should trust is hard!" 
 
-I am a Data Scientist at [Globo.com](http://www.globo.com/) graduated in Statistics from the [University of Brasilia, (UnB)](http://www.est.unb.br/). For a year and a half I did a master's degree in quantitative finance with a focus on risk default. 
+My background is statistics with lots of side studies on economics having started a master. I have worked as a research assistant for a Brazilian National Research Institute, a statistician at Labour Ministry, Data Scientist at the largest media company in Latin America (Globo) and Uber as Marketing Scientist. My main area of interest is causal inference, econometrics and machine learning.
 
-I have dedicated myself on this path always avoiding the comfort zone. Being curious, challenging problems, chewing technical and academic books, beta testing, following those off the curve and experimenting with new technologies. 
+I'm driven by curiosity, challenging problems, chewing technical and academic books and seeing a problem from multiple perspectives. Code in R, Python, Spark, Hive and SQL.
 
-<script src="//d3js.org/d3.v3.min.js"></script>
-<script src="../assets/bullet.js"></script>
-<script>
-
-var margin = {top: 5, right: 40, bottom: 20, left: 150},
-    width = 520 - margin.left - margin.right,
-    height = 40 - margin.top - margin.bottom;
-
-var chart = d3.bullet()
-    .width(width)
-    .height(height);
-
-d3.json("../assets/interests.json", function(error, data) {
-  if (error) throw error;
-
-  var svg = d3.select("div#interest").selectAll("svg")
-      .data(data)
-    .enter().append("svg")
-      .attr("class", "bullet")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-      .call(chart);
-
-  var title = svg.append("g")
-      .style("text-anchor", "end")
-      .attr("transform", "translate(-6," + height / 2 + ")");
-
-  title.append("text")
-      .attr("class", "title")
-      .text(function(d) { return d.title; });
-
-  title.append("text")
-      .attr("class", "subtitle")
-      .attr("dy", "1em")
-      .text(function(d) { return d.subtitle; });
-});
-
-
-</script>
-        
-#### Interests: the mark is my current moment and then my growth goal
-<div id="interest"></div>
-
-<br>
+Experience
+============
 
 I have been applying data analysis, analytics, experimentation, and machine learning professionally in the field of Web and Marketing. Data-driven decision-making is key to organizations become more effectively and efficient attract, engage and retain customer.
+
+#### @Uber 
+
+* Bayesian Hierarquical Time Series for geo experimentation. 
+* Market Saturation and Total Addressable Market for marketing spend optimization.
+* Marketing Spend Investment Impact in Acquisition Metrics
 
 #### @Globo.com 
 
@@ -89,9 +51,11 @@ Courses
 
 * [Master Statistics with R](https://www.coursera.org/specializations/statistics): This Specialization showed how to analyze and visualize data in R and created reproducible data analysis reports, demonstrate a conceptual understanding of the unified nature of statistical inference, perform frequentist and Bayesian statistical inference and modeling to understand natural phenomena and make data-based decisions.
 
-* [Digital Marketing](https://in.udacity.com/course/digital-marketing-nanodegree--nd018): This program offers you the opportunity to master platform-specific skills valued by top employers, while at the same time establishing a broad-based understanding of the whole digital marketing ecosystem. Run live campaigns on major marketing platforms, learn and apply new marketing techniques, analyze results, and produce actionable insights. [*doing*]
+* [Digital Marketing](https://in.udacity.com/course/digital-marketing-nanodegree--nd018): This program offers you the opportunity to master platform-specific skills valued by top employers, while at the same time establishing a broad-based understanding of the whole digital marketing ecosystem. Run live campaigns on major marketing platforms, learn and apply new marketing techniques, analyze results, and produce actionable insights.
 
-* [Become a Product Manager](https://www.udemy.com/become-a-product-manager-learn-the-skills-get-a-job/): Learn the skills that make up the entire Product Management job and process: from ideation to market research, to UX wireframing to prototyping, technology, metrics, and finally to building the product with user stories, project management, scoping, and leadership. [*doing*]
+
+* [Macroeconometric Forecasting](https://courses.edx.org/courses/course-v1:IMFx+MFx+3T2018/course/): This course gives a deep understanding on time series forecasting of uncertainty and for policy analysis. Analysing the properties of time series data and model design using advanced time series techiniques like vector auto-regression models (VARs) and error correction models (VECMs). [*doing*]
+
 
 Publications
 ============
