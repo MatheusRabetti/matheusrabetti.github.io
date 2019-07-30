@@ -8,14 +8,14 @@ permalink: /about/
 
 > "Generating numbers is easy, generating numbers you should trust is hard!" 
 
-My background is statistics with lots of side studies on economics having started a master. I have worked as a research assistant for a Brazilian National Research Institute, a statistician at Labour Ministry, Data Scientist at the largest media company in Latin America (Globo) and Uber as Marketing Scientist. My main area of interest is causal inference, econometrics and machine learning.
+My background is statistics with lots of side studies on economics having started a master. I have worked as a research assistant for a Brazilian National Research Institute, a statistician at Labour Ministry, Data Scientist at the largest media company in Latin America (Globo) and marketing scientist at Uber. My main area of interest is causal inference, econometrics and machine learning.
 
 I'm driven by curiosity, challenging problems, chewing technical and academic books and seeing a problem from multiple perspectives. Code in R, Python, Spark, Hive and SQL.
 
 Experience
 ============
 
-I have been applying data analysis, analytics, experimentation, and machine learning professionally in the field of Web and Marketing. Data-driven decision-making is key to organizations become more effectively and efficient attract, engage and retain customer.
+I have been applying data analysis, analytics, experimentation, and machine learning professionally in the field of Web, Product and Marketing. Data-driven decision-making is key to organizations become more effectively and efficient attract, engage and retain customer.
 
 #### @Uber 
 
