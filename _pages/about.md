@@ -19,15 +19,22 @@ I have been applying data analysis, analytics, experimentation, and machine lear
 
 #### @Uber 
 
-* Bayesian Hierarquical Time Series for geo experimentation. 
-* Market Saturation and Total Addressable Market for marketing spend optimization.
-* Marketing Spend Investment Impact in Acquisition Metrics
+* Methods for geo experimentation: Bayesian Hierarquical Time Series (Causal Impact), Synthetic Control, Matching Similar Cities and Regions for geo experimentation
+* Market Saturation, Total Addressable Market and Opportunity Size for Engagement, Churn and Acquisition segments
+* Marketing and Incentives Impact in Acquisition Metrics - short and long term.
+* LAtam POC for Marketing Incrementality Test & Measurement
+* Offline and Brand Campaigns Business Impact
+* Marketing Business Results Report sent monthly for key stakeholers
+* Interviewing marketing data analysts
+* Fraud Analysis Report
 
-#### @Globo.com 
+#### @Globo.com - largest media company in Latin America
 
+* Daily business insights giving guidance for product changes (working along a software engineer and a designer)
 * Implemented a churn prediction model to anticipate this decision and make actions to retain the customer.
 * Building the metrics and the statistical environment on A/B platform.
 * Formulating success metrics for quality of experience on player, estimating marginal effects of these metrics on engagement and using the estimates on how to prioritize what metric to act on.
+* Computer Vision for predicting when the video credits start 
 
 #### @Ministry of Labor
 
