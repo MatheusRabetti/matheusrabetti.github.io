@@ -8,25 +8,33 @@ permalink: /about/
 
 > "Generating numbers is easy, generating numbers you should trust is hard!" 
 
-My background is statistics with lots of side studies on economics having started a master. I have worked as a research assistant for a Brazilian National Research Institute, a statistician at Labour Ministry, Data Scientist at the largest media company in Latin America (Globo) and marketing scientist at Uber. My main area of interest are causal inference, econometrics and machine learning.
+My background is statistics with lots of side studies on economics having started a master. Broadly-trained data scientist with 6 years of experience, accomplished Data Scientist in complex experimentation/causality, time series forecasting, and classification models. 
 
-I'm driven by curiosity, challenging problems, chewing technical and academic books and seeing a problem from multiple perspectives. Code in R, Python, Spark, Hive and SQL.
+I have worked as a Research Assistant for a Brazilian National Research Institute, a Statistician at Labour Ministry, Product Analyst at the largest media company in Latin America (Globo), Marketing Scientist at Uber and currently working as Data Scientist at Glovo. My main area of interest are causal inference, econometrics and machine learning.
+
+Proven business impact in different areas, particularly Marketing and Experimentation in the last years. Skilled at optimal decision making, causal inference, machine learning, communication, business acumen, and problem-solving. I'm driven by curiosity, challenging problems, chewing technical and academic books and seeing a problem from multiple perspectives. 
 
 Experience
 ============
 
-I have been applying data analysis, analytics, experimentation, and machine learning professionally in the field of Web, Product and Marketing. Data-driven decision-making is key to organizations become more effectively and efficient attract, engage and retain customer.
+#### @Glovo
+
+* Building Relationship and Mapping Marketing Actions for Data Science Projects Prioritization
+* Leading conversion rate prediction model for digital channels early performance comparison (Survival Analysis)
+* Started Data Science Project Kick-off Meeting and Documentation (objective, action, impact, stakeholders)
+* Segment Discovery of users with higher LTV increment after being impacted by Marketing campaigns that would convert only if targeted by the campaigns (Invidual Treatment Effect - Uplift Modeling)
+* Build reliable, precise and faster A/B tests with variance reduction (CUPED), bias correction (CUPED / Diff and Diff), indentifiyng novelty or primacy effects, and randomization unit correction (Linear Mixed Model).
+* Moving the company culture of decision making based on correlation studies to causality analysis (instrumental variables, propensity score matching, mediation modeling, regression discontinuity, causal diagrams, and others causal inference methods)
 
 #### @Uber 
 
 * Methods for geo experimentation: Bayesian Hierarquical Time Series (Causal Impact), Synthetic Control, Matching Similar Cities and Regions for geo experimentation
 * Market Saturation, Total Addressable Market and Opportunity Size for Engagement, Churn and Acquisition segments
-* Marketing and Incentives Impact in Acquisition Metrics - short and long term.
-* LAtam POC for Marketing Incrementality Test & Measurement
-* Offline and Brand Campaigns Business Impact
+* Marketing and Incentives Impact in Acquisition Metrics - short and long term impact inference.
+* LAtam POC for Marketing Incrementality Tests & Measurement Methodology
+* Measuring Offline and Brand Campaigns Business Impact
 * Marketing Business Results Report sent monthly for key stakeholers
 * Interviewing marketing data analysts
-* Fraud Analysis Report
 
 #### @Globo.com - largest media company in Latin America
 
@@ -40,14 +48,28 @@ I have been applying data analysis, analytics, experimentation, and machine lear
 
 * Time series prediction of admissions and dismissals for the main Brazilian cities
 * Monthly report of labor market monitoring metrics of affiliated municipalities
-* Dashboard available online for anyone interested in the most current labor market situation
+* Public Dashboard informing policy makers and the overall population in the current labor market situation
 
 #### @IPEA - Institute of Economic and Applied Research
 
 * An econometric analysis of the diversity on agriculture familiar production.
 * Panel of social vulnerability in partnership with the UN.
-* Investigates the population and employment dynamics in central urban areas of twelve selected capitals. Kernel heat maps were used to conceptualize and delimite central areas for each city.
+* Investigates the population and employment dynamics in central urban areas of twelve selected capitals using Spatial analysis methods. Kernel heat maps were used to conceptualize and delimite central areas for each city.
 
+Skills
+============
+
+* Favorite machine learning frameworks: Scikit-learn, Caret, XGBoost, LightGBM, Keras
+* Programming Languages: R, Python, SQL
+* Compute Instance: Google Compute Engine
+* Data Warehouse (OLAP): Hive, Vertica, Presto, AWS Redshift, Google BigQuery
+* Cloud Storage: AWS S3, Google Cloud Storage
+* Distributed Machine Learning: Spark
+* Container Platform: Docker
+* Job Scheduler: Airflow
+* Visualisation: Tableau, Matplotlib, ggplot, Looker
+* Version Control: Git
+* Project Tracking: Jira, Trello
 
 Courses
 ============
@@ -60,8 +82,8 @@ Courses
 
 * [Digital Marketing](https://in.udacity.com/course/digital-marketing-nanodegree--nd018): This program offers you the opportunity to master platform-specific skills valued by top employers, while at the same time establishing a broad-based understanding of the whole digital marketing ecosystem. Run live campaigns on major marketing platforms, learn and apply new marketing techniques, analyze results, and produce actionable insights.
 
+* [Causal Inference](https://www.datacamp.com/community/open-courses/causal-inference-with-r-instrumental-variables-rdd): In this series of 7 courses created by Duke University with support from eBay focuses on how to use the advanced methods of instrumental variables and regression discontinuity to find causal effects. Guides you through the concepts that data scientists need to always consider when examining and making inferences about data. 
 
-* [Macroeconometric Forecasting](https://courses.edx.org/courses/course-v1:IMFx+MFx+3T2018/course/): This course gives a deep understanding on time series forecasting of uncertainty and for policy analysis. Analysing the properties of time series data and model design using advanced time series techiniques like vector auto-regression models (VARs) and error correction models (VECMs). [*doing*]
 
 
 Publications

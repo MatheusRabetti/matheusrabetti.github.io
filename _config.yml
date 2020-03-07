@@ -20,9 +20,9 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 author:
   name             : "Matheus Rabetti"
   avatar           : "/assets/avatar-icon.jpg"
-  bio              : "Marketing Scientist at Uber"
+  bio              : "Decision Scientist @ Glovo, Uber"
   disqus-shortname : matheusrabetti
-  location         : "Sao Paulo, Brazil"
+  location         : "Barcelona, Spain"
   email            : "matheus.rabetti@gmail.com"
   uri              :
   facebook         :
