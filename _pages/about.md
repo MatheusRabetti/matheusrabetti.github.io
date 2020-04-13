@@ -8,11 +8,11 @@ permalink: /about/
 
 > "Generating numbers is easy, generating numbers you should trust is hard!" 
 
-My background is statistics with lots of side studies on economics having started a master. Broadly-trained data scientist with 6 years of experience, accomplished Data Scientist in complex experimentation/causality, time series forecasting, and classification models. 
+Broadly-trained data scientist with 6 years of experience, accomplished Data Scientist in complex experimentation/causality, time series forecasting, and classification models. My background is statistics with lots of side studies on economics
 
-I have worked as a Research Assistant for a Brazilian National Research Institute, a Statistician at Labour Ministry, Product Analyst at the largest media company in Latin America (Globo), Marketing Scientist at Uber and currently working as Data Scientist at Glovo. My main area of interest are causal inference, econometrics and machine learning.
+I have worked as a Research Assistant for a Brazilian National Research Institute, a Statistician at Labour Ministry, Product Analyst at the largest media company in Latin America (Globo), Marketing Scientist at Uber and currently working as Data Scientist at Glovo. My main areas of interest are causal inference, econometrics, and machine learning.
 
-Proven business impact in different areas, particularly Marketing and Experimentation in the last years. Skilled at optimal decision making, causal inference, machine learning, communication, business acumen, and problem-solving. I'm driven by curiosity, challenging problems, chewing technical and academic books and seeing a problem from multiple perspectives. 
+Proven business impact in different areas, particularly Marketing and Experimentation in the last years. Skilled at optimal decision making, causal inference, machine learning, communication, business acumen, and problem-solving. I’m driven by curiosity, challenging problems, chewing technical and academic books and seeing a problem from multiple perspectives.
 
 Experience
 ============
@@ -22,24 +22,25 @@ Experience
 * Building Relationship and Mapping Marketing Actions for Data Science Projects Prioritization
 * Leading conversion rate prediction model for digital channels early performance comparison (Survival Analysis)
 * Started Data Science Project Kick-off Meeting and Documentation (objective, action, impact, stakeholders)
-* Segment Discovery of users with higher LTV increment after being impacted by Marketing campaigns that would convert only if targeted by the campaigns (Invidual Treatment Effect - Uplift Modeling)
-* Build reliable, precise and faster A/B tests with variance reduction (CUPED), bias correction (CUPED / Diff and Diff), indentifiyng novelty or primacy effects, and randomization unit correction (Linear Mixed Model).
+* Segment Discovery of users with higher LTV increment after being impacted by Marketing campaigns that would convert only if targeted by the campaigns (Individual Treatment Effect - Uplift Modeling)
+* Build reliable, precise and faster A/B tests with variance reduction (CUPED), bias correction (CUPED / Diff and Diff), identifying novelty or primacy effects, randomization unit correction (Linear Mixed Model), and Bayesian Inference.
 * Moving the company culture of decision making based on correlation studies to causality analysis (instrumental variables, propensity score matching, mediation modeling, regression discontinuity, causal diagrams, and others causal inference methods)
 
 #### @Uber 
 
-* Methods for geo experimentation: Bayesian Hierarquical Time Series (Causal Impact), Synthetic Control, Matching Similar Cities and Regions for geo experimentation
+* Methods for geo experimentation: Bayesian Hierarchical Time Series (Causal Impact), Synthetic Control, Matching Similar Cities and Regions for geo experimentation
 * Market Saturation, Total Addressable Market and Opportunity Size for Engagement, Churn and Acquisition segments
 * Marketing and Incentives Impact in Acquisition Metrics - short and long term impact inference.
 * LAtam POC for Marketing Incrementality Tests & Measurement Methodology
 * Measuring Offline and Brand Campaigns Business Impact
-* Marketing Business Results Report sent monthly for key stakeholers
+* Marketing Business Results Report sent monthly for key stakeholders
 * Interviewing marketing data analysts
 
 #### @Globo.com - largest media company in Latin America
 
 * Daily business insights giving guidance for product changes (working along a software engineer and a designer)
 * Implemented a churn prediction model to anticipate this decision and make actions to retain the customer.
+* User Path Navigation with Markov Chain
 * Building the metrics and the statistical environment on A/B platform.
 * Formulating success metrics for quality of experience on player, estimating marginal effects of these metrics on engagement and using the estimates on how to prioritize what metric to act on.
 * Computer Vision for predicting when the video credits start 
@@ -65,7 +66,6 @@ Skills
 * Data Warehouse (OLAP): Hive, Vertica, Presto, AWS Redshift, Google BigQuery
 * Cloud Storage: AWS S3, Google Cloud Storage
 * Distributed Machine Learning: Spark
-* Container Platform: Docker
 * Job Scheduler: Airflow
 * Visualisation: Tableau, Matplotlib, ggplot, Looker
 * Version Control: Git
