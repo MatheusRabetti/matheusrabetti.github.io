@@ -8,7 +8,7 @@ permalink: /about/
 
 > "Generating numbers is easy, generating numbers you should trust is hard!" 
 
-Broadly-trained data scientist with 6 years of experience, accomplished Data Scientist in complex experimentation/causality, time series forecasting, and classification models. My background is statistics with lots of side studies on economics
+Broadly-trained data scientist with 7 years of experience, accomplished Data Scientist in complex experimentation/causality, time series forecasting, and classification models. My background is statistics with lots of side studies on economics
 
 I have worked as a Research Assistant for a Brazilian National Research Institute, a Statistician at Labour Ministry, Product Analyst at the largest media company in Latin America (Globo), Marketing Scientist at Uber and currently working as Data Scientist at Glovo. My main areas of interest are causal inference, econometrics, and machine learning.
 
@@ -19,10 +19,12 @@ Experience
 
 #### @Glovo
 
-* Building Relationship and Mapping Marketing Actions for Data Science Projects Prioritization
-* Leading conversion rate prediction model for digital channels early performance comparison (Survival Analysis)
-* Started Data Science Project Kick-off Meeting and Documentation (objective, action, impact, stakeholders)
-* Segment Discovery of users with higher LTV increment after being impacted by Marketing campaigns that would convert only if targeted by the campaigns (Individual Treatment Effect - Uplift Modeling)
+* Global Experimentation/Causality POC
+* Identifying heterogeneous treatment effects of marketing interventions (Retargeting). Segment Discovery leads to more efficient retargeting audiences.
+* Multi-Touch Attribution (building the role pipeline for u-shaped and Markov chains)
+* UMAP embedding clustering to identify users that churned due to bad user experience.
+* Marketing First Order Prediction - predicting total conversions for a specific time window.
+* Incrementality Tests for Retargeting and Acquisition
 * Build reliable, precise and faster A/B tests with variance reduction (CUPED), bias correction (CUPED / Diff and Diff), identifying novelty or primacy effects, randomization unit correction (Linear Mixed Model), and Bayesian Inference.
 * Moving the company culture of decision making based on correlation studies to causality analysis (instrumental variables, propensity score matching, mediation modeling, regression discontinuity, causal diagrams, and others causal inference methods)
 
