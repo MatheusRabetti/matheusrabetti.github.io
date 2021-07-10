@@ -10,7 +10,7 @@ permalink: /about/
 
 Broadly-trained data scientist with 7 years of experience, accomplished Data Scientist in complex experimentation/causality, time series forecasting, and classification models. My background is statistics with lots of side studies on economics
 
-I have worked as a Research Assistant for a Brazilian National Research Institute, a Statistician at Labour Ministry, Product Analyst at the largest media company in Latin America (Globo), Marketing Scientist at Uber and as Marketing Data Scientist at Glovo. Currently I'm working for Toptal as Strategy Analyst for Toptal. My main areas of interest are causal inference, econometrics, and machine learning.
+I have worked as a Research Assistant for a Brazilian National Research Institute, a Statistician at Labour Ministry, Product Analyst at the largest media company in Latin America (Globo), Marketing Scientist at Uber and as Marketing Data Scientist at Glovo. Currently I'm working for Toptal as Strategy Analyst. My main areas of interest are causal inference, econometrics, and machine learning.
 
 Proven business impact in different areas, particularly Marketing, Experimentation and Operations in the last years. Skilled at optimal decision making, causal inference, machine learning, communication, stakeholder management, business acumen, OKR's setting and tracking and problem-solving. I’m driven by curiosity, challenging problems, chewing technical and academic books and seeing a problem from multiple perspectives.
 
