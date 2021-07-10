@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Experimentation Data Science"
+title                    : "Causality Data Science"
 name                     : "Matheus Rabetti"
 description              : "Enlightened trial and error outperforms the planning of flawless execution"
 url                      : "https://matheusrabetti.github.io"
@@ -20,7 +20,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 author:
   name             : "Matheus Rabetti"
   avatar           : "/assets/avatar-icon.jpg"
-  bio              : "Decision Scientist @ Glovo, Uber"
+  bio              : "Decision Scientist @ Toptal, Glovo, Uber"
   disqus-shortname : matheusrabetti
   location         : "Barcelona, Spain"
   email            : "matheus.rabetti@gmail.com"

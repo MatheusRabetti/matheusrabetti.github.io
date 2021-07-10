@@ -10,15 +10,22 @@ permalink: /about/
 
 Broadly-trained data scientist with 7 years of experience, accomplished Data Scientist in complex experimentation/causality, time series forecasting, and classification models. My background is statistics with lots of side studies on economics
 
-I have worked as a Research Assistant for a Brazilian National Research Institute, a Statistician at Labour Ministry, Product Analyst at the largest media company in Latin America (Globo), Marketing Scientist at Uber and currently working as Data Scientist at Glovo. My main areas of interest are causal inference, econometrics, and machine learning.
+I have worked as a Research Assistant for a Brazilian National Research Institute, a Statistician at Labour Ministry, Product Analyst at the largest media company in Latin America (Globo), Marketing Scientist at Uber and as Marketing Data Scientist at Glovo. Currently I'm working for Toptal as Strategy Analyst for Toptal. My main areas of interest are causal inference, econometrics, and machine learning.
 
-Proven business impact in different areas, particularly Marketing and Experimentation in the last years. Skilled at optimal decision making, causal inference, machine learning, communication, business acumen, and problem-solving. I’m driven by curiosity, challenging problems, chewing technical and academic books and seeing a problem from multiple perspectives.
+Proven business impact in different areas, particularly Marketing, Experimentation and Operations in the last years. Skilled at optimal decision making, causal inference, machine learning, communication, stakeholder management, business acumen, OKR's setting and tracking and problem-solving. I’m driven by curiosity, challenging problems, chewing technical and academic books and seeing a problem from multiple perspectives.
 
 Experience
 ============
 
-#### @Glovo
+#### @Toptal
 
+* Strategic advisor for Toptal business functions and leaders 
+* Holding prioritization weekly meetings
+* Holding monthly business performance meetings 
+* Improved newcomers talents retention by 5% in the network and by 2% the talents allocated to a job within 10 days. Explored the data, found the issue for this talent cluster and setup an action plan with the stakeholders to tackle it. 
+* Dashboard creation and OKR setting
+
+#### @Glovo
 * Global Experimentation/Causality POC
 * Identifying heterogeneous treatment effects of marketing interventions (Retargeting). Segment Discovery leads to more efficient retargeting audiences.
 * Multi-Touch Attribution (building the role pipeline for u-shaped and Markov chains)
@@ -68,8 +75,8 @@ Skills
 * Data Warehouse (OLAP): Hive, Vertica, Presto, AWS Redshift, Google BigQuery
 * Cloud Storage: AWS S3, Google Cloud Storage
 * Distributed Machine Learning: Spark
-* Job Scheduler: Airflow
-* Visualisation: Tableau, Matplotlib, ggplot, Looker
+* Job Scheduler: Luigi
+* Visualisation: Tableau, Matplotlib, ggplot, Looker, Google Spreadsheet
 * Version Control: Git
 * Project Tracking: Jira, Trello
 
