@@ -20,13 +20,19 @@ Experience
 #### @Toptal
 
 * Strategic advisor for Toptal business functions and leaders 
-* Holding prioritization weekly meetings
-* Holding monthly business performance meetings 
-* Improved newcomers talents retention by 5% in the network and by 2% the talents allocated to a job within 10 days. Explored the data, found the issue for this talent cluster and setup an action plan with the stakeholders to tackle it. 
-* Dashboard creation and OKR setting
+* Leading Talent Operations analytical function.
+* Holding weekly analysis prioritization meetings
+* Holding monthly business performance review meetings 
+* OKRs definition
+* Improved newcomers talents retention by 5% in the network and by 2% the talents allocated to a job within 10 days. Discovery 
+    * Discovery - discovered talent retention issue. The metric wasn't being tracked. 
+    * Problem Statement - explored the data and found that many talents leave the network after finishing a job. 
+    * Action Item - Implement a new job matching process to tackle jobs with end scheduled.
+* Probability to convert based on Technical Steps Grade - Regression Model to predict when a talent score high in the first steps of the funnel if we can skip further steps in the screening process. 
 
 #### @Glovo
-* Global Experimentation/Causality POC
+
+* Experimentation/Causality POC
 * Identifying heterogeneous treatment effects of marketing interventions (Retargeting). Segment Discovery leads to more efficient retargeting audiences.
 * Multi-Touch Attribution (building the role pipeline for u-shaped and Markov chains)
 * UMAP embedding clustering to identify users that churned due to bad user experience.
