@@ -8,14 +8,42 @@ permalink: /about/
 
 > "Generating numbers is easy, generating numbers you should trust is hard!" 
 
-Broadly-trained data scientist with 7 years of experience, accomplished Data Scientist in complex experimentation/causality, time series forecasting, and classification models. My background is statistics with lots of side studies on economics
+A highly skilled Data Scientist with 10 years of experience, specializing in complex experimentation, causal inference and probability time series forecasting. My objective is to conduct analyses and build models that prioritize interpretability and clarity over pure performance. By focusing on transparency, I ensure that the insights derived are easily understood, allowing stakeholders to grasp how different actions impact outcomes. This approach enhances decision-making by providing actionable insights, fostering trust in the results, and driving more strategic and informed business decisions. 
 
-I have worked as a Research Assistant for a Brazilian National Research Institute, a Statistician at Labour Ministry, Product Analyst at the largest media company in Latin America (Globo), Marketing Scientist at Uber and as Marketing Data Scientist at Glovo. Currently I'm working for Toptal as Strategy Analyst. My main areas of interest are causal inference, econometrics, and machine learning.
+I have excelled in a variety of impactful roles across sectors, including serving as a Research Assistant at a Brazilian National Research Institute, Statistician at the Ministry of Labor, Product Analyst at Globo (the largest media company in Latin America), Marketing Scientist at Uber, and Marketing Data Scientist at Glovo, Consultant at Toptal, Lead Product Analyst & Experimentation Ambassador at Vista and Senior Data Scientist for different areas of my current company, Preply.
 
-Proven business impact in different areas, particularly Marketing, Experimentation and Operations in the last years. Skilled at optimal decision making, causal inference, machine learning, communication, stakeholder management, business acumen, OKR's setting and tracking and problem-solving. I’m driven by curiosity, challenging problems, chewing technical and academic books and seeing a problem from multiple perspectives.
+One of my key strengths is my versatility. I have proven myself in multiple areas of business, from marketing to supply, product, pricing and sales allowing me to develop a broad understanding of diverse business functions. This cross-functional expertise enables me to see the bigger picture and drive results across various domains.
+
+Throughout my career, I have delivered measurable business value through optimal decision-making and effective stakeholder management. My approach balances quick, heuristic insights with rigorous analysis to drive MVP experimentation and informed decision-making. I am driven by intellectual curiosity, a passion for solving complex problems, and a deep commitment to continuous learning and growth.
 
 Experience
 ============
+
+#### @Preply
+
+* App Core Product Team
+    * Implement and QA event taxonomies for self-service analysis on customer and user behaviour.
+    * Develop and maintain KPIs and dashboards to monitor product metrics and identify insights.
+* Ranking & Pricing
+    * Creating price elasticity curves for different marketplace segmentations using Conditional Average Treatment Effect modeling which found a group of segments summing up to 28% of the user base that would generate incremental revenue if the price of their tutors increased by a certain amount.
+* Supply & Demand
+    * Tutor demand forecast
+    * Causal Inference Model - Training impact on Tutor Performance which lead us to shift the strategy from proposing the tutors to take a certain course right after the profile creation approval to 14 days later resulting in 3% incremental revenue.
+    * Tutor Community Message Classification (NLP) to track the sentiment of the messages and flagging the critical ones to be addressed by the internal team.
+    * Retention Experimentation Framework using Survival Analysis
+* B2B Sales & Marketing
+    * Lead Scoring Model
+    * Hours Utilization Impact on Client Retention. Important for defining the new OKRs for sales agents.
+    * Improved B2B users experience by tutor selection. What makes a tutor a good tutor for the specific B2B users needs. Collaboration with user research team.
+
+#### @Vista
+
+* Technical leader of the analytics team for Next Best Action - working on personalised email experience
+* Building the experimentation culture, create standardisation and supporting experiment creation and analysis.
+* Leading a Data Product team of 3 analysts. Coaching and managing their carreer.
+* Implemented Bayesian Experimentation Framework
+
+[Experimentation Culture Awards 2022 - Building a culture of experimentation in public](https://experimentationcultureawards.com/#nominees2022:~:text=WINNER%20of%20the%202022%20Team%20AWARD%20is%3A%20Vista%20(US))
 
 #### @Toptal
 
@@ -75,16 +103,16 @@ Experience
 Skills
 ============
 
-* Favorite machine learning frameworks: Scikit-learn, Caret, XGBoost, LightGBM, Keras
+* Modeling Frameworks: econml, pymc, bsts, Scikit-learn, Caret, XGBoost, LightGBM
 * Programming Languages: R, Python, SQL
-* Compute Instance: Google Compute Engine
-* Data Warehouse (OLAP): Hive, Vertica, Presto, AWS Redshift, Google BigQuery
+* Compute Instance: Google Compute Engine, Databricks
+* Data Warehouse (OLAP): Hive, Vertica, Presto, AWS Redshift, Google BigQuery, Snowflake, dbt
+* Product Event Tracking: Google Analytics, Amplitude
 * Cloud Storage: AWS S3, Google Cloud Storage
 * Distributed Machine Learning: Spark
 * Job Scheduler: Luigi
 * Visualisation: Tableau, Matplotlib, ggplot, Looker, Google Spreadsheet
 * Version Control: Git
-* Project Tracking: Jira, Trello
 
 Courses
 ============
