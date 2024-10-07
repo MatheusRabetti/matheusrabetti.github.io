@@ -20,16 +20,16 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 author:
   name             : "Matheus Rabetti"
   avatar           : "/assets/avatar-icon.jpg"
-  bio              : "Decision Scientist @ Toptal, Glovo, Uber"
+  bio              : "Experimentation & Data Science @ Uber"
   disqus-shortname : matheusrabetti
-  location         : "Barcelona, Spain"
+  location         : "Brasília, Brazil"
   email            : "matheus.rabetti@gmail.com"
   uri              :
   facebook         :
   github           : MatheusRabetti
-  linkedin         : matheus-rabetti-8977b49b
+  linkedin         : matheus-r-8977b49b
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
-  twitter          : RabettiMatheus
+  twitter          :
   google:
     analytics      : "UA-83714078-1" 
 
