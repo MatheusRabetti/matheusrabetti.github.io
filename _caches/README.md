@@ -1,1 +1,0 @@
-# Knitr caches folder

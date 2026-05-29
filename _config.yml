@@ -20,7 +20,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 author:
   name             : "Matheus Rabetti"
   avatar           : "/assets/avatar-icon.jpg"
-  bio              : "Experimentation & Data Science @ Uber"
+  bio              : "Experimentation . Data Science . AI @Coinbase"
   disqus-shortname : matheusrabetti
   location         : "Brasília, Brazil"
   email            : "matheus.rabetti@gmail.com"
@@ -31,7 +31,6 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   twitter          :
   google:
-    analytics      : "UA-83714078-1" 
 
 
 
@@ -49,7 +48,6 @@ exclude:
   - .sass-cache
   - assets/js/plugins
   - assets/js/_main.js
-  - assets/js/vendor
   - Capfile
   - CHANGELOG
   - config
@@ -79,7 +77,7 @@ highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-gist
 
